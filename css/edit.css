@@ -1,0 +1,584 @@
+body{
+    font-size: 16px;
+    line-height: 22px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #718096;
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    color: #718096;
+    font-size: 16px;
+}
+h2{
+    text-transform: uppercase;
+    color: #152C5B;
+}
+a{
+    color: #1D9AD6;
+}
+.form-group label{
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 5px;
+}
+.form-control{
+    font-size: 16px;
+}
+.custom-select{
+    font-size: 16px;
+    color: #152C5B;
+    min-height: 42px;
+}
+.form-control:hover, .form-control:focus, .custom-select:hover{
+    border: 1px #1D9AD6 solid;
+}
+.form-control:focus, .custom-select:focus{
+    box-shadow: none;
+}
+.form-control::placeholder{
+    font-size: 16px;
+    color: #B3C3DB;
+}
+a:hover{
+    color: #0D7DB2;
+}
+.content{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.hbx{
+    height: auto;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.navbar{
+    height: 74px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right:30px;
+    padding-left: 30px;
+    z-index: 10;
+    transition: all 0.4s;
+    width: 100%;
+}
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #00477B;
+}
+.nav-link{
+    color: #fff !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 20px !important;
+}
+.nav-link:hover, .active{
+    color: #35DCFF !important;
+}
+.navbar-brand{
+    margin-right: 40px;
+}
+.navbar-brand img{
+    height: 36px;
+}
+.search{
+    width: 20px;
+}
+.navbar-dark .navbar-toggler{
+    border: none;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    padding: 15px 0;
+}
+.home-banner{
+    width: 100%;
+    display: inline-block;
+    height: 535px;
+    margin-top: 65px;
+    padding-top: 75px;
+    background-image:url('https://sgcmccomvn-my.sharepoint.com/personal/tthuy_cmc_com_vn/Documents/Microsoft%20Teams%20Chat%20Files/triangle.svg');
+    background-size: 70%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.home-banner .img_slide{
+    width: 100%;
+}
+.home-banner h1{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+.home-banner p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.home-banner button{
+    margin-right: 10px;
+}
+.home-banner button img{
+    margin-right: 10px;
+    float: left;
+}
+.sub-banner{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    margin-top: 70px;
+    background-size: 45%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.sub-banner h2{
+    text-transform: uppercase;
+    color: white;
+    margin: 45px 0 15px 0;
+}
+.sub-banner p{
+    color: white;
+    display: inline-block;
+    width: 70%;
+}
+.sub-banner .img_slide{
+    width: auto;
+    height: 285px;
+}
+.sub-banner button{
+    margin: 10px 0 35px 0;
+}
+.solution, .industry, .platform, .service, .contact, .footer{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.main-heading{
+    float: left;
+    position: relative;
+    margin-bottom: 15px;
+}
+.main-heading h2{
+    text-transform: uppercase;
+    color: #152C5B;
+    margin: 0;
+}
+.solution p, .industry p, .platform p, .service p, .partner p{
+    color: #718096;
+    margin: 15px 0 40px 0;
+}
+.industry p.desc, .platform p.desc{
+    padding: 0 100px;
+}
+.industry a.tongue img{
+    transition: transform .25s ease,-webkit-transform .25s ease;
+    width: 12px;
+}
+.industry a:hover.tongue img{
+    transform: translate3d(0,-5px,0);
+}
+.solution{
+    display: flex;
+}
+.platform{
+    background-color: #1D9AD6;
+    background-image: url('https://sgcmccomvn-my.sharepoint.com/personal/tthuy_cmc_com_vn/Documents/Microsoft%20Teams%20Chat%20Files/img_9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.platform h6, .platform h2, .platform p{
+    color: #fff;
+}
+.platform .card .icon{
+    border: 1px #fff solid;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 8px;
+}
+.industry img{
+    width: 430px;
+}
+.service .sertyp{
+    margin-top: 30px;
+}
+.service img{
+    width: 70%;
+}
+.card{
+    margin-bottom: 30px;
+}
+ul.slindus{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+ul.slindus li{
+    margin: 0 5px;
+    display: inline;
+}
+ul.slindus li a{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px #DEE5EE solid;
+    padding: 8px;
+}
+ul.slindus li a:hover{
+    text-decoration: none;
+    background-color: #F5FAFF;
+    border: 1px #E6EFFA solid;
+}
+ul.slindus li a.arrow{
+    background-color: #fff;
+    border: none;
+    margin: 0 10px;
+}
+ul.slindus li a:hover.arrow svg{
+    fill: #718096;
+}
+ul.slindus li a span{
+    font-size: 14px;
+    color: #5C697C;
+    line-height: normal;
+}
+ul.slindus li a img{
+    width: 50px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.btn-primary{
+    border-radius: 70px;
+    height: 44px;
+    min-width: 140px;
+    text-align: center;
+    background-color: #1D9AD6;
+    border: 1px #1D9AD6 solid;
+    box-shadow: 0px 10px 30px rgba(29, 154, 214, 0.3);
+    font-size: 16px;
+}
+.btn-primary:hover{
+    background-color: #0D7DB2;
+    border: 1px #0D7DB2 solid;
+}
+.btn-primary.disabled, .btn-primary:disabled{
+    background-color: #86C4E2;
+    border: 1px #86C4E2 solid;
+}
+.btn-lg{
+    height: 54px;
+    font-size: 18px;
+}
+.box50{
+    width: 50%;
+}
+.box20{
+    width: 20%;
+}
+.partner ul{
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+.partner ul li{
+    display: inline-block;
+}
+.partner ul li a{
+    margin: 0 15px;
+}
+.partner ul li a img{
+    width: 105px;
+    margin: 5px;
+}
+.partner ul li a:hover img{
+    opacity: 0.5;
+}
+.contact{
+    height: 100px;
+}
+.contact ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.contact ul li{
+    border-right: 1px #457EBF solid;
+    padding: 0 30px;
+}
+.contact ul li:last-child{
+    border-right: none !important;
+}
+.contact ul li a{
+    color: white;
+}
+.contact ul li a:hover{
+    text-decoration: none;
+    color: #8CB0E1;
+}
+.contact ul li{
+    display: inline-block;
+}
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer ul li{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+}
+.footer ul li strong{
+    color: white;
+    font-weight: 500;
+    font-size: 14px
+}
+.footer ul li a{
+    color: #8CB0E1;
+    font-size: 12px;
+}
+.footer .sub-menu{
+    padding: 55px 0;
+}
+.unfter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px rgba(255,255,255,0.1) solid;
+    height: 70px;
+    font-size: 12px;
+    color: #8CB0E1;
+}
+.unfter a{
+    color: #8CB0E1;
+}
+.unfter span{
+    display: inline-block;
+    margin: 0 10px;
+}
+.unfter img{
+    height: 20px;
+}
+.unfter .language a:hover{
+    text-decoration: none;
+}
+.unfter .language a img{
+    height: 10px;
+    display: inline-block;
+    margin-left: 8px;
+}
+.unfter .social a img{
+    display: inline-block;
+    margin:0 10px 0 0;
+}
+.unfter .social a:hover, .unfter .language a:hover{
+    text-decoration: none;
+    color: #fff;
+}  
+.unfter .social a:hover svg, .unfter .language a:hover svg{
+    fill: #fff;
+} 
+.edit-card{
+    border: 1px solid #E5ECF2;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 30px rgba(224, 231, 239, 0.5);
+    border-radius: 10px;
+}
+.card-title{
+    color: #152C5B;
+    font-weight: 500;
+}
+.card-text{
+    font-size: 15px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.btn-white{
+    background-color: #fff;
+    border: 1px #fff solid;
+    color: #1D9AD6;
+}
+.btn-white svg, .btn-white:hover svg{
+    fill: #1D9AD6;
+}
+.tongue {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: rotate(180deg) translateX(50%);
+    -ms-transform: rotate(180deg) translateX(50%);
+    transform: rotate(180deg) translateX(50%);
+    width: 138px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #8492A6;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://sgcmccomvn-my.sharepoint.com/personal/tthuy_cmc_com_vn/Documents/Microsoft%20Teams%20Chat%20Files/tougue.svg');
+}
+.tongue svg {
+    -webkit-animation: floating-sm 2s ease infinite;
+            animation: floating-sm 2s ease infinite;
+  }
+.tongue:hover svg {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.card2{
+    display: flex;
+    margin: 50px 0 0 0;
+}
+.card2 img{
+    margin-right: 20px;
+    width: 55px !important;
+}
+.card2 h5{
+    color: #152C5B;
+}
+.card2 h6{
+    color: #152C5B;
+    font-size: 20px;
+}
+.card2 ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D9AD6;
+}
+.card2 p{
+    font-size: 15px;
+}
+ul.ulwarr{
+    list-style-image: url('https://sgcmccomvn-my.sharepoint.com/personal/tthuy_cmc_com_vn/Documents/Microsoft%20Teams%20Chat%20Files/arrow_right_solid_icon2.svg');
+    padding-left: 13px;
+}
+ul.ulwarr li{
+    padding: 8px 0;
+}
+.started{
+    padding: 40px 0;
+}
+.started h2{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+.filter-le{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.filter-le select{
+    width: 250px;
+    float: right;
+    margin: 0 0 0 20px;
+    color: #152C5B;
+    font-size: 18px;
+}
+.large-enterprise{
+    margin-top: 50px;
+}
+.large-enterprise .card{
+    margin: 0 0 30px 0;
+}
+.large-enterprise .card .card-img-top{
+    height: 245px !important;
+    object-fit: cover;
+    border-top-left-radius: calc(.65rem - 1px);
+    border-top-right-radius: calc(.65rem - 1px);
+}
+.large-enterprise .card .card-body p.card-text{
+    margin-bottom: 30px;
+}
+.large-enterprise .card .card-body a.viewmore{
+    font-weight: 500 !important;
+    font-size: 15px;
+}
+.page-link{
+    color: #1D9AD6;
+}
+.page-link:hover{
+    color: #26568D;
+}
+.pagination{
+    margin-bottom: 0 !important;
+}
+.formct h2{
+    color: #152C5B;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.formct img{
+    width: 100%;
+}
+.formct button{
+    margin: 15px 0 0 0;
+}
+.formct .sbox{
+    display: flex;
+}
+.formct .sbox h6{
+    color: #152C5B;
+    margin: 0 0 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.formct .sbox img{
+    width: 150px;
+    margin-right: 25px;
+    object-fit: cover;
+}
+a.view-more-txt{
+    font-size: 14px;
+    font-weight: 500;
+}
+a.view-more-txt svg{
+    transition: transform .25s ease,-webkit-transform .25s ease;
+}
+a:hover.view-more-txt svg{
+    transform: translate3d(10px,0,0);
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: #dadada;
+    margin: 50px 0;
+}
+.getinfo{
+    display: flex;
+    align-items: stretch;
+}
+.getinfo img{
+    height: 100%;
+    object-fit: cover;
+}
+.getinfo .form{
+    padding: 65px 100px;   
+}
+.getinfo h2{
+    margin-bottom: 25px;
+}
+.getinfo .form button{
+    margin: 20px 0 0 0;
+}
+.bg-fea-so{
+    background:transparent url('https://sgcmccomvn-my.sharepoint.com/personal/tthuy_cmc_com_vn/Documents/Microsoft%20Teams%20Chat%20Files/img_feature_solution.jpg') no-repeat right bottom;
+    background-size: contain;
+}
