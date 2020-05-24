@@ -46,7 +46,7 @@
     background-color: #718096;
 }
 .slategray-dark-txt{
-    color: #152C5B;
+    color: #152C5B !important;
 }
 .slate-txt{
     color: #718096;

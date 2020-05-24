@@ -31,6 +31,12 @@
 .mt-45{
     margin-top: 45px;
 }
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
 .mt-15{
     margin-top: 15px;
 }
@@ -42,6 +48,9 @@
 }
 .mt-40{
     margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
 }
 .mb-45{
     margin-bottom: 45px;
@@ -61,6 +70,11 @@
     align-items: center;
     justify-content: center;
 }
+.flex-subbn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .flex{
     display: flex;
 }
@@ -72,5 +86,9 @@
 }
 .w-48{
     width: 48%;
+}
+.font12{
+    font-size: 12px !important;
+    line-height: 16px;
 }
 

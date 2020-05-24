@@ -12,9 +12,10 @@ body{
 p{
     color: #718096;
 }
-h2{
+h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
     color: #152C5B;
+    font-weight: normal;
 }
 a{
     color: #1D9AD6;
@@ -59,7 +60,7 @@ a:hover{
     float: left;
 }
 .navbar{
-    height: 74px;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,6 +70,9 @@ a:hover{
     z-index: 10;
     transition: all 0.4s;
     width: 100%;
+}
+.always-active{
+    background: #00477B !important;
 }
 /* Change navbar styling on scroll */
 .navbar.active {
@@ -161,6 +165,7 @@ a:hover{
     color: #fff;
     text-transform: uppercase;
     margin: 0 0 40px 0;
+    font-weight: normal;
 }
 .home-banner p{
     color: #fff;
@@ -176,17 +181,18 @@ a:hover{
 }
 .sub-banner{
     width: 100%;
-    display: inline-block;
-    height: auto;
+    height: 350px;
     margin-top: 70px;
     background-size: 45%;
     background-position: bottom right;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 .sub-banner h2{
     text-transform: uppercase;
     color: white;
-    margin: 45px 0 15px 0;
+    margin: 0 0 15px 0;
 }
 .sub-banner p{
     color: white;
@@ -214,6 +220,7 @@ a:hover{
     text-transform: uppercase;
     color: #152C5B;
     margin: 0;
+    font-weight: normal;
 }
 .solution p, .industry p, .platform p, .service p, .partner p{
     color: #718096;
@@ -460,8 +467,18 @@ ul.sub-ul li a{
     border-radius: 10px;
 }
 .card-title{
+    text-transform: none !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-title a{
     color: #152C5B;
-    font-weight: 500;
+}
+.card-title a:hover{
+    color: #1D9AD6;
+    text-decoration: none;
 }
 .card-text{
     font-size: 15px !important;
@@ -518,6 +535,7 @@ ul.sub-ul li a{
 .card2 h6{
     color: #152C5B;
     font-size: 20px;
+    font-weight: normal;
 }
 .card2 ul li a{
     font-size: 14px;
@@ -543,7 +561,7 @@ ul.ul-arrow li{
     font-weight: lighter;
 }
 .filter-le{
-    padding: 50px 0;
+    padding: 35px 0;
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -561,14 +579,22 @@ ul.ul-arrow li{
 .large-enterprise .card{
     margin: 0 0 30px 0;
 }
+.large-enterprise .card a{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
 .large-enterprise .card .card-img-top{
-    height: 245px !important;
     object-fit: cover;
     border-top-left-radius: calc(.65rem - 1px);
     border-top-right-radius: calc(.65rem - 1px);
 }
 .large-enterprise .card .card-body p.card-text{
     margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .large-enterprise .card .card-body a.viewmore{
     font-weight: 500 !important;
@@ -603,11 +629,14 @@ ul.ul-arrow li{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: none;
 }
 .formct .sbox img{
     width: 150px;
     margin-right: 25px;
     object-fit: cover;
+    border: 1px #dadada solid;
 }
 a.view-more-txt{
     font-size: 14px;
@@ -618,6 +647,9 @@ a.view-more-txt svg{
 }
 a:hover.view-more-txt svg{
     transform: translate3d(10px,0,0);
+}
+a:hover.view-more-txt{
+    text-decoration: none;
 }
 .divider{
     width: 100%;
@@ -658,7 +690,7 @@ li.nav-item .sub-nav{
     min-width: 700px;
     padding: 20px 25px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    top: 83px;
+    top: 81px;
     left: 0;
 }
 li.nav-item:hover .sub-nav{
@@ -730,4 +762,11 @@ li.nav-item .sub-nav ul li a{
 }
 li.nav-item .sub-nav .w-50{
     padding: 0 10px;
+}
+.bnstory{
+    background: transparent url('../images/bnstory.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.object-contain{
+    object-fit: contain !important;
 }
