@@ -1,1161 +1,844 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/edit.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/colors.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>index</title>
+  <title>Home Page</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/navbar-blue.css">
+  <style>
+    #sf-menu-content-list {
+      margin-left:10px;
+      font-size:25px;
+      border: 1px solid #fff; border-radius: 10px;
+    }
+
+  </style>
 </head>
-
-<body>
-  <!-- Header -->
-  <div class="hbx blue-gradient">
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark"> <a class="navbar-brand" href="index.html"><img
-        src="images/cope2n_white_logo.svg"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-        <svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'>
-          <path stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/>
-          </svg>
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="search-xs d-lg-none">
-        <input type="text" name="search" placeholder="Seach..." class="search_input">
-      </div>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="industry.html">Industry <span class="sr-only">(current)</span>
-          </a>
-          <div class="sub-nav triangle-industry">
-            <div class="w-50 float-left">
-              <a href="#">Manufacturing, Energy</a>
-              <a href="#">Travel, Transportation</a>
-              <a href="#">Retail, Consumer goods</a>
-              <a href="#">Education</a>
-              <a href="#">Smart spaces</a>
-            </div>
-            <div class="w-50 float-left">
-              <a href="#">Financial Services</a>
-              <a href="#">Media, Communications</a>
-              <a href="#">Healthcare</a>
-              <a href="#">Government</a>
-              <a href="#">Professional service</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="solution.html">Solution</a>
-          <div class="sub-nav triangle-solution">
-            <div class="w-50 float-left">
-              <p>Customer Experience</p>
-                <ul>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                </ul>
-              <p>Security Intelligence</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-            <div class="w-50 float-left">
-              <p>Digital Operation</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-              <p>Digital Platform</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="platform.html">Platform</a> 
-          <div class="sub-nav triangle-platform">
-            <div class="w-50 float-left">
-              <p>Cloud</p>
-                <ul>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                </ul>
-              <p>Infrastructure</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-            <div class="w-50 float-left">
-              <p>Network</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-              <p>Security</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="service.html">Service</a> 
-          <div class="sub-nav triangle-service">
-            <div class="w-50 float-left">
-              <p>Digital Transformation</p>
-                <ul>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-1</a></li>
-                </ul>
-              <p>Infrastructure</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-            <div class="w-50 float-left">
-              <p>Digital Operation</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-              <p>Digital Platform</p>
-              <ul>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-                <li><a href="#">Example-1</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="search d-none d-sm-none d-lg-block">
-      <form>
-        <input type="text" name="search" placeholder="Seach..." class="search_input">
-      </form>
-    </div>
-  </nav>
-    </header>
-    <div class="home-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 data-aos="fade-up">For the changing world of finance, HR, and planning.</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Choose your organization size to learn more:</p>
-            <div class="w-100" data-aos="fade-up" data-aos-delay="100">
-              <button type="button" class="btn btn-primary btn-lg lift" onclick="window.location.href='medium-enterprise.html'">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  style="width: 24px; float: left; margin-right: 10px;" fill="#ffffff"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path d="M57.1,52.1h-0.7V37.6c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9v14.5H35.9V28.2h17.9c0.4,0,0.7,0.3,0.7,0.7v4.5
-    c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9v-4.5c0-1.4-1.1-2.5-2.5-2.5H35.9v-16c0-1.3-1-2.4-2.3-2.5V6.3c0-1.3-1-2.4-2.3-2.5L8.6,2
-    C7.2,1.9,5.9,3,5.9,4.5v1.4C4.6,6,3.7,7.1,3.7,8.4v43.8H2.9C1.3,52.1,0,53.4,0,55c0,1.7,1.3,3,2.9,3H57c1.6,0,2.9-1.3,2.9-2.9
-    C60,53.4,58.7,52.1,57.1,52.1L57.1,52.1z M7.7,4.5c0-0.4,0.4-0.7,0.8-0.7l22.8,1.8c0.4,0,0.7,0.3,0.7,0.7v1.6L7.7,6V4.5L7.7,4.5z
-     M5.4,8.4c0-0.4,0.4-0.7,0.8-0.7l27.3,2.1c0.4,0,0.7,0.3,0.7,0.7v41.6h-2.5V39.5c0-0.8-0.7-1.5-1.5-1.5H22c-0.8,0-1.5,0.7-1.5,1.5
-    v5.7c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9v-5.4H30v12.3h-7.6v-2.8c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9v2.8H5.4V8.4z
-     M57.1,56.2H2.9c-0.6,0-1.2-0.5-1.2-1.2c0-0.6,0.5-1.2,1.2-1.2H57c0.6,0,1.2,0.5,1.2,1.2S57.7,56.2,57.1,56.2z" />
-                  <path d="M8.9,19.1h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5H8.9c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C7.4,18.4,8.1,19.1,8.9,19.1z M9.1,15.1h3.1v2.3H9.1V15.1z" />
-                  <path d="M17.8,19.1h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C16.2,18.4,16.9,19.1,17.8,19.1z M18,15.1h3.1v2.3H18V15.1z" />
-                  <path d="M26.6,19.1h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C25.1,18.4,25.8,19.1,26.6,19.1L26.6,19.1z M26.9,15.1H30v2.3h-3.1V15.1z" />
-                  <path d="M8.9,27h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5H8.9c-0.8,0-1.5,0.7-1.5,1.5v2.7C7.4,26.3,8.1,27,8.9,27z
-     M9.1,23h3.1v2.3H9.1V23z" />
-                  <path d="M17.8,27h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7C16.2,26.3,16.9,27,17.8,27
-    z M18,23h3.1v2.3H18V23z" />
-                  <path d="M26.6,27h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7C25.1,26.3,25.8,27,26.6,27
-    L26.6,27z M26.9,23H30v2.3h-3.1V23z" />
-                  <path d="M8.9,34.9h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5H8.9c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C7.4,34.2,8.1,34.9,8.9,34.9L8.9,34.9z M9.1,30.9h3.1v2.3H9.1V30.9z" />
-                  <path d="M16.9,38.1H9.1c-0.9,0-1.7,0.8-1.7,1.7v2.4c0,0.9,0.8,1.7,1.7,1.7H17c0.9,0,1.7-0.8,1.7-1.7v-2.4
-    C18.6,38.8,17.9,38.1,16.9,38.1z M16.9,42.1H9.1v-2.3h7.7v2.3H16.9z" />
-                  <path d="M17.8,34.9h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C16.2,34.2,16.9,34.9,17.8,34.9L17.8,34.9z M18,30.9h3.1v2.3H18V30.9z" />
-                  <path d="M26.6,34.9h3.6c0.8,0,1.5-0.7,1.5-1.5v-2.7c0-0.8-0.7-1.5-1.5-1.5h-3.6c-0.8,0-1.5,0.7-1.5,1.5v2.7
-    C25.1,34.2,25.8,34.9,26.6,34.9L26.6,34.9z M26.9,30.9H30v2.3h-3.1V30.9z" />
-                  <path d="M44.6,34.1c0-0.9-0.7-1.6-1.6-1.6h-3.6c-0.9,0-1.6,0.7-1.6,1.6V37c0,0.9,0.7,1.6,1.6,1.6H43c0.9,0,1.6-0.7,1.6-1.6V34.1z
-     M42.8,36.8h-3.3v-2.6h3.3V36.8z" />
-                  <path d="M43,40.6h-3.6c-0.9,0-1.6,0.7-1.6,1.6V45c0,0.9,0.7,1.6,1.6,1.6H43c0.9,0,1.6-0.7,1.6-1.6v-2.8C44.6,41.3,43.9,40.6,43,40.6
-    z M42.8,44.9h-3.3v-2.6h3.3V44.9z" />
-                  <path d="M52.8,34.1c0-0.9-0.7-1.6-1.6-1.6h-3.6c-0.9,0-1.6,0.7-1.6,1.6V37c0,0.9,0.7,1.6,1.6,1.6h3.6c0.9,0,1.6-0.7,1.6-1.6V34.1z
-     M51,36.8h-3.3v-2.6H51V36.8z" />
-                  <path d="M51.2,40.6h-3.6c-0.9,0-1.6,0.7-1.6,1.6V45c0,0.9,0.7,1.6,1.6,1.6h3.6c0.9,0,1.6-0.7,1.6-1.6v-2.8
-    C52.8,41.3,52,40.6,51.2,40.6z M51,44.9h-3.3v-2.6H51V44.9z" />
-                </svg>
-                Medium Enterprise</button>
-              <button type="button" class="btn btn-primary btn-lg lift" onclick="window.location.href='industry.html'">
-                <svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" style="width: 24px; float: left; margin-right: 10px;" fill="#ffffff"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-  
-                    .st1 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path class="st1" d="M54.9,58h1.7c0.6,0,1,0.5,1,1s-0.5,1-1,1H4c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1h1.7V19.9c0-0.6,0.5-1,1-1h8.4
-               v-8.4c0-0.6,0.5-1,1-1h3V5.1c0-0.6,0.5-1,1-1h4.4V1c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1v3H31c0.6,0,1,0.5,1,1v4.4h2V5.1
-               c0-0.6,0.5-1,1-1h18.9c0.6,0,1,0.5,1,1V58z M30,6.1h-8.8v3.4H30V6.1z M17.2,58h0.7v-3.4h-3.4V58h0.7v-1.7c0-0.6,0.5-1,1-1
-               c0.6,0,1,0.5,1,1V58z M24.6,33.8V32V20.9H7.7V58h4.7v-4.4c0-0.6,0.5-1,1-1h5.4c0.6,0,1,0.5,1,1V58h4.7V33.8H24.6z M17.2,18.9h8.4
-               c0.6,0,1,0.5,1,1v0.3h3c0.6,0,1,0.5,1,1s-0.5,1-1,1h-3v3.4h3c0.6,0,1,0.5,1,1c0,0.6-0.5,1-1,1h-3V31H34V11.5H17.2V18.9z M26.6,58
-               h16.9V33H26.6v0.7V58z M45.5,58h7.4l0,0V6.1H36v4.4V31h3.4v-0.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V31h2v-0.3c0-0.6,0.5-1,1-1
-               s1,0.5,1,1V32L45.5,58L45.5,58z M32,54.9c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1V36.1c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V54.9z M35,56
-               c0.6,0,1-0.5,1-1V36.1c0-0.6-0.5-1-1-1s-1,0.5-1,1V55C34,55.5,34.5,56,35,56z M40.1,54.9c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1V36.1
-               c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V54.9z M40.4,12.8c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1v1.3
-               C39.4,12.4,39.9,12.8,40.4,12.8z M45.5,11.8c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V11.8z
-                M48.5,12.8c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3C47.5,12.4,47.9,12.8,48.5,12.8z M41.4,18.5c0,0.6-0.5,1-1,1
-               c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V18.5z M44.5,19.6c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1
-               v1.3C43.4,19.1,43.9,19.6,44.5,19.6z M49.5,18.5c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1s1,0.5,1,1V18.5z M40.4,26.3
-               c0.6,0,1-0.5,1-1V24c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1v1.3C39.4,25.8,39.9,26.3,40.4,26.3z M45.5,25.3c0,0.6-0.5,1-1,1
-               c-0.6,0-1-0.5-1-1V24c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V25.3z M48.5,26.3c0.6,0,1-0.5,1-1V24c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3
-               C47.5,25.8,47.9,26.3,48.5,26.3z M13.1,28c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1s1,0.5,1,1V28z M16.1,29
-               c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1V28C15.1,28.5,15.6,29,16.1,29z M21.2,28c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1
-               v-1.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V28z M12.1,35.7c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3
-               C11.1,35.3,11.5,35.7,12.1,35.7z M17.2,34.7c0,0.6-0.5,1-1,1s-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V34.7z M20.2,35.7
-               c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1v1.3C19.2,35.3,19.6,35.7,20.2,35.7z M13.1,41.5c0,0.6-0.5,1-1,1
-               c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1s1,0.5,1,1V41.5z M16.1,42.5c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1v1.3
-               C15.1,42,15.6,42.5,16.1,42.5z M21.2,41.5c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V41.5z M12.1,49.2
-               c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3C11.1,48.8,11.5,49.2,12.1,49.2z M17.2,48.2c0,0.6-0.5,1-1,1s-1-0.5-1-1v-1.3
-               c0-0.6,0.5-1,1-1c0.6,0,1,0.5,1,1V48.2z M20.2,49.2c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1c-0.6,0-1,0.5-1,1v1.3
-               C19.2,48.8,19.6,49.2,20.2,49.2z M49.5,32c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1v-1.3c0-0.6,0.5-1,1-1s1,0.5,1,1V32z M48.5,39.8
-               c0.6,0,1-0.5,1-1v-1.3c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3C47.5,39.3,47.9,39.8,48.5,39.8z M49.5,45.5c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1
-               v-1.3c0-0.6,0.5-1,1-1s1,0.5,1,1V45.5z M48.5,53.3c0.6,0,1-0.5,1-1V51c0-0.6-0.5-1-1-1s-1,0.5-1,1v1.3
-               C47.5,52.8,47.9,53.3,48.5,53.3z M29.6,14.8c0.6,0,1,0.5,1,1c0,0.6-0.5,1-1,1h-8.1c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1
-               C21.5,14.8,29.6,14.8,29.6,14.8z" />
-                </svg>
-                Large Enterprise</button>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="images/illustrations/img_1.svg" class="img_slide" data-aos="fade-up" data-aos-delay="300">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Industry -->
-  <div class="industry py-85 text-center lighter-blue-gradient" id="slidehome">
-    <a href="#slidehome" id="scroll" class="tongue tongue-up" data-scroll-to="">
-      <img src="images/icons/arrow_up_solid_icon2.svg">
-    </a>
-    <div class="container">
-      <div class="main-heading w-100">
-        <h2 class="text-center">Industry</h2>
-      </div>
-      <p class="text-center desc">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.</p>
-      <div class="tex-center w-100"  data-aos="fade-up"><img src="images/illustrations/img_2.svg"></div>
-      <div class="tex-center w-100 my-15" data-aos="fade-up" data-aos-delay="100"><img src="images/icons/arrow_down_line.svg"></div>
-    </div>
-    <!---->
-    <ul class="slide-industry" data-aos="fade-up" data-aos-delay="200">
-      <li>
-        <a href="#" class="arrow">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 30px;" fill="#C6D3E3"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-            style="enable-background:new 0 0 60 60;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-              }
-            </style>
-            <rect class="st0" width="60" height="60" />
-            <path d="M14.5,30.8l27.8,28.8c0.5,0.5,1.3,0.5,1.8,0c0.5-0.5,0.5-1.3,0-1.8L17.2,30l27-27.8c0.5-0.5,0.5-1.3,0-1.8
-	c-0.2-0.2-0.6-0.4-1-0.4c-0.4,0-0.7,0.1-1,0.4L14.5,29.2C14.1,29.6,14.1,30.4,14.5,30.8z" />
-          </svg>
-        </a>
-      </li>
-      <li class="d-sm-inline-block">
-        <a href="industry-detail.html">
-          <img src="images/icons/I_ME_icon.svg">
-          <span>Manufacturing, Energy</span>
-        </a>
-      </li>
-      <li class="d-none d-sm-inline-block">
-        <a href="industry-detail.html">
-          <img src="images/icons/I_FS_icon.svg">
-          <span>Financial Services</span>
-        </a>
-      </li>
-      <li class="d-none d-sm-inline-block">
-        <a href="industry-detail.html">
-          <img src="images/icons/I_MC_icon.svg">
-          <span>Media, Communications</span>
-        </a>
-      </li>
-      <li class="d-none d-lg-inline-block">
-        <a href="industry-detail.html">
-          <img src="images/icons/I_TT_icon.svg">
-          <span>Travel, Transportation</span>
-        </a>
-      </li>
-      <li class="d-none d-lg-inline-block">
-        <a href="industry-detail.html">
-          <img src="images/icons/I_RCG_icon.svg">
-          <span>Retail, Consumer goods</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="arrow">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 30px;" fill="#C6D3E3"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-            style="enable-background:new 0 0 60 60;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-              }
-            </style>
-            <rect class="st0" width="60" height="60" />
-            <path d="M44.5,29.2L16.6,0.4c-0.5-0.5-1.3-0.5-1.8,0s-0.5,1.3,0,1.8l27,27.8l-27,27.8c-0.5,0.5-0.5,1.3,0,1.8
-	c0.2,0.2,0.6,0.4,0.8,0.4c0.4,0,0.7-0.1,1-0.4l27.8-28.8C45,30.4,45,29.6,44.5,29.2z" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Solution -->
-  <div class="solution bglighter">
-    <div class="box50 d-inline-block float-left p-75">
-      <div class="main-heading w-100">
-        <h2 data-aos="fade-up">Solution</h2>
-      </div>
-      <p data-aos="fade-up" data-aos-delay="100">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="w-100" data-aos="fade-up" data-aos-delay="200">
-        <button class="btn btn-primary lift" onclick="window.location.href='solution.html'">View more
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            style="width: 16px; height: 16px; margin-left: 5px;" fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-              }
-            </style>
-            <rect class="st0" width="60" height="60" />
-            <path d="M40.4,9.2c-0.9-0.9-2.1-0.9-3,0c-0.9,0.9-0.9,2.3,0,3l15.2,15.9H2.1C0.9,28.1,0,29,0,30.4c0,1.2,0.9,2.3,2.1,2.3h50.5
-    L37.4,48.7c-0.9,0.9-0.9,2.3,0,3.2s2.3,0.9,3,0l18.9-19.6c0.9-0.9,0.9-2.3,0-3L40.4,9.2z" />
-          </svg>
-        </button>
-      </div>
-
-    </div>
-    <div class="box50 light-blue-gradient py-85 flex-cm">
-      <img src="images/illustrations/img_3.svg" class="d-inline-block" data-aos="fade-up" data-aos-delay="300">
-    </div>
-  </div>
-  <!-- Platform -->
-  <div class="platform py-85 text-center">
-    <div class="container">
-      <div class="main-heading w-100">
-        <h2 class="text-center" data-aos="fade-up">Platform</h2>
-      </div>
-      <p class="text-center desc" data-aos="fade-up" data-aos-delay="200">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.</p>
-    </div>
-    <div class="w-100 text-center float-left">
-      <div class="box20 float-left" data-aos="fade-up" data-aos-delay="300">
-        <div class="card border-0 bg-transparent">
-          <div class="card-body">
-            <div class="icon">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 35px;"
-                fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-                </style>
-                <rect class="st0" width="60" height="60" />
-                <path d="M55.1,29.1c-0.4,0-0.7,0.2-0.9,0.6l-0.8,2l-2-7.3c-0.1-0.4-0.4-0.6-0.8-0.7c-0.4,0-0.7,0.2-0.9,0.5l-2.4,4.9H46
-    c1.3-2.5,1.9-5.2,1.9-8.1c0-9.9-8.1-18-18-18s-18,8.1-18,18c0,2.9,0.7,5.6,1.9,8.1l-0.1,0c-0.4,0-0.7,0.2-0.9,0.6l-0.8,2l-2-7.3
-    c-0.1-0.4-0.4-0.6-0.8-0.7c-0.4,0-0.7,0.2-0.9,0.5L6,29.1H3v1.8h3.6c0.3,0,0.7-0.2,0.8-0.5L9,27.1l2.1,7.6c0.1,0.4,0.4,0.6,0.8,0.7
-    c0,0,0,0,0.1,0c0.4,0,0.7-0.2,0.8-0.6l1.6-3.9l0.6,0c0.5,0.7,1,1.4,1.5,2c0,0.1,0.1,0.2,0.1,0.3c2.9,4.4,3.1,5.3,3.6,8.1
-    c0.1,0.5,0.2,1.1,0.3,1.7c0.2,1.1,0.9,2,1.8,2.6c-0.3,0.4-0.5,1-0.5,1.5c0,1,0.5,1.8,1.3,2.3c-0.2,0.4-0.4,0.8-0.4,1.3
-    c0,1,0.5,1.8,1.3,2.3c-0.2,0.4-0.4,0.8-0.4,1.3c0,1.5,1.2,2.7,2.7,2.7h7.2c1.5,0,2.7-1.2,2.7-2.7c0-0.5-0.1-0.9-0.4-1.3
-    c0.8-0.5,1.3-1.3,1.3-2.3c0-0.5-0.1-0.9-0.4-1.3c0.8-0.5,1.3-1.3,1.3-2.3c0-0.6-0.2-1.1-0.5-1.5c0.9-0.6,1.5-1.5,1.8-2.6
-    c0.1-0.6,0.2-1.2,0.3-1.7c0.5-2.7,0.7-3.6,3.6-8.1c0.1-0.1,0.1-0.2,0.1-0.3c0.6-0.6,1.1-1.3,1.5-2h3c0.3,0,0.7-0.2,0.8-0.5l1.6-3.3
-    l2.1,7.6c0.1,0.4,0.4,0.6,0.8,0.7c0,0,0,0,0.1,0c0.4,0,0.7-0.2,0.8-0.6l1.6-3.9l1.2,0l0-1.8L55.1,29.1z M33.5,55.2h-7.2
-    c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h7.2c0.5,0,0.9,0.4,0.9,0.9C34.4,54.8,34,55.2,33.5,55.2z M34.4,51.6h-0.9h-7.2h-0.9
-    c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h9c0.5,0,0.9,0.4,0.9,0.9C35.3,51.2,34.9,51.6,34.4,51.6z M35.3,48h-0.9h-9h-0.9
-    c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h10.8c0.5,0,0.9,0.4,0.9,0.9S35.8,48,35.3,48z M41.7,32.1c-0.1,0.2-0.2,0.4-0.2,0.6
-    c-2.9,4.4-3.1,5.6-3.6,8.3c-0.1,0.5-0.2,1-0.3,1.7c-0.2,1.1-1.1,1.8-2.1,1.8h-0.1h-1.6l2.4-13.5h1c1.5,0,2.7-1.2,2.7-2.7v-3.6h2.7
-    c0.5,0,0.9-0.4,0.9-0.9v-4.5c0-1.5-1.2-2.7-2.7-2.7v-2.7c0-1.5-1.2-2.7-2.7-2.7h-0.9c0-1.5-1.2-2.7-2.7-2.7h-2.7
-    c-0.5,0-0.9,0.4-0.9,0.9V30c0,0.5,0.4,0.9,0.9,0.9h2.5l-2.4,13.5H28l-2.4-13.5h2.5c0.5,0,0.9-0.4,0.9-0.9V9.3c0-0.5-0.4-0.9-0.9-0.9
-    h-2.7c-1.5,0-2.7,1.2-2.7,2.7h-0.9c-1.5,0-2.7,1.2-2.7,2.7v2.7c-1.5,0-2.7,1.2-2.7,2.7v6.3c0,0.5,0.4,0.9,0.9,0.9h2.7v1.8
-    c0,1.5,1.2,2.7,2.7,2.7h1l2.4,13.5h-1.6h-0.1c-1,0-1.9-0.7-2.1-1.8c-0.1-0.6-0.2-1.2-0.3-1.7c-0.5-2.7-0.7-3.9-3.6-8.3
-    c0-0.2-0.1-0.4-0.2-0.6c-2.8-3-4.4-6.9-4.4-11.1C13.8,12.1,21,4.8,30,4.8S46.1,12.1,46.1,21C46.1,25.1,44.6,29.1,41.7,32.1z
-     M36.2,18.3v-2.7c0-0.5-0.4-0.9-0.9-0.9h-2.7v-4.5h1.8c0.5,0,0.9,0.4,0.9,0.9V12c0,0.5,0.4,0.9,0.9,0.9H38c0.5,0,0.9,0.4,0.9,0.9
-    v3.6c0,0.5,0.4,0.9,0.9,0.9h0.9c0.5,0,0.9,0.4,0.9,0.9v3.6h-2.7h-3.6c-0.5,0-0.9,0.4-0.9,0.9v1.8h1.8v-0.9H38v3.6
-    c0,0.5-0.4,0.9-0.9,0.9h-4.5V16.5h1.8v1.8H36.2z M21,21c-0.5,0-0.9,0.4-0.9,0.9v2.7h-1.8v-5.4c0-0.5,0.4-0.9,0.9-0.9h0.9
-    c0.5,0,0.9-0.4,0.9-0.9v-3.6c0-0.5,0.4-0.9,0.9-0.9h0.9v1.8h1.8V12v-0.9c0-0.5,0.4-0.9,0.9-0.9h1.8v18.9h-4.5
-    c-0.5,0-0.9-0.4-0.9-0.9v-2.7v-2.7h1.8V21H21z" />
-              </svg>
-            </div>
-            <h6 class="card-title">Smart Application</h6>
-            <p class="card-text">Smart Applications from CMC and partners to unleash Intelligent Enterprise...</p>
-          </div>
-        </div>
-      </div>
-      <div class="box20 float-left" data-aos="fade-up" data-aos-delay="400">
-        <div class="card border-0 bg-transparent">
-          <div class="card-body">
-            <div class="icon">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 35px;"
-                fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-  
-                  .st1 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                  }
-                </style>
-                <rect class="st0" width="60" height="60" />
-                <path class="st1"
-                  d="M51.2,25.4c0,0.5-0.4,1-1,1h-3.7V29h3.7c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1h-3.7v2.7h3.7c0.5,0,1,0.4,1,1
-    c0,0.5-0.4,1-1,1h-3.7v2.7h3.7c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1h-3.7v1.6c0,0.3-0.1,0.5-0.3,0.7l-2.8,2.8c-0.2,0.2-0.4,0.3-0.7,0.3
-    h-1.6v3.7c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1v-3.7h-2.7v3.7c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1v-3.7h-2.7v3.5c0,3.3-2.6,5.9-5.9,5.9
-    c-2.7,0-5-1.8-5.7-4.3c-2-0.2-3.9-1.1-5.4-2.6c-1.6-1.7-2.5-3.9-2.5-6.2c0-1.2,0.2-2.3,0.7-3.4C10,36.9,8,33.6,8,30
-    c0-2,0.6-3.9,1.7-5.5c0.9-1.3,2.1-2.3,3.4-3.1c-0.4-1.1-0.7-2.2-0.7-3.4c0-2.3,0.9-4.5,2.5-6.2c1.4-1.5,3.3-2.4,5.4-2.6
-    C21.1,6.8,23.4,5,26,5c3.2,0,5.9,2.6,5.9,5.9v3.5h2.7v-3.7c0-0.5,0.4-1,1-1s1,0.4,1,1v3.7h2.7v-3.7c0-0.5,0.4-1,1-1s1,0.4,1,1v3.7
-    h1.6c0.3,0,0.5,0.1,0.7,0.3l2.8,2.8c0.2,0.2,0.3,0.4,0.3,0.7v1.6h3.7c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1h-3.7v2.7h3.7
-    C50.8,24.4,51.2,24.9,51.2,25.4z M22.4,50.6c0.6,1.4,2,2.4,3.6,2.4c2.2,0,3.9-1.8,3.9-3.9v-12h-3l-2.6,2.6c0.3,0.5,0.4,1.1,0.4,1.7
-    c0,0.9-0.4,1.8-1,2.4c-0.7,0.7-1.6,1-2.4,1c-0.9,0-1.8-0.3-2.4-1c-0.7-0.7-1-1.5-1-2.4c0-0.9,0.4-1.8,1-2.5c1.1-1.1,2.8-1.3,4.1-0.6
-    l2.9-2.9c0.2-0.2,0.4-0.3,0.6-0.3c0,0,0,0,0.1,0H30V31h-6.1c-0.4,1.4-1.8,2.5-3.3,2.5c-1.9,0-3.5-1.6-3.5-3.5c0-1.9,1.6-3.5,3.5-3.5
-    c1.6,0,2.9,1.1,3.3,2.5H30v-4.2h-3.4c-0.3,0-0.5-0.1-0.7-0.3L23,21.7c-0.5,0.3-1.1,0.4-1.7,0.4c-0.9,0-1.8-0.3-2.4-1
-    c-0.7-0.7-1-1.5-1-2.4c0-0.9,0.4-1.8,1-2.4c1.3-1.4,3.5-1.4,4.9,0c0.7,0.7,1,1.5,1,2.4c0,0.6-0.1,1.2-0.4,1.7l2.6,2.6h3v-12
-    C30,8.7,28.2,7,26,7c-1.6,0-3,1-3.6,2.4c0.7,0.1,1.4,0.3,2.1,0.6c1,0.4,1.8,1.1,2.6,1.8c0.4,0.4,0.4,1,0,1.4
-    c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.6-0.6-1.2-1.1-2-1.4c-0.8-0.4-1.6-0.6-2.5-0.6c-3.7,0.1-6.7,3.1-6.7,6.9
-    c0,1.2,0.3,2.3,0.9,3.4c0.3,0.6,0.1,1.1-0.5,1.4c-3,1.2-4.9,4-4.9,7.2c0,3.2,1.9,6,4.9,7.2c0.3,0.1,0.5,0.3,0.6,0.6
-    c0.1,0.3,0.1,0.6-0.1,0.8c-0.6,1-0.9,2.2-0.9,3.4c0,3.7,3,6.8,6.7,6.9c0.9,0,1.7-0.2,2.5-0.6c0.8-0.3,1.4-0.8,2-1.4
-    c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4c-0.7,0.8-1.6,1.4-2.6,1.8C23.8,50.3,23.1,50.5,22.4,50.6z M22.4,19.7
-    c0.3-0.3,0.4-0.7,0.4-1.1s-0.2-0.8-0.4-1.1c-0.6-0.6-1.5-0.6-2.1,0c-0.3,0.3-0.4,0.7-0.4,1.1c0,0.4,0.2,0.8,0.4,1.1
-    C20.8,20.3,21.8,20.3,22.4,19.7z M20.6,31.5c0.8,0,1.5-0.7,1.5-1.5c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5
-    C19,30.8,19.7,31.5,20.6,31.5z M22.4,42.4c0.3-0.3,0.4-0.7,0.4-1.1c0-0.4-0.2-0.8-0.4-1.1l0,0l0,0c-0.6-0.6-1.5-0.6-2.1,0
-    c-0.3,0.3-0.4,0.7-0.4,1.1c0,0.4,0.2,0.8,0.4,1.1C20.8,43,21.8,43,22.4,42.4z M42.3,43.6l2.2-2.3V18.6l-2.2-2.3H31.9v2.9h8.8
-    c0.5,0,1,0.4,1,1v5.4c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1v-4.4h-7.8v17.6h7.8v-4.4c0-0.5,0.4-1,1-1c0.5,0,1,0.4,1,1v5.4
-    c0,0.5-0.4,1-1,1h-8.8v2.9H42.3z M39.7,30c0-0.5,0.4-1,1-1s1,0.4,1,1c0,0.5-0.4,1-1,1C40.2,31,39.7,30.5,39.7,30L39.7,30z" />
-              </svg>
-            </div>
-            <h6 class="card-title">AI as a Service</h6>
-            <p class="card-text">Artificial intelligence provided in the form of services such as predicting data on the
-              basis...</p>
-          </div>
-        </div>
-      </div>
-      <div class="box20 float-left" data-aos="fade-up" data-aos-delay="500">
-        <div class="card border-0 bg-transparent">
-          <div class="card-body">
-            <div class="icon">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 35px;"
-                fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-  
-                  .st1 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                  }
-                </style>
-                <rect class="st0" width="60" height="60" />
-                <path class="st1" d="M30.7,6.7C30.5,6.8,30.2,7,30,7c-0.3,0-0.5-0.1-0.7-0.3C29.1,6.5,29,6.2,29,6c0-0.3,0.1-0.5,0.3-0.7
-    S29.7,5,30,5c0.3,0,0.5,0.1,0.7,0.3s0.3,0.4,0.3,0.7C30.9,6.2,30.8,6.5,30.7,6.7z M52,35.9c1.6,0,2.9,1.3,2.9,2.9v4.7
-    c0,0.7-0.3,1.4-0.7,2c0.5,0.5,0.7,1.2,0.7,2v4.7c0,1.6-1.3,2.9-2.9,2.9H34.1c-1.6,0-2.9-1.3-2.9-2.9v-4.7c0-0.7,0.3-1.4,0.7-2
-    c-0.5-0.5-0.7-1.2-0.7-2v-4.7c0-1.6,1.3-2.9,2.9-2.9H42V31h-8.9c-0.4,1.4-1.7,2.3-3.2,2.3s-2.8-1-3.2-2.3h-8.9v4.9h8
-    c1.6,0,2.9,1.3,2.9,2.9v4.7c0,0.7-0.3,1.4-0.7,2c0.5,0.5,0.7,1.2,0.7,2v4.7c0,1.6-1.3,2.9-2.9,2.9H7.9C6.3,55,5,53.7,5,52.1v-4.7
-    c0-0.7,0.3-1.4,0.7-2c-0.5-0.5-0.7-1.2-0.7-2v-4.7c0-1.6,1.3-2.9,2.9-2.9h8V30c0-0.5,0.4-1,1-1h9.8c0.3-1,1.1-1.9,2.2-2.2v-2.7H18.3
-    c-1.6,0-2.9-1.3-2.9-2.9v-4.7c0-0.7,0.3-1.4,0.7-2c-0.5-0.5-0.7-1.2-0.7-2V7.9c0-1.6,1.3-2.9,2.9-2.9h7.3c0.5,0,1,0.4,1,1
-    s-0.4,1-1,1h-7.3c-0.5,0-1,0.4-1,1v4.7c0,0.5,0.4,1,1,1h23.4c0.5,0,1-0.4,1-1V7.9c0-0.5-0.4-1-1-1h-7.3c-0.5,0-1-0.4-1-1s0.4-1,1-1
-    h7.3c1.6,0,2.9,1.3,2.9,2.9v4.7c0,0.7-0.3,1.4-0.7,2c0.5,0.5,0.7,1.2,0.7,2v4.7c0,1.6-1.3,2.9-2.9,2.9H30.9v2.7
-    c1,0.3,1.9,1.2,2.2,2.2h9.8c0.5,0,1,0.4,1,1v5.9H52z M17.3,16.5v4.7c0,0.5,0.4,1,1,1h23.4c0.5,0,1-0.4,1-1v-4.7c0-0.5-0.4-1-1-1
-    H18.3C17.7,15.5,17.3,16,17.3,16.5z M25.9,53c0.5,0,1-0.4,1-1v-4.7c0-0.5-0.4-1-1-1H7.9c-0.5,0-1,0.4-1,1v4.7c0,0.5,0.4,1,1,1H25.9z
-     M26.8,43.5v-4.7c0-0.5-0.4-1-1-1H7.9c-0.5,0-1,0.4-1,1v4.7c0,0.5,0.4,1,1,1h17.9C26.4,44.5,26.8,44,26.8,43.5z M28.6,30
-    c0,0.8,0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4S28.6,29.2,28.6,30z M34.1,37.8c-0.5,0-1,0.4-1,1v4.7c0,0.5,0.4,1,1,1
-    H52c0.5,0,1-0.4,1-1v-4.7c0-0.5-0.4-1-1-1H34.1z M52,53c0.5,0,1-0.4,1-1v-4.7c0-0.5-0.4-1-1-1H34.1c-0.5,0-1,0.4-1,1v4.7
-    c0,0.5,0.4,1,1,1H52z M20.8,11.3c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h8.2c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1H20.8z M20.8,17.9h8.2
-    c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1h-8.2c-0.5,0-1-0.4-1-1C19.8,18.3,20.3,17.9,20.8,17.9z M34.7,19.6c-0.2,0.2-0.4,0.3-0.7,0.3
-    s-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3
-    c0.2,0.2,0.3,0.4,0.3,0.7C35,19.1,34.9,19.4,34.7,19.6z M39.1,19.8c0.3,0,0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.3-0.7
-    c0-0.3-0.1-0.5-0.3-0.7c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.3,0.1,0.5,0.3,0.7
-    C38.6,19.7,38.9,19.8,39.1,19.8z M34,11.3c0.3,0,0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.3-0.7c0-0.3-0.1-0.5-0.3-0.7
-    c-0.2-0.2-0.4-0.3-0.7-0.3s-0.5,0.1-0.7,0.3c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.3,0.1,0.5,0.3,0.7C33.5,11.1,33.8,11.3,34,11.3z
-     M40.1,10.3c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7
-    c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3C40,9.8,40.1,10,40.1,10.3z M15.3,48.8H9.9c-0.5,0-1,0.4-1,1
-    c0,0.5,0.4,1,1,1h5.5c0.5,0,1-0.4,1-1C16.3,49.2,15.9,48.8,15.3,48.8z M18.9,49c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3
-    c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3s-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7
-    C18.7,49.5,18.8,49.2,18.9,49z M23.9,48.8c-0.3,0-0.5,0.1-0.7,0.3c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.3,0.1,0.5,0.3,0.7
-    c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.3-0.7c0-0.3-0.1-0.5-0.3-0.7C24.4,48.9,24.2,48.8,23.9,48.8z
-     M15.3,42.1H9.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.5c0.5,0,1,0.4,1,1C16.3,41.7,15.9,42.1,15.3,42.1z M19.6,42.1
-    c0.3,0,0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.3-0.7s-0.1-0.5-0.3-0.7c-0.2-0.2-0.4-0.3-0.7-0.3s-0.5,0.1-0.7,0.3
-    c-0.2,0.2-0.3,0.4-0.3,0.7s0.1,0.5,0.3,0.7C19.1,42,19.4,42.1,19.6,42.1z M24.6,41.8c-0.2,0.2-0.4,0.3-0.7,0.3s-0.5-0.1-0.7-0.3
-    c-0.2-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7S24.8,41.6,24.6,41.8z
-     M41.5,48.8H36c-0.5,0-1,0.4-1,1c0,0.5,0.4,1,1,1h5.5c0.5,0,1-0.4,1-1C42.4,49.2,42,48.8,41.5,48.8z M45.1,49
-    c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3
-    c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7C44.8,49.5,44.9,49.2,45.1,49z M50.1,48.8c-0.3,0-0.5,0.1-0.7,0.3
-    c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.3,0.1,0.5,0.3,0.7c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.2-0.2,0.3-0.4,0.3-0.7
-    c0-0.3-0.1-0.5-0.3-0.7C50.6,48.9,50.3,48.8,50.1,48.8z M36,42.1h5.5c0.5,0,1-0.4,1-1c0-0.5-0.4-1-1-1H36c-0.5,0-1,0.4-1,1
-    C35,41.7,35.5,42.1,36,42.1z M46.5,41.8c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7
-    c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.2,0.2,0.3,0.4,0.3,0.7S46.6,41.6,46.5,41.8z M50.1,42.1c0.3,0,0.5-0.1,0.7-0.3
-    c0.2-0.2,0.3-0.4,0.3-0.7s-0.1-0.5-0.3-0.7c-0.2-0.2-0.4-0.3-0.7-0.3s-0.5,0.1-0.7,0.3c-0.2,0.2-0.3,0.4-0.3,0.7s0.1,0.5,0.3,0.7
-    C49.5,42,49.8,42.1,50.1,42.1z" />
-              </svg>
-            </div>
-            <h6 class="card-title">Data Management Platform</h6>
-            <p class="card-text">Including Data Lake (data records), Data Integration, Analytics as a Service (data
-              analysis service)...</p>
-          </div>
-        </div>
-      </div>
-      <div class="box20 float-left" data-aos="fade-up" data-aos-delay="600">
-        <div class="card border-0 bg-transparent">
-          <div class="card-body">
-            <div class="icon">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 35px;"
-                fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-  
-                  .st1 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                  }
-                </style>
-                <rect class="st0" width="60" height="60" />
-                <path class="st1" d="M46.2,13.2c2.8,0.2,5.4,1.5,7.4,3.5c2.2,2.2,3.4,5.2,3.4,8.3c0,6.5-5.3,11.8-11.8,11.8H44v14.6
-    c0,1.2-0.8,2.9-4.5,4.3C36.9,56.5,33.5,57,30,57c-3.6,0-7-0.5-9.5-1.4c-3.7-1.3-4.5-3.1-4.5-4.3V36.8h-4.1c-4.9,0-8.9-4-8.9-8.9
-    c0-3.6,2.1-6.7,5.3-8.1c0-0.3,0-0.6,0-0.9c0-1.1,0.2-2.2,0.5-3.2c0.2-0.6,0.8-0.9,1.3-0.7c0.6,0.2,0.9,0.8,0.7,1.3
-    c-0.3,0.8-0.4,1.7-0.4,2.6c0,0.5,0,1,0.1,1.4c0.1,0.5-0.2,1-0.7,1.2c-2.8,0.9-4.6,3.5-4.6,6.4c0,3.7,3,6.8,6.8,6.8H16v-6.1
-    c0-1.2,0.8-2.9,4.5-4.3c2.6-0.9,5.9-1.4,9.5-1.4c3.6,0,7,0.5,9.5,1.4c3.7,1.3,4.5,3.1,4.5,4.3v6.1h1.2c5.3,0,9.7-4.3,9.7-9.7
-    c0-5.3-4.3-9.6-9.5-9.7c-0.5,0-0.9-0.4-1-0.9c-0.9-5.4-5.5-9.3-11-9.3C29.5,5.1,26,7,24,10.2c-0.3,0.4-0.8,0.6-1.3,0.4
-    c-1.1-0.4-2.2-0.7-3.4-0.7c-1,0-1.9,0.1-2.8,0.4c-0.6,0.2-1.1-0.1-1.3-0.7c-0.2-0.6,0.1-1.1,0.7-1.3C17,8,18.1,7.8,19.3,7.8
-    c1.2,0,2.3,0.2,3.4,0.5C25.2,5,29.1,3,33.3,3c3.1,0,6.2,1.1,8.6,3.2C44,8,45.5,10.5,46.2,13.2z M38.8,38.4c2.3-0.8,3.1-1.7,3.1-2.3
-    v-4.4c-0.6,0.4-1.4,0.8-2.4,1.1c-2.6,0.9-5.9,1.4-9.5,1.4c-3.6,0-7-0.5-9.5-1.4c-1-0.4-1.8-0.7-2.4-1.1v4.4c0,0.5,0.8,1.5,3.1,2.3
-    c2.3,0.8,5.5,1.3,8.8,1.3C33.3,39.7,36.4,39.3,38.8,38.4z M20.4,40.4c-1-0.4-1.8-0.7-2.4-1.1v4.4c0,0.5,0.8,1.5,3.1,2.3
-    c2.3,0.8,5.5,1.3,8.8,1.3c3.3,0,6.5-0.5,8.8-1.3c2.3-0.8,3.1-1.7,3.1-2.3v-4.4c-0.6,0.4-1.4,0.8-2.4,1.1c-2.6,0.9-5.9,1.4-9.5,1.4
-    C26.4,41.8,23,41.3,20.4,40.4z M30,25c-3.3,0-6.5,0.5-8.8,1.3c-2.3,0.8-3.1,1.7-3.1,2.3c0,0.5,0.8,1.5,3.1,2.3
-    c2.3,0.8,5.5,1.3,8.8,1.3c3.3,0,6.5-0.5,8.8-1.3c2.3-0.8,3.1-1.7,3.1-2.3c0-0.5-0.8-1.5-3.1-2.3C36.4,25.4,33.3,25,30,25z M30,54.9
-    c3.3,0,6.5-0.5,8.8-1.3c2.3-0.8,3.1-1.7,3.1-2.3v-4.4c-0.6,0.4-1.4,0.8-2.4,1.1c-2.6,0.9-5.9,1.4-9.5,1.4c-3.6,0-7-0.5-9.5-1.4
-    c-1-0.4-1.8-0.7-2.4-1.1v4.4c0,0.5,0.8,1.5,3.1,2.3C23.5,54.4,26.6,54.9,30,54.9z M12.9,12.6c-0.2,0.2-0.5,0.3-0.7,0.3
-    c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.5-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.5-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3
-    c0.2,0.2,0.3,0.5,0.3,0.7C13.2,12.1,13.1,12.4,12.9,12.6z" />
-              </svg>
-            </div>
-            <h6 class="card-title">Enterprise - Ready Cloud</h6>
-            <p class="card-text">Providing a scalable platform to build high-productivity applications, mobile apps...</p>
-          </div>
-        </div>
-      </div>
-      <div class="box20 float-left" data-aos="fade-up" data-aos-delay="700">
-        <div class="card border-0 bg-transparent lift">
-          <div class="card-body">
-            <div class="icon">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 35px;"
-                fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-  
-                  .st1 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                  }
-                </style>
-                <rect class="st0" width="60" height="60" />
-                <path class="st1" d="M50.9,23.5c0.6,1.6,0.7,3.2,0.4,4.8c3.4,1.6,5.7,5.1,5.7,8.8c0,5.3-4.1,11-10.1,11H16c-9.5,0-13-5.7-13-11
-    c0-4.6,3.2-8.5,7.6-9.5c-0.5-1.5-0.6-3-0.6-4.5c0.4-6.6,6.2-12,13-12h0.1c5.5,0,10.3,3.3,12.2,8.2c2-1.6,4.6-2.4,7.2-2.1
-    C46.3,17.4,49.6,19.9,50.9,23.5z M15.9,45.8h30.9c4.6,0,7.9-4.6,7.9-8.7c0-3.1-2.1-6-5.1-7.1l-1-0.4l0.3-1c0.4-1.5,0.4-2.9-0.2-4.4
-    c-1-2.7-3.5-4.7-6.4-4.9c-2.6-0.2-5.1,0.8-6.7,2.7l-1.5,1.7l-0.5-2.2c-1.1-4.8-5.5-8.3-10.6-8.3h-0.1c-5.6,0-10.4,4.5-10.7,9.9
-    c-0.1,1.7,0.2,3.3,0.9,4.8l0.6,1.4l-1.6,0.1c-4,0.4-7,3.6-7,7.5C5.2,39.7,6.3,45.8,15.9,45.8z M25.4,37.8c-0.1,1.1-0.5,1.9-1.2,2.5
-    c-0.7,0.6-1.6,0.9-2.7,0.9c-0.8,0-1.5-0.2-2.1-0.6c-0.6-0.4-1.1-0.9-1.4-1.6c-0.3-0.7-0.5-1.5-0.5-2.4v-0.9c0-0.9,0.2-1.8,0.5-2.5
-    s0.8-1.3,1.4-1.7c0.6-0.4,1.3-0.6,2.2-0.6c1.1,0,2,0.3,2.7,0.9c0.7,0.6,1.1,1.4,1.2,2.5h-1.7c-0.1-0.7-0.3-1.2-0.6-1.5
-    c-0.3-0.3-0.8-0.5-1.5-0.5c-0.8,0-1.3,0.3-1.7,0.8c-0.4,0.5-0.6,1.4-0.6,2.4v0.9c0,1.1,0.2,1.9,0.6,2.5c0.4,0.6,1,0.8,1.7,0.8
-    c0.7,0,1.2-0.2,1.5-0.5c0.3-0.3,0.6-0.8,0.7-1.5H25.4z M29.2,31.1l2.9,7.6l2.9-7.6h2.2v10h-1.7v-3.3l0.2-4.4L32.7,41h-1.2l-2.9-7.7
-    l0.2,4.4V41H27v-10H29.2z M45.7,40.3c0.7-0.6,1.1-1.4,1.2-2.5h-1.7c-0.1,0.7-0.3,1.2-0.7,1.5c-0.3,0.3-0.9,0.5-1.5,0.5
-    c-0.7,0-1.3-0.3-1.7-0.8c-0.4-0.6-0.6-1.4-0.6-2.5v-0.9c0-1.1,0.2-1.9,0.6-2.4c0.4-0.6,1-0.8,1.7-0.8c0.6,0,1.1,0.2,1.5,0.5
-    c0.3,0.3,0.5,0.8,0.6,1.5h1.7c-0.1-1.1-0.5-1.9-1.2-2.5c-0.7-0.6-1.6-0.9-2.7-0.9c-0.8,0-1.5,0.2-2.2,0.6c-0.6,0.4-1.1,0.9-1.4,1.7
-    c-0.3,0.7-0.5,1.5-0.5,2.5v0.9c0,0.9,0.2,1.7,0.5,2.4c0.3,0.7,0.8,1.2,1.4,1.6c0.6,0.4,1.3,0.6,2.1,0.6C44.1,41.2,45,40.9,45.7,40.3
-    z" />
-              </svg>
-            </div>
-            <h6 class="card-title">Cloud</h6>
-            <p class="card-text">Cloud provides infrastructure such as services (IaaS) for the upper layers...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w-100 text-center" data-aos="fade-up" data-aos-delay="800">
-      <button class="btn btn-primary mt-45 lift btn-white" onclick="window.location.href='platform.html'">View more
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-          style="width: 16px; height: 16px; margin-left: 5px;" fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
-          <style type="text/css">
-            .st0 {
-              fill: none;
-            }
-          </style>
-          <rect class="st0" width="60" height="60" />
-          <path d="M40.4,9.2c-0.9-0.9-2.1-0.9-3,0c-0.9,0.9-0.9,2.3,0,3l15.2,15.9H2.1C0.9,28.1,0,29,0,30.4c0,1.2,0.9,2.3,2.1,2.3h50.5
-	L37.4,48.7c-0.9,0.9-0.9,2.3,0,3.2s2.3,0.9,3,0l18.9-19.6c0.9-0.9,0.9-2.3,0-3L40.4,9.2z" />
-        </svg>
+ <body>
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="javascript:void(0)">Kaṭal (கடல் - Ocean) - அறம் செய விரும்பு - Do good and be good</a>
     </div>
-  </div>
-  <!-- Service -->
-  <div class="service bglighter mh-600 py-85">
-    <div class="container">
-      <div class="d-inline-block w-100 mb-45">
-        <div class="col-md-6 float-left flex-cm">
-          <img src="images/illustrations/img_4.svg" data-aos="fade-up">
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 float-left">
-          <div class="main-heading w-100">
-            <h2 data-aos="fade-up" data-aos-delay="100">Service</h2>
-          </div>
-          <p data-aos="fade-up" data-aos-delay="200">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="sertyp">
-        <div class="row">
-          <div class="col-sm col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="card edit-card">
-              <div class="card-body">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  style="width: 45px; height: 45px; margin-bottom: 25px;" fill="#1D9AD6"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path d="M58.2,41.3h-5v-5.1c0-1.3-1.1-2.4-2.4-2.4H30.9v-5.7h13.2c1.4,0,2.6-1.2,2.6-2.6v-5.8c0-0.5-0.4-0.9-0.9-0.9
-    s-0.9,0.4-0.9,0.9v5.8c0,0.5-0.4,0.8-0.8,0.8H15.9c-0.5,0-0.8-0.4-0.8-0.8V3.6c0-0.5,0.4-0.8,0.8-0.8h8.7c0.3,0,0.7,0.2,0.8,0.5
-    l1,2.8c0.5,1.3,1.7,2.1,3,2.1h14.6c0.5,0,0.8,0.4,0.8,0.8v6.6c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9V9V3.4c0-1.3-1.1-2.4-2.4-2.4
-    C42.8,1,17,1,15.9,1c-1.4,0-2.6,1.2-2.6,2.6v21.8c0,1.4,1.2,2.6,2.6,2.6h13.2v5.7H9.9c-1.3,0-2.4,1.1-2.4,2.4v5.1h-5
-    c-1,0-1.8,0.8-1.8,1.8V45C0.3,45.4,0,45.9,0,46.5V56c0,1.1,0.9,2,2,2h12.5c1.1,0,2-0.9,2-2c0-6,0-7.3,0-12.9c0-1-0.8-1.8-1.8-1.8
-    H9.3v-5.1c0-0.3,0.3-0.6,0.6-0.6h19.2v5.7h-4.8c-1,0-1.8,0.8-1.8,1.8V45c-0.4,0.4-0.7,0.9-0.7,1.5V56c0,1.1,0.9,2,2,2h4.2
-    c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9h-4.2c-0.1,0-0.2-0.1-0.2-0.2v-9.6c0-0.1,0.1-0.2,0.2-0.2h3.5c0.1,0,0.2,0.1,0.2,0.1
-    l0.4,1.1c0.3,0.8,1,1.3,1.8,1.3h6.5c0.1,0,0.2,0.1,0.2,0.2V56c0,0.1-0.1,0.2-0.2,0.2h-4.2c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9
-    h4.2c1.1,0,2-0.9,2-2c0-6,0-7.3,0-12.9c0-1-0.8-1.8-1.8-1.8h-5.5v-5.7h19.9c0.3,0,0.6,0.3,0.6,0.6v5.1h-5.3c-1,0-1.8,0.8-1.8,1.8V45
-    c-0.4,0.4-0.7,0.9-0.7,1.5V56c0,1.1,0.9,2,2,2H58c1.1,0,2-0.9,2-2c0-6,0-7.3,0-12.9C60,42.1,59.2,41.3,58.2,41.3L58.2,41.3z
-     M44.2,2.8c0.4,0,0.7,0.3,0.7,0.7v3.1c-0.3-0.1-0.6-0.1-0.8-0.1H29.4c-0.6,0-1.2-0.4-1.4-0.9l-1-2.7H44.2z M14.6,56
-    c0,0.1-0.1,0.2-0.2,0.2H2c-0.1,0-0.2-0.1-0.2-0.2v-9.6c0-0.1,0.1-0.2,0.1-0.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0h3.5
-    c0.1,0,0.2,0.1,0.2,0.1l0.4,1.1c0.3,0.8,1,1.3,1.8,1.3h6.5c0.1,0,0.2,0.1,0.2,0.2L14.6,56L14.6,56z M14.6,43.1
-    C14.6,43.1,14.6,43.1,14.6,43.1l0.1,4c0,0,0,0,0,0c-0.1,0-0.1,0-0.2,0H7.9c-0.1,0-0.2-0.1-0.2-0.1l-0.4-1.1c-0.3-0.8-1-1.3-1.8-1.3
-    H2.4v-1.4c0,0,0-0.1,0.1-0.1L14.6,43.1L14.6,43.1z M36.4,43.1C36.4,43.1,36.4,43.1,36.4,43.1l0.1,4c0,0-0.2,0-0.2,0h-6.5
-    c-0.1,0-0.2-0.1-0.2-0.1l-0.4-1.1c-0.3-0.8-1-1.3-1.8-1.3h-3.1v-1.4c0,0,0-0.1,0.1-0.1L36.4,43.1L36.4,43.1z M58.2,56
-    c0,0.1-0.1,0.2-0.2,0.2H45.6c-0.1,0-0.2-0.1-0.2-0.2v-9.6c0-0.1,0.1-0.2,0.2-0.2h3.5c0.1,0,0.2,0.1,0.2,0.1l0.4,1.1
-    c0.3,0.8,1,1.3,1.8,1.3H58c0.1,0,0.2,0.1,0.2,0.2L58.2,56L58.2,56z M58.2,47c-0.1,0-0.1,0-0.2,0h-6.5c-0.1,0-0.2-0.1-0.2-0.1
-    L51,45.8c-0.3-0.8-1-1.3-1.8-1.3h-3.1v-1.4c0,0,0-0.1,0.1-0.1h12c0,0,0.1,0,0.1,0.1V47z" />
-                </svg>
-                <h6 class="card-title">Digital Transformation</h6>
-                <p class="card-text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="card edit-card">
-              <div class="card-body">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  style="width: 45px; height: 45px; margin-bottom: 25px;" fill="#1D9AD6"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-  
-                    .st1 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path class="st1" d="M32.5,3c3.2,0,6.3,1,9,2.8C41.9,6.1,42,6.6,41.7,7c-0.3,0.4-0.8,0.5-1.2,0.2c-2.4-1.6-5.1-2.5-8-2.5
-    c-5.3,0-10.2,3-12.6,7.7c-0.9,1.8-2.6,1.7-3.4,1.7c-0.1,0-0.1,0-0.2,0c-4,0-7.6,2.6-8.9,6.4c-0.3,0.9-1,1.6-2,2
-    c-2.3,0.8-3.7,2.9-3.6,5.3c0.1,2.9,2.6,5.2,5.6,5.2h25.5c0.5,0,0.9,0.4,0.9,0.9c0,0.5-0.4,0.9-0.9,0.9h-1.9V51
-    c1.6,0.4,2.8,1.9,2.8,3.6c0,2-1.7,3.7-3.7,3.7c-2,0-3.7-1.7-3.7-3.7c0-1.7,1.2-3.2,2.8-3.6V34.8h-7.9v12.5c0,0.5-0.4,0.9-0.9,0.9
-    h-6.1c-0.4,1.3-1.6,2.2-3,2.2c-1.7,0-3.1-1.4-3.1-3.1s1.4-3.1,3.1-3.1c1.4,0,2.6,1,3,2.2h5.2V34.8h-7.9v4c0,0.5-0.4,0.9-0.9,0.9H7.4
-    C7,40.8,6,41.5,4.8,41.5c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7C6,36.1,7,36.9,7.4,38h2.5v-3.2H7.3c-3.9,0-7.2-3-7.3-6.9
-    c-0.1-3.2,1.8-6,4.8-7c0.4-0.2,0.8-0.5,0.9-0.9c1.5-4.5,5.8-7.6,10.6-7.6c0.1,0,0.2,0,0.2,0c0.7,0,1.4,0,1.8-0.8
-    C21,6.3,26.5,3,32.5,3z M3.8,38.8c0,0.5,0.4,1,1,1c0.5,0,1-0.4,1-1c0-0.5-0.4-1-1-1C4.3,37.8,3.8,38.3,3.8,38.8z M10,47.3
-    c0,0.8,0.6,1.4,1.4,1.4s1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4C10.6,45.9,10,46.5,10,47.3z M30,56.6c1.1,0,2-0.9,2-2
-    c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2C28.1,55.7,29,56.6,30,56.6z M36.9,33.1h11c5.4,0,10-4.4,9.9-9.8c-0.1-5.4-4.6-9.6-10-9.5
-    c0,0-0.1,0-0.1,0c-1.1,0-2.2-0.6-2.8-1.6c-0.4-0.8-1-1.6-1.6-2.3c-0.3-0.4-0.3-0.9,0.1-1.2c0.4-0.3,0.9-0.3,1.2,0.1
-    c0.7,0.8,1.3,1.7,1.8,2.6c0.3,0.5,0.8,0.8,1.3,0.7c6.4-0.2,11.7,4.8,11.8,11.2c0.1,5.6-4,10.3-9.3,11.4V38h2.5
-    c0.4-1.1,1.4-1.9,2.6-1.9c1.5,0,2.7,1.2,2.7,2.7c0,1.5-1.2,2.7-2.7,2.7c-1.2,0-2.2-0.8-2.6-1.9h-3.4c-0.5,0-0.9-0.4-0.9-0.9v-4
-    c-0.2,0-0.4,0-0.5,0h-7.4v11.6h5.2c0.4-1.3,1.6-2.2,3-2.2c1.7,0,3.1,1.4,3.1,3.1s-1.4,3.1-3.1,3.1c-1.4,0-2.6-1-3-2.2h-6.1
-    c-0.5,0-0.9-0.4-0.9-0.9V34.8h-1.9c-0.5,0-0.9-0.4-0.9-0.9C36,33.4,36.4,33.1,36.9,33.1z M50.1,47.3c0-0.8-0.6-1.4-1.4-1.4
-    c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4C49.5,48.7,50.1,48.1,50.1,47.3z M56.3,38.8c0-0.5-0.4-1-1-1c-0.5,0-1,0.4-1,1
-    c0,0.5,0.4,1,1,1C55.9,39.8,56.3,39.4,56.3,38.8z" />
-                </svg>
-                <h6 class="card-title">Cloud Transformation</h6>
-                <p class="card-text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-            <div class="card edit-card">
-              <div class="card-body">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  style="width: 45px; height: 45px; margin-bottom: 25px;" fill="#1D9AD6"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-  
-                    .st1 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path class="st1" d="M56.9,13.4c-0.1-2-1.4-3.7-3.3-4.5L31.9,0.4c-1.2-0.5-2.6-0.5-3.8,0L6.3,8.9c-1.9,0.7-3.1,2.5-3.3,4.5
-    C3,15.3,2.5,25.3,6.2,35.8c1.8,5.3,4.4,9.9,7.6,13.7c3.9,4.6,8.7,8,14.4,10.2c0.6,0.2,1.2,0.3,1.8,0.3c0.6,0,1.2-0.1,1.8-0.3
-    c5.7-2.2,10.6-5.6,14.4-10.2c3.2-3.8,5.8-8.4,7.6-13.7C57.4,25.3,57,15.3,56.9,13.4z M52.1,35.2c-1.7,5.1-4.2,9.5-7.2,13.1
-    c-3.7,4.3-8.3,7.6-13.7,9.7c-0.8,0.3-1.6,0.3-2.4,0c-5.4-2.1-10-5.3-13.7-9.7c-3.1-3.6-5.5-8-7.2-13.1C4.3,25,4.7,15.3,4.8,13.5
-    C4.9,12.2,5.8,11,7,10.6L28.7,2c0.4-0.2,0.8-0.2,1.2-0.2c0.4,0,0.8,0.1,1.2,0.2L53,10.6c1.2,0.5,2.1,1.6,2.1,2.9
-    C55.2,15.3,55.6,25,52.1,35.2z M48.6,13.2l-17-6.7c-1-0.4-2.1-0.4-3.1,0l-17,6.7c-1.5,0.6-2.6,2-2.7,3.7c-0.1,1.2-0.2,4.3,0.3,8.5
-    c0.1,0.5,0.5,0.8,1,0.8c0.5-0.1,0.8-0.5,0.8-1c-0.5-4-0.4-7.1-0.3-8.2c0.1-0.9,0.7-1.8,1.6-2.1l17-6.7c0.6-0.2,1.2-0.2,1.8,0l17,6.7
-    c0.9,0.3,1.5,1.2,1.6,2.1c0.1,1.9,0.9,18.7-9.6,29.1c-0.3,0.3-0.3,0.9,0,1.2c0.2,0.2,0.4,0.3,0.6,0.3c0.2,0,0.4-0.1,0.6-0.3
-    c11-10.9,10.2-28.5,10.1-30.5C51.1,15.2,50.1,13.8,48.6,13.2z M30.8,51.9c2.2-0.8,4.2-1.9,6-3.2c0.4-0.3,0.9-0.2,1.2,0.2
-    c0.3,0.4,0.2,0.9-0.2,1.2c-1.9,1.4-4.1,2.6-6.4,3.4c-0.5,0.2-1,0.3-1.5,0.3c-0.5,0-1-0.1-1.5-0.3c-12.3-4.7-16.9-15.7-18.7-24
-    c-0.1-0.5,0.2-0.9,0.7-1c0.5-0.1,0.9,0.2,1,0.7c1.7,7.9,6.1,18.3,17.6,22.7C29.7,52.1,30.3,52.1,30.8,51.9z M30,16.9
-    c-7.2,0-13.1,5.9-13.1,13.1c0,7.2,5.9,13.1,13.1,13.1c7.2,0,13.1-5.9,13.1-13.1S37.2,16.9,30,16.9z M30,41.3
-    c-6.3,0-11.3-5.1-11.3-11.3S23.7,18.7,30,18.7c6.3,0,11.3,5.1,11.3,11.3S36.2,41.3,30,41.3z M37.3,24.3c0.7,0.6,1.1,1.4,1.1,2.3
-    c0,0.9-0.3,1.7-0.9,2.3l-6.9,6.8c-0.6,0.6-1.4,0.9-2.2,0.9c-0.7,0-1.4-0.2-2-0.8l-3.6-3c-0.7-0.6-1-1.3-1.1-2.2
-    c-0.1-0.9,0.2-1.7,0.8-2.3c1.2-1.3,3.2-1.4,4.4-0.2l1.2,1.1l4.7-4.9c1.2-1.2,3.1-1.3,4.3-0.2L37.3,24.3z M29.3,34.5l6.9-6.8
-    c0.3-0.3,0.4-0.6,0.4-1c0-0.4-0.2-0.7-0.5-1l-0.2-0.2C35.3,25,34.5,25,34,25.5l-4.8,5c-0.6,0.6-1.6,0.7-2.2,0.1l-1.3-1.2
-    c-0.3-0.2-0.6-0.4-0.9-0.4c-0.4,0-0.8,0.2-1,0.5c-0.3,0.3-0.4,0.6-0.4,1s0.2,0.7,0.5,1l3.6,3C28,35,28.8,35,29.3,34.5z" />
-                </svg>
-                <h6 class="card-title">Security Transformation</h6>
-                <p class="card-text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="card edit-card">
-              <div class="card-body">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  style="width: 45px; height: 45px; margin-bottom: 25px;" fill="#1D9AD6"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-                  style="enable-background:new 0 0 60 60;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                    }
-  
-                    .st1 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                    }
-                  </style>
-                  <rect class="st0" width="60" height="60" />
-                  <path class="st1" d="M29.1,8.8v6.3c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9V8.8c2-0.4,3.6-2.2,3.6-4.3C34.4,2,32.4,0,30,0
-    s-4.4,2-4.4,4.4C25.6,6.6,27.1,8.4,29.1,8.8z M30,1.8c1.5,0,2.7,1.2,2.7,2.7c0,1.5-1.2,2.7-2.7,2.7s-2.7-1.2-2.7-2.7
-    C27.3,3,28.5,1.8,30,1.8z M40.4,30.5c0.5,0,0.9-0.4,0.9-0.9v-6.3c0-0.4-0.2-0.7-0.6-0.8l-10.4-3.9c-0.2-0.1-0.4-0.1-0.6,0l-10.4,3.9
-    c-0.3,0.1-0.6,0.5-0.6,0.8v2.8c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9v-1.6l8.7,3.2v11.6l-8.7-3.2v-6c0-0.5-0.4-0.9-0.9-0.9
-    c-0.5,0-0.9,0.4-0.9,0.9v6.6c0,0.4,0.2,0.7,0.6,0.8l10.4,3.9l0,0c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l10.4-3.9
-    c0.3-0.1,0.6-0.5,0.6-0.8v-3.1c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9v2.4l-8.7,3.2V27.8l8.7-3.2v5.1
-    C39.5,30.1,39.9,30.5,40.4,30.5z M30,26.2l-7.9-3l7.9-3l7.9,3L30,26.2z M43.3,42c1-0.8,2.3-1.2,3.6-1.2c3.4,0,6.1,2.7,6.1,6.1
-    c0,3.4-2.7,6.1-6.1,6.1c-3.4,0-6.1-2.7-6.1-6.1c0-1.4,0.4-2.6,1.2-3.6l-2.1-2.1c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0
-    L43.3,42z M42.6,46.9c0,2.4,1.9,4.3,4.3,4.3c2.4,0,4.3-1.9,4.3-4.3c0-2.4-1.9-4.3-4.3-4.3C44.5,42.6,42.6,44.5,42.6,46.9z
-     M13.1,19.2c1.4,0,2.6-0.4,3.6-1.2l2.1,2.1c0.2,0.2,0.4,0.3,0.6,0.3c0.2,0,0.4-0.1,0.6-0.3c0.3-0.3,0.3-0.9,0-1.2L18,16.7
-    c0.8-1,1.2-2.3,1.2-3.6c0-3.4-2.7-6.1-6.1-6.1C9.7,7,7,9.7,7,13.1C7,16.4,9.7,19.2,13.1,19.2z M13.1,8.8c2.4,0,4.3,1.9,4.3,4.3
-    c0,2.4-1.9,4.3-4.3,4.3c-2.4,0-4.3-1.9-4.3-4.3C8.8,10.7,10.7,8.8,13.1,8.8z M30.9,44.9v6.3c2,0.4,3.6,2.2,3.6,4.3
-    c0,2.4-2,4.4-4.4,4.4s-4.4-2-4.4-4.4c0-2.1,1.5-3.9,3.6-4.3v-6.3c0-0.5,0.4-0.9,0.9-0.9S30.9,44.4,30.9,44.9z M27.3,55.6
-    c0,1.5,1.2,2.7,2.7,2.7s2.7-1.2,2.7-2.7c0-1.5-1.2-2.7-2.7-2.7S27.3,54.1,27.3,55.6z M55.6,25.6c-2.1,0-3.9,1.5-4.3,3.6h-6.3
-    c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h6.3c0.4,2,2.2,3.6,4.3,3.6c2.4,0,4.4-2,4.4-4.4S58,25.6,55.6,25.6z M55.6,32.7
-    c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7c1.5,0,2.7,1.2,2.7,2.7S57,32.7,55.6,32.7z M15.1,30.9H8.8c-0.4,2-2.2,3.6-4.3,3.6
-    C2,34.4,0,32.4,0,30s2-4.4,4.4-4.4c2.1,0,3.9,1.5,4.3,3.6h6.3c0.5,0,0.9,0.4,0.9,0.9S15.6,30.9,15.1,30.9z M1.8,30
-    c0,1.5,1.2,2.7,2.7,2.7c1.5,0,2.7-1.2,2.7-2.7s-1.2-2.7-2.7-2.7S1.8,28.5,1.8,30z M40.5,20.3c0.2,0,0.4-0.1,0.6-0.3l2.1-2.1
-    c1,0.8,2.3,1.2,3.6,1.2c3.4,0,6.1-2.7,6.1-6.1C53,9.7,50.3,7,46.9,7c-3.4,0-6.1,2.7-6.1,6.1c0,1.4,0.4,2.6,1.2,3.6l-2.1,2.1
-    c-0.3,0.3-0.3,0.9,0,1.2C40.1,20.2,40.3,20.3,40.5,20.3z M46.9,8.8c2.4,0,4.3,1.9,4.3,4.3c0,2.4-1.9,4.3-4.3,4.3
-    c-2.4,0-4.3-1.9-4.3-4.3C42.6,10.7,44.5,8.8,46.9,8.8z M16.7,42l2.1-2.1c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2L18,43.3
-    c0.8,1,1.2,2.3,1.2,3.6c0,3.4-2.7,6.1-6.1,6.1C9.7,53,7,50.3,7,46.9s2.7-6.1,6.1-6.1C14.5,40.8,15.7,41.3,16.7,42z M8.8,46.9
-    c0,2.4,1.9,4.3,4.3,4.3c2.4,0,4.3-1.9,4.3-4.3c0-2.4-1.9-4.3-4.3-4.3C10.7,42.6,8.8,44.5,8.8,46.9z" />
-                </svg>
-                <h6 class="card-title">Infrastructure</h6>
-                <p class="card-text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-100 text-center" data-aos="fade-up" data-aos-delay="700">
-        <button class="btn btn-primary lift mt-20" onclick="window.location.href='service.html'">View more
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            style="width: 16px; height: 16px; margin-left: 5px;" fill="#ffffff"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-            style="enable-background:new 0 0 60 60;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-              }
-            </style>
-            <rect class="st0" width="60" height="60" />
-            <path d="M40.4,9.2c-0.9-0.9-2.1-0.9-3,0c-0.9,0.9-0.9,2.3,0,3l15.2,15.9H2.1C0.9,28.1,0,29,0,30.4c0,1.2,0.9,2.3,2.1,2.3h50.5
-  L37.4,48.7c-0.9,0.9-0.9,2.3,0,3.2s2.3,0.9,3,0l18.9-19.6c0.9-0.9,0.9-2.3,0-3L40.4,9.2z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-  <!-- Partner -->
-  <div class="partner py-85">
-    <div class="container">
-      <div class="main-heading w-100">
-        <h2 class="text-center" data-aos="fade-up">Partner</h2>
-      </div>
-      <p class="text-center" data-aos="fade-up" data-aos-delay="100">Establishing strategic partnerships with more than 40 partners around the world</p>
-      <ul>
-        <li  data-aos="fade-up" data-aos-delay="200">
-          <a href="#"><img src="images/partners/microsoft-300x200 1.png" class="lift"></a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="300">
-          <a href="#"><img src="images/partners/salesforce_2-300x200 1.png" class="lift"></a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="400">
-          <a href="#"><img src="images/partners/amazon-300x200 1.png" class="lift"></a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="500">
-          <a href="#"><img src="images/partners/google-300x200 1.png" class="lift"></a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="600">
-          <a href="#"><img src="images/partners/cmccloud-300x200 1.png" class="lift"></a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="700">
-          <a href="#"><img src="images/partners/SAMSUNG-SDS_lettermark_Blue-300x200 1.png" class="lift"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Contact -->
-  <div class="contact bgdark flex-cm">
-    <div class="container">
-      <ul>
-        <li  data-aos="fade-up">
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 23px; margin-right: 5px;"
-              fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0)">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" id='sfdc-menu' aria-expanded="true">Salesforce<b class="caret"></b></a>
+          <ul class="dropdown-menu" id="sf-menu-content">
+             <li><a href="./sfdc/GettingStarted.html">Getting Started</a></li>
+             <li><a href="./sfdc/gs/workbook.html">Workbook</a></li>
+              <li class='divider'></li>
+            <li><a href="./sfdc/pevents.html">Platform Events</a></li>
+              <li><a href="./sfdc/cdc.html">Change Data Capture</a></li>
+              <li><a href="./sfdc/sso.html">SSO</a></li>
+              <li><a href="./sfdc/email-integration.html">Email Integration</a></li>
+ 
+             <li class='divider'></li>
+              <li><a href="./sfdc/dx.html">SFDX</a></li>
+              <li><a href="./sfdc/package-faq.html">SFDX Package FAQ</a></li>
+              <li><a href="./dx/plugins.html">SFDX Plugins</a></li>
+              <li><a href="./dx/dx-ci.html">SFDX Jenkins CI</a></li>
 
-                .st1 {
-                  fill-rule: evenodd;
-                  clip-rule: evenodd;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path class="st1" d="M48.1,40.9l5.4,3.6c1,0.7,1.2,1.9,0.7,2.9l-2.5,4.3c-0.7,1.1-1.8,2-3.1,2.4c-4.3,1.1-13.7,1.4-28.9-13.7
-           S4.8,15.7,5.9,11.4C6.3,10.1,7.2,9,8.3,8.3l4.3-2.6c1-0.6,2.2-0.3,2.9,0.7l3.8,5.6l3.1,4.7c0.7,0.9,0.4,2.2-0.5,2.9l-3.8,3
-           c-0.8,0.7-1.1,1.8-0.6,2.7c0.1,0.2,0.2,0.3,0.3,0.6c1.1,2,2.4,4.3,7.2,9.2s7.2,6.1,9.2,7.2c0.2,0.1,0.4,0.2,0.6,0.3
-           c0.9,0.5,2,0.2,2.7-0.6l3-3.8c0.7-0.9,2-1.1,2.9-0.5L48.1,40.9z M47.7,27.5c0-7.9-6.5-14.4-14.4-14.4c-0.5,0-0.8-0.4-0.8-0.8
-           c0-0.5,0.4-0.8,0.8-0.8c8.8,0,16,7.2,16,16.1c0,0.5-0.4,0.8-0.8,0.8C48.1,28.3,47.7,27.9,47.7,27.5z M33.3,18.1
-           c5.2,0,9.3,4.2,9.3,9.3c0,0.5,0.4,0.8,0.8,0.8c0.5,0,0.8-0.4,0.8-0.8c0-6.1-4.9-11-11-11c-0.5,0-0.8,0.4-0.8,0.8
-           S32.9,18.1,33.3,18.1z M37.6,27.5c0-2.4-1.9-4.3-4.3-4.3c-0.5,0-0.8-0.4-0.8-0.8c0-0.5,0.4-0.8,0.8-0.8c3.3,0,5.9,2.6,5.9,5.9
-           c0,0.5-0.4,0.8-0.8,0.8C37.9,28.3,37.6,27.9,37.6,27.5z" />
-            </svg>
-            Hotline: 19002101</a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="100">
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 20px; margin-right: 5px;"
-              fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
-              style="enable-background:new 0 0 24 24;" xml:space="preserve">
-              <path d="M18.3,4.1c0-0.6-0.2-1.1-0.6-1.5l-2-2C15.3,0.2,14.7,0,14.2,0H14v4.2h4.2V4.1z" />
-              <path d="M12.9,14.5c0.1-0.4,0.4-0.8,0.7-1.1l4.8-4.7v-3h-4.9c-0.4,0-0.7-0.3-0.7-0.7V0H2.1C1,0,0,0.9,0,2.1v19.8C0,23.1,1,24,2.1,24
-	h14c1.2,0,2.1-0.9,2.1-2.1v-5.2l-0.8,0.8c-0.3,0.3-0.7,0.5-1.1,0.7l-2.2,0.7l-0.3,0c-0.6,0-1.1-0.3-1.4-0.7c-0.3-0.5-0.4-1-0.2-1.6
-	L12.9,14.5z M3.5,12.7h7c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7h-7c-0.4,0-0.7-0.3-0.7-0.7C2.8,13,3.2,12.7,3.5,12.7z
-	 M2.8,10.5c0-0.4,0.3-0.7,0.7-0.7h7c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7h-7C3.2,11.2,2.8,10.9,2.8,10.5z M2.8,16.2
-	c0-0.4,0.3-0.7,0.7-0.7h7c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7h-7C3.2,16.9,2.8,16.6,2.8,16.2z M13.4,19.7
-	c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7H9.1c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7H13.4z M3.5,8.4
-	c-0.4,0-0.7-0.3-0.7-0.7C2.8,7.3,3.2,7,3.5,7h9.8c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7H3.5z" />
-              <path d="M14.1,15.1L13.5,17c-0.1,0.3,0.2,0.5,0.4,0.4l1.8-0.6L14.1,15.1z" />
-              <path d="M19.6,9.3L15,14l2,2c1-1,3.1-3.1,4.6-4.6L19.6,9.3z" />
-              <path
-                d="M23.6,7.3c-0.2-0.2-0.6-0.4-1-0.4c-0.4,0-0.7,0.1-1,0.4l-1,1l2,2c0.6-0.6,0.9-0.9,1-1C24.1,8.8,24.1,7.9,23.6,7.3z" />
-              <path d="M23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3z" />
-              <path d="M23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3z" />
-              <path d="M23.6,9.3C23.6,9.3,23.6,9.3,23.6,9.3L23.6,9.3z" />
-            </svg>
-            Request</a>
-        </li>
-        <li data-aos="fade-up" data-aos-delay="200">
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="width: 22px; margin-right: 5px;"
-              fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
 
-                .st1 {
-                  fill-rule: evenodd;
-                  clip-rule: evenodd;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path class="st1" d="M30,36.6l28-27C57.4,9.3,56.6,9,55.8,9H4.3c-1,0-2,0.4-2.7,1L30,36.6z M60,13.2C60,13.2,60,13.3,60,13.2v34.3
-           c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2L41.7,30.8L60,13.2L60,13.2z M31.4,40.7l7.5-7.2l19,17.8c-0.6,0.3-1.3,0.6-2.1,0.6H4.3
-           c-0.5,0-1-0.1-1.4-0.3l18.4-17.8l7.5,7c0.4,0.4,0.9,0.5,1.3,0.5C30.6,41.2,31,41.1,31.4,40.7z M0,47.5V14l18.4,17.1L0.2,48.6
-           C0.1,48.3,0,47.9,0,47.5z" />
-            </svg>
-            Contact us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Footer -->
-  <div class="footer bgdarker">
-    <div class="container">
-      <div class="sub-menu w-100">
-        <div class="row">
-          <div class="col col-xs" data-aos="fade-up">
-            <ul>
-              <li><strong>Industry</strong></li>
-              <li><a href="#">Manufacturing, Energy
-                </a></li>
-              <li><a href="#">Financial Services</a></li>
-              <li><a href="#">Media, Communications</a></li>
-              <li><a href="#">Travel, Transportation</a></li>
-              <li><a href="#">Retail, Consumer goods</a></li>
-              <li><a href="#">Healthcare</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Government</a></li>
-              <li><a href="#">Smart spaces</a></li>
-              <li><a href="#">Professional service</a></li>
-            </ul>
-          </div>
-          <div class="col col-xs" data-aos="fade-up" data-aos-delay="100">
-            <ul>
-              <li><strong>Solution</strong></li>
+
+              <li class='divider'></li>
+                <li><a href="./ea/ea-wb.html">Einstein Analytics Workbook</a></li>
+               <li><a href="./sfdc/ea.html">Einstein Analytics (EA)</a></li>
+               <li><a href="./sfdc/ea-wp.html">Einstein Analytics Architecture</a></li>
+                <li><a href="./sfdc/ea-2.html">EA - Beginner</a></li>
+                <li><a href="./sfdc/ea-faq.html">EA FAQs</a></li>
+                <li><a href="./sfdc/ea-du.html">EA - DatasetUtils</a></li>
+                <li><a href="./sfdc/saql.html">EA - SAQL</a></li>
+                <li><a href="./sfdc/fsc-ea.html">FSC - EA Dashboards</a></li>
+
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/dg.html">Data Governance</a></li>
+              <li><a href="./sfdc/gdpr.html">GDPR</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/rm.html">Roadmap</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/sfdc-ecosystem.html">Products</a></li>
+              <li><a href="./sfdc/certs/products.html">Products Tree</a></li>
+              <li><a href="./sfdc/sfdc-map.html">Products Map</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/mobile-dev.html">Mobile App</a></li>
+
+
+
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/vf.html">Visual Workflow</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/lx-bp.html">Lightning Best Practices</a></li>
+               <li><a href="./lex/ui.html">Lightning User Experience </a></li>
+               <li><a href="./sfdc/lex-ds.html">Lightning Data Services</a></li>
+              <li><a href="./sfdc/lex-dialer.html">Lightning Dailer</a></li>
+              <li class='divider'></li>
+              <li><a href="https://developer.salesforce.com/docs/component-library">Lightning Component Lib</a></li>
+               <li><a href="https://login.salesforce.com/?startURL=%2Fdocs%2Fcomponent-library">Lightning Component Lib for Your Org</a></li>
+               <li><a href="https://chrome.google.com/webstore/detail/salesforce-lightning-insp/pcpmcffcomlcjgpcheokdfcjipanjdpc">Chrome Extension: Lightning Inspector </a></li>
+               <li><a href="https://www.lightningdesignsystem.com">Lightning Design System</a></li>
+ 
+
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/finserv-cloud.html">Financial Services Cloud</a></li>
+              <li><a href="./sfdc/fs-cloud/model.html">FSC - Data Model Interactive</a></li>
+              <li><a href="https://mohan-chinnappan-n.github.io/drawio/src/main/webapp/index.html?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.xml#R7Vndb6M4EP9rIt09pAIcSPPYpB%2F7Umm1e7q7fXRgAGsBc8Zpk%2F71NwYDBpKITbbNVttUTfDMeDyej9%2FYyYSs0u2DoHn8yANIJo4VbCfkduI4i7mF74qwqwieO6sIkWBBRbJbwlf2Apqo50UbFkDREZScJ5LlXaLPswx82aFRIfhzVyzkSXfVnEYwIHz1aTKk%2FsMCGWuqbVkt4xOwKNZLX7uasab%2B90jwTabXmzgkLF8VO6W1Li1fxDTgzwaJ3E3ISnAuq6d0u4JEubZ2WzXv%2FgC3sVtAJsdMcCAgDoSWQ%2BfhDPcx1RqeaLKBegtegrqWAXtSBsuddpL330ZZuVzz7bRgLyyLJuRGuYCLAMQUyThAPr4%2FVz5U3NKFbsMx%2FaXY6C%2BYqb9GIqdB0Oh28m27MD5F6vMLJFQynhUxy1Fmiv%2BfQRQ8u%2FF91CzrDaAXyj1Us7T%2Fm%2B04TyAkwxS4SViUIUnyHMWoHiUQqlkcpcKkjFjI0JNkGcsUP25tfCz3AcqzyvYmtGrg85T5%2Bjmha0iWzcZXPOECWRnPQE2Tgn%2BHmoj%2BsMpXw6nzUS2oTDAkdaYhnWfynqYsUeX3N4iAZlSTda3Zjh7vW2iYRHVWoItga5B0Uj0AT0GKHYpobg0Au%2B7w2SimhabFRh3NNI3q%2Bo0axW0O44NO45EpPXt%2FKf0I6RpEbeZatElbUSRdo8n7TD9sl4q22hVoLqTmupaPXmwMMxQ6A6kip35fyhruwSg7be6A%2FlGOb1SOtt2tx70F6e0pyPlrFKTtDioyxgX6GQAB9mQ95ELGPOIZTe5aqhls9I3Y%2FatCeuXWw28jI0yFvFGHBqTdfUlptisVBC3tBQT%2Fiz9WnJHR7GUq6rsvM7S0tlxTj4%2BGuOAb4cMBP2o3oq4I5HHwU748miiibKJP3fPPT436MOi%2FPAx%2F4psCYnV4dKw%2FHlBZ%2FucHel0evezrkej1KscJm7wGehlog6FrwKYHTh0gOh76E2Fqy6SBojj6NgJgTTizT4az%2BqJ3DM7ckXBmZoa1JzMa4mjc02t85kzdKOrUJG43NUm%2FYVY71rPMi1hP0cw90KFrRZVbBorK9G02Piqj3%2BF5uLzigYLhjzvdOTA8wNw9VXoQhsklD5HeeQD7Q0fADsq%2B3UGwRc4evI0K0plA5njd4F6fiGOedRqOoY%2FpzhDLlUBx2N7%2BOtdWL5sqhadipD0EyX1NHotJ9vACECjL624FDHofKO0uJ%2B6tkQ8%2BRhTv%2BGTZB6mUBUGZvweS1kSFg2WtvxnVlkyaLxzNTPKOlrt15cwXTsfJ07lzXtesRXgYFnBuH5u%2F5z62QpSg%2Fkcfu0Afc8kF%2B9ji9%2Bhjx24LY3tc9yowe5O2Z1vuaX2PLHpJ5b1O3%2BuvUxv80xrfuNvt%2B258i6P4MLWubOL0Ot%2BMXK7z4bD9RbASb391JXf%2FAw%3D%3D">FSC - Relationship Map</a></li>
+ 
+              <li><a href="./sfdc/fsc-ea.html">FSC - EA Dashboards</a></li>
+
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/fs-cloud/model-sfdc.html">SFDC - Data Model</a></li>
+              <li class='divider'></li>
+
+              <!--
+              <li><a href="./sfdc/sandbox-rel-spring-18.html">Spring 18 Release Info</a></li>
+            -->
+              <li><a href="./sfdc/sandbox-rel-summer-18.html">Summer 18 Release Info</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/certs/certs-2.html">Certs</a></li>
+              <li><a href="./sfdc/certs/training.html">Training Videos</a></li>
+              <li><a href="./sfdc/certs/admin-cert.html">Admin - Cert</a></li>
+ 
+              <li class='divider'></li>
+              <li><a href="./sfdc/notes.html">Notes - ContentNote</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/console.html">Console</a></li>
+              <li><a href="./sfdc/omnichannel.html">Omni-Channel</a></li>
+               <li><a href="./sfdc/omnichannel-tuning.html">Omni-Channel Tuning</a></li>
+ 
+              <li class='divider'></li>
+              <li><a href="./sfdc/einstein-ai.html">Einstein Platform</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/bobj.html">Big Objects</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/dataload.html">Data Load</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/flow.html">Visual Flow</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/bp-apex.html">Apex Best Practices</a></li>
+              <li><a href="./sfdc/pb-trigger.html">Process Builder and Trigger</a></li>
+              
+               <li class='divider'></li>
+              <li><a href="./sfdc/coe.html">CoE</a></li>
+              <li><a href="./sfdc/org-strat/orgstrat.html">Org Strategy Cheat Sheet  </a></li>
+               <li><a href="./sfdc/org-strat-2.html">Org Strategy </a></li>
+               <li class='divider'></li>
+ 
+              <li><a href="./sfdc/ldv.html">Large Data Volumes</a></li>
+              <li><a href="./sfdc/soql-sosl-bp.html">SOQL Best Practices</a></li>
+              <li><a href="./sfdc/uiapi.html">UI API</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/mc-1.html">Marketing Cloud</a></li>
+               <li><a href="./sfdc/mc/keywords.html">MC Glossary</a></li>
+ 
+
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/cheatsheets.html">Cheatsheets</a></li>
+              <li><a href="./sfdc/data/sfdc-glossary.html?f=SFDC:Lightning%20Platform">Glossary</a></li>
+              <li><a href="sfdc/glossary/">Glossary-2</a></li>
+
+              <li><a href="./sf-notes/sf-notes-1.html">Notes</a></li>
+              <li><a href="./sf-notes/notes-book.html">Notes Book</a></li>
+              <li><a href="./sfdc/shield.html">Shield</a></li>
+ 
               <li>
-                <a href="#" data-toggle="collapse" data-target="#demo"><img
-                    src="images/icons/arrow_right_solid_icon2.svg">Customer Experience</a>
-                <!-- <ul class="sub-ul" id="demo" class="collapse">
-                  <li><a href="#">Example-1</a></li>
-                  <li><a href="#">Example-2</a></li>
-                  <li><a href="#">Example-3</a></li>
-                  <li><a href="#">Example-4</a></li>
-                </ul> -->
+                <a href="./websecurity/csp.html">CSP</a>
               </li>
-              <li><a href="#" data-toggle="collapse" data-target="#demo2"><img
-                    src="images/icons/arrow_right_solid_icon2.svg">Digital Operation</a>
+
+              <li class='divider'></li>
+               <li>
+                <a href="./vscode/plugins.html">VSCode Extensions</a>
               </li>
-              <li><a href="#" data-toggle="collapse" data-target="#demo3"><img
-                    src="images/icons/arrow_right_solid_icon2.svg">Digital Platform</a>
+              <li class='divider'></li>
+               <li>
+                <a href="./heroku/private-spaces.html">Heroku Private Spaces</a>
               </li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Security Intelligence</a></li>
-            </ul>
-          </div>
-          <div class="col col-xs" data-aos="fade-up" data-aos-delay="200">
-            <ul>
-              <li><strong>Service</strong></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Digital Transformation</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Cloud Transformation</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Security Transformation</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Infrastructure</a></li>
-            </ul>
-          </div>
-          <div class="col col-xs" data-aos="fade-up" data-aos-delay="300">
-            <ul>
-              <li><strong>Platform</strong></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Smart Application</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">AI as a Service</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Data Management Platform</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">Enterprise - Ready Cloud</a></li>
-              <li><a href="#"><img src="images/icons/arrow_right_solid_icon2.svg">CMC Cloud</a></li>
-            </ul>
-          </div>
-          <div class="col col-xs" data-aos="fade-up" data-aos-delay="400">
-            <ul>
-              <li><strong>Partner</strong></li>
-              <li><a href="partner.html">Infrastructure</a></li>
-              <li><a href="partner.html">Application & Content Provider</a></li>
-              <li><a href="partner.html">Technology</a></li>
-              <li><a href="partner.html">Solution</a></li>
-              <li><a href="partner.html">Consulting & Services</a></li>
-            </ul>
-          </div>
-          <div class="col col-xs" data-aos="fade-up" data-aos-delay="500">
-            <ul>
-              <li><strong>About us</strong></li>
-              <li><a href="about.html">Overview
-                </a></li>
-              <li><a href="contact.html">Contact
-                </a></li>
-              <li><a href="faq.html">FAQ</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="unfter w-100">
-        <div class="social">
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="height: 20px; margin-right: 10px;"
-              fill="#8CB0E1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path d="M36.9,14.2h4V6.7c-0.7-0.1-3.1-0.3-5.8-0.3c-5.8,0-9.8,3.9-9.8,11.1v6.6H19v8.4h6.4v21.1h7.8V32.5h6.1l0.9-8.4h-7.1v-5.8
-	C33.1,15.9,33.8,14.2,36.9,14.2L36.9,14.2z" />
-            </svg>
-          </a>
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="height: 20px; margin-right: 10px;"
-              fill="#8CB0E1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path d="M55.5,14.6c-1.9,0.9-3.9,1.4-6,1.6c2.2-1.3,3.8-3.3,4.6-5.8c-2,1.2-4.3,2-6.6,2.6c-1.9-2-4.7-3.3-7.7-3.3
-	c-5.8,0-10.5,4.7-10.5,10.5c0,0.9,0.1,1.6,0.3,2.4c-8.7-0.5-16.4-4.7-21.6-11c-0.9,1.5-1.4,3.4-1.4,5.3c0,3.7,1.9,6.9,4.7,8.8
-	c-1.7,0-3.3-0.5-4.8-1.3v0.1c0,5.1,3.7,9.4,8.4,10.3c-0.9,0.3-1.8,0.3-2.7,0.3c-0.7,0-1.4,0-2-0.2c1.4,4.2,5.2,7.2,9.8,7.3
-	c-3.6,2.8-8.1,4.5-13,4.5c-0.9,0-1.7,0-2.5-0.2c4.6,3,10.1,4.7,16.1,4.7c19.2,0,29.8-16,29.8-29.9c0-0.4,0-0.9,0-1.4
-	C52.4,18.6,54.1,16.7,55.5,14.6z" />
-            </svg>
-          </a>
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="height: 20px;" fill="#8CB0E1"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path d="M52.5,26.1v-7.5h-3.8v7.5h-7.5v3.8h7.5v7.5h3.8v-7.5H60v-3.8C60,26.1,52.5,26.1,52.5,26.1z" />
-              <path d="M18.7,26.1v7.5h10.6c-1.5,4.4-5.7,7.5-10.6,7.5c-6.2,0-11.2-5.1-11.2-11.3s5-11.3,11.2-11.3c2.7,0,5.3,1,7.3,2.7l4.9-5.7
-	c-3.4-3-7.7-4.6-12.2-4.6C8.4,11,0,19.4,0,29.8s8.4,18.8,18.7,18.8s18.7-8.4,18.7-18.8V26H18.7V26.1z" />
-            </svg>
-          </a>
-        </div>
-        <div class="copyright">
-          <a href="#">© 2019 CMC Technology Corporation</a><span>|</span><a href="#">Terms</a><span>|</span><a
-            href="#">Cookie Preferences</a>
-        </div>
-        <div class="language">
-          <a href="#">English
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="height: 8px; margin-left: 5px;"
-              fill="#8CB0E1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-              style="enable-background:new 0 0 60 60;" xml:space="preserve">
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                }
-              </style>
-              <rect class="st0" width="60" height="60" />
-              <path d="M54.6,8H30H5.4C2.4,8,0,9.9,0,12.2c0,0.6,0.2,1.2,0.5,1.8c4,6.4,10.7,15.5,16.6,23.5c3.1,4.2,6,8.1,8.1,11.1
-	c1,1.4,2.8,2.3,4.7,2.3c2,0,3.7-0.8,4.7-2.3c2.1-3,5-6.9,8.1-11.1c5.9-8,12.6-17.1,16.6-23.5c0.4-0.6,0.5-1.2,0.5-1.8
-	C60,9.9,57.6,8,54.6,8z" />
-            </svg>
-          </a>
-        </div>
-      </div>
+              <li class='divider'></li>
+               <li>
+                <a href="./mulesoft/mulesoft-1.html">Mulesoft - Anypoint platform</a>
+              </li>
+              <li class='divider'></li>
+               <li> <a href="./web-to/editor.html">Web-to Editor</a> </li>
+               <li> <a href="./web-to/web-to-qa.html">Web-to FAQs</a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">CI<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./sfdc/deploy-checklist.html">Deployment Checklist</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">VCS<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./sfdc/git.html">Git</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Apache<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./sfdc/kafka.html">Apache Kafka</a></li>
+                <li><a href="./sfdc/spark.html">Apache Spark</a></li>
+                  <li class='divider'></li>
+                <li><a href="./fwk/dropwizard.html">DropWizard</a></li>
+                  <li class='divider'></li>
+                <li><a href="./bi/kudu.html">Apache Kudu</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Amazon<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./aws/aws.html">AWS</a></li>
+              <li><a href="./aws/certs/certs-2.html">AWS Certs</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Scala<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./scala/sbt.html">SBT</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">DB<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./ora/ora.html">ORA</a></li>
+              <li class='divider'></li>
+              <li><a href="./col-db/col-db.html">Columnar DBs</a></li>
+              <li class='divider'></li>
+              <li><a href="./sfdc/xmledit.html">XML Editor</a></li>
+              <li class='divider'></li>
+              <li><a href="./json/jsonEditor.html">JSON Editor</a></li>
+              <li class='divider'></li>
+              <li><a href="./data-processing/dp-1.html">Data Processing</a></li>
+              <li class='divider'></li>
+              <li><a href="./ora/cloudgen2.html">Cloud Gen 2</a></li>
+               <li class='divider'></li>
+              <li><a href="./relational/rel1.html">Relational Database </a></li>
+ 
+
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Reactive<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./reactive/counter.html">Three Principles of Redux</a></li>
+              <li class='divider'></li>
+              <li><a target="_blank" href="https://christinalee.github.io/Slides/slides-master/rx-android">Intro to RX</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Mobile<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+
+              <li><a href="sfdc/emm.html" target="_blank">Enterprise Mobility Management</a></li>
+              <li><a href="sfdc/mobile-strategy.html" target="_blank">SFDC Mobile Strategy Development</a></li>
+              <li><a href="sfdc/mobile-security.html" target="_blank">SFDC Mobile Security</a></li>
+              <li><a href="sfdc/mySalesforce.html" target="_blank">mySalesforce</a></li>
+              <li class='divider'></li>
+              <li><a href="sfdc/ms-intune.html" target="_blank">MS Intune</a></li>
+                <li class='divider'></li>
+              <li><a href="sfdc/mobile-dev.html" target="_blank">Mobile Development</a></li>
+
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">BI<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="bi/tb.html" target="_blank">Tableau</a></li>
+              <li><a href="bi/hyperdb.html" target="_blank">Hyper DB - Extract Engine</a></li>
+              <li class='divider'></li>
+              <li><a href="charts/charts.html" target="_blank">Charts</a></li>
+
+          </ul>
+        </li>
+
+
+
+
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Books<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./books/lx">Mastering Salesforce Lightning</a></li>
+              <li class='divider'></li>
+              <li><a href="./books/shield">Salesforce Shield </a></li>
+              <li class='divider'></li>
+              <li><a href="./books/mulesoft">Salesforce Mulesoft </a></li>
+ 
+              <li class='divider'></li>
+              <li><a href="sfdc/website-security.html">Website Security</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Literature<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="https://mohansun-book-tk.herokuapp.com/" target="_blank">திருக்குறள் - Tirukkuṛaḷ - Web</a></li>
+              <li><a href="./lit/tk.html" target="_blank">திருக்குறள் - Tirukkuṛaḷ- WhatsApp Bot</a></li>
+ 
+              <li class='divider'></li>
+              <li><a href="https://chrome.google.com/webstore/detail/%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%B3%E0%AF%8D-tirukkural/ippmbpcekcodilphmakjknfckmdmodlk">திருக்குறள் - Chrome Extension</a></li>
+               <li class='divider'></li>
+               <li><a href="lit/lit-1.html" target="_blank">Literature  Videos</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Math<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./math/numbers.html" target="_blank">Numbers</a></li>
+              <li><a href="./math/fourier.html" target="_blank">Fourier</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Biz<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="./biz/biz-1.html" target="_blank">Biz Case Studies</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Others<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+              <li><a href="music.html" target="_blank">Music-1</a></li>
+              <li class='divider'></li>
+              <li><a href="piano/magenta.html" target="_blank">Piano</a></li>
+              <li><a href="piano/posenet.html" target="_blank">PoseNet</a></li>
+
+              <li class='divider'></li>
+              <li><a href="chess/play-chess.html" target="_blank">Chess</a></li>
+              <li class='divider'></li>
+              <li><a href="weaving/weaving.html" target="_blank">Weaving</a></li>
+              <li class='divider'></li>
+              <li><a href="arts/screen-writing.html" target="_blank">Screen Writing</a></li>
+              <li class='divider'></li>
+
+              <li><a href="mri/mri.html" target="_blank">MRI</a></li>
+              <li class='divider'></li>
+              <li><a href="env/env-1.html" target="_blank">Environment</a></li>
+              <li><a href="env/animals-1.html" target="_blank">Animals</a></li>
+              <li class='divider'></li>
+              <li><a href="forest/f1.html" target="_blank">Plants</a></li>
+
+              <li class='divider'></li>
+              <li><a href="arch/best-arch.html" target="_blank">Proven Architectures</a></li>
+
+              <li class='divider'></li>
+              <li><a href="greats/greats-1.html" target="_blank">Greats</a></li>
+              <li><a href="movies/movies-1.html" target="_blank">Movies</a></li>
+
+              <li class='divider'></li>
+              <li><a href="voip/voip-1.html" target="_blank">VOIP</a></li>
+
+
+              <li class='divider'></li>
+              <li><a href="qa/qa.html" target="_blank">QA systems</a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Projects<b class="caret"></b></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="./projects/all-projects.html">About Projects</a></li>
+
+            <li class='divider'></li>
+            <li><a href="./about/hydrogen.html">Waste2Energy</a></li>
+
+              <li class='divider'></li>
+             <li><a href="./projects/ai-healthcare.html">Project Healthcare</a></li>
+              <li><a href="./projects/vision.html">Project Vision</a></li>
+
+              <li class='divider'></li>
+               <li><a href="./projects/farming.html">Organic Farming</a></li>
+              <li><a href="./farming/notes-book.html"> Farming Notes</a></li>
+              <li><a href="./projects/csv-viewer.html?f=FarmersMarket">Farmers Market</a></li>
+              <li><a href="./projects/carpentry.html">Carpentry</a></li>
+              <li><a href="./non-profits/non-profits.html">Non-Profits</a></li>
+
+
+
+              <li class='divider'></li>
+              <li><a href="./autos/auto-1.html">Automobiles</a></li>
+              <li><a href="./plumbing/plumbing.html">Plumbing</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./projects/cooking.html">Cooking</a></li>
+               <li><a href="./projects/yoga.html">Yoga</a></li>
+
+               <li class='divider'></li>
+               <li><a href="./htmlspec//htmlspec.html">HTML spec experiments</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./projects/food-medicine.html">Food as Medicine</a></li>
+              <li><a href="./projects/food-medicine-2.html">Food as Medicine-2</a></li>
+              <li><a href="./projects/health/vairaoli.html">Vairaoli Notes</a></li>
+
+
+
+
+              <li class='divider'></li>
+              <li><a href="./projects/music-1.html">Music Composing</a></li>
+              <li><a href="./projects/lennon-1.html">John Lennon</a></li>
+              <li><a href="./projects/guitar-1.html">Guitar</a></li>
+              <li><a href="./projects/movies-1.html">Great Movies</a></li>
+
+
+
+              <li class='divider'></li>
+              <li><a href="./projects/bootstrap.html">Project Fresh Start</a></li>
+
+              <li class='divider'></li>
+              <li><a href="./sfdc/https.html">Move to HTTPS</a></li>
+
+              <li class='divider'></li>
+                <li><a href="./drawio/src/main/webapp/index.html">DrawIO</a></li>
+                <li><a href="./viz/viz.html">graphviz</a></li>
+                <li><a href="https://mohan-chinnappan-n2.github.io/2019/viz/seq/seq.html">UML-Seq Diagram</a></li>
+
+
+                <li class='divider'></li>
+                <li><a href="./blockchain/blockchain-1.html">Blockchain</a></li>
+
+ 
+ 
+                <li class='divider'></li>
+                <li><a href="./node/node-1.html">Node - Deno</a></li>
+
+                <li class='divider'></li>
+                <li><a href="./gpu/gpu-1.html">GPU</a></li>
+
+                <li class='divider'></li>
+                <li><a href="./dl/dl-1.html">DL</a></li>
+
+                <li class='divider'></li>
+                <li><a href="./heating/hvac.html">HVAC</a></li>
+                <li><a href="./cooling/ac.html">AC</a></li>
+                <li><a href="./house/house-1.html">Efficient Houses</a></li>
+
+
+
+
+                <li class='divider'></li>
+                <li><a href="./about/cv.html">About me</a></li>
+
+          </ul>
+        </li>
+
+
+
+
+
+
+      </ul>
+
+
+
+
     </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script> 
-  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript" src="js/smoothScroll.js"></script>
-  <!-- Scroll Navbar-->
+    <!-- /.navbar-collapse -->
+  </nav>
+
   <script>
-    $(function () {
-      $(window).on('scroll', function () {
-        if ($(window).scrollTop() > 10) {
-          $('.navbar').addClass('active');
-        } else {
-          $('.navbar').removeClass('active');
+    $('document').ready(function() {
+        $('#sf-menu-content-list').html(
+              $('#sf-menu-content').html()
+
+        ).hide()
+ 
+        ;
+        $('#sf-menu-content .divider').html("<button class='btn btn-info' style='height:.5px;width:300px;'></button>");
+
+        function toggleSF() {
+            $('#sf-menu-content-list').html(
+              $('#sf-menu-content').html()
+            )
+            $('#sf-menu-content-list').toggle();
         }
-      });
+        $('#toggle-sf-content').click(function() {
+           toggleSF();
+        });
+
+        toggleSF();
     });
   </script>
-  <script type="text/javascript">
-    AOS.init({
-      duration: 1200,
-    })
-  </script>
+
+
+  <div class="container">
+    <button id="toggle-sf-content" class="btn btn-info">Toggle Salesforce Items</button>
+    <a class='btn btn-primary' href="farming" target="_blank">Farming.yeah!</a>
+    <a class='btn btn-success' href="life/life-1.html" target="_blank"> Life.yeah! <span class='glyphicon glyphicon-heart'></span></a>
+<br/ >
+    <ul id="sf-menu-content-list"></ul>
+   <hr/>    
+   <div class="row">
+      <div class="col-lg-6">
+    அகர	முதல	எழுத்தெல்லாம்	ஆதி <br/>
+    பகவன்	முதற்றே	உலகு.
+    </div>
+    <div class="col-lg-6">
+    As all letters have the letter A for their first, so the world has the eternal God for its first.
+    </div>
+    </div>
+    <hr/>
+
+    <h3> Notes about interesting topics</h3>
+    <h4>Click on top menu items to view the topics</h4>
+    <hr/>
+
+
+    <style>
+    @keyframes release {
+      from {background-color: #99ffcc;color:black;  transform: rotate(-11deg)}
+      to {background-color: ##337ab7;color:white;  transform: rotate(+11deg)}
+  }
+
+  .release {
+      animation-name: release;
+      animation-duration: 10s;
+      animation:release 5s linear 2s infinite alternate;
+  }
+  </style>
+
+
+
+    <span>
+       <div id="quote" style="float: left;">
+       </div>
+       <img src="gandhi-mahatma-large.jpg" width="40" style="border-radius:35px;float: right;">
+     </span>
+     <center>
+  <hr>
+
+
+  <object style="width: 100%; height: 820px" data="https://www.salesforce.com/content/dam/web/en_us/www/documents/infographics/lightning-readiness-overview.pdf"
+          type="application/pdf">
+   </object>
+
+
+
+   <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <title>sfx-uxc-trailhead-astro-hi-there-512-v1</title>
+          <path class="st0 tail" d="M213.1,346c-14.2-5.6-27.6-13.1-39.8-22.3c-17.1-13-45.8-18.4-45.8-18.4s13,18,11.8,20.5
+              c-1.8,3.9-33.4-6.7-49.8-57.2c-19,40.4-1.4,72.8-4,75.4s-13.9-6-22.6-16.3c0,0,7.7,40.4,58.8,77.6c5.2,3.8-7.9,1.5-24.9-2.6
+              c0,0,39.9,49.1,116.6,5.4S213.1,346,213.1,346z"/>
+          <path id="_Path_" class="st1" d="M164.8,320.7l2.6,12.6l9.2,6.3l-3.5,15.7c0,0,7.3,14.8,6.5,14.8l-13.4-3.9l7.1,11.1l-3.6,11.5
+              l10.3,9.6l-0.5,5.7l16.8,9.4l-18.7,3.7l-9.8-5.2l-0.4-12.4l-10.7-6.5l5.3-17.2l-11.2-18.8l11.5-0.6l2.4-12.5l-6.7-7.3l-3.5-20.9
+              L164.8,320.7z"/>
+          <polygon id="_Path_2" class="st1" points="142.8,328.4 138.5,353.4 152.9,374.8 142,377.9 151.1,388.4 143.7,399.2 157.2,422.6
+              138.8,420.7 131.9,395.9 139.7,385.8 133.8,375.4 125.6,363.1 134.4,362.5 125.8,349.6 131.9,342.8 125.2,329 "/>
+          <path id="_Path_3" class="st1" d="M123.4,328.1l-9.2,10c0,0,6.6,26.7,4.8,25.3l-7.1-5.1l1.4,13.5l-7,4.8l8.6,16.6l-22.4-18.6
+              l9.2-12.9L99,341.6l10.1,3.7l-8.2-18.9h8.6l-1.1-14.7L123.4,328.1z"/>
+          <path id="_Path_4" class="st2" d="M198.4,263.4c0,0-115-67.2-34.4-183.4c0,0,28.6-40.1,80.7-41.8c0,0,102.6-15.7,145.5,41
+              c43.5,57.6,58.9,130.5-31.4,187.6C358.9,266.9,285.5,304.4,198.4,263.4z"/>
+          <g class="left-ear">
+            <path id="_Path_5" class="st2 ears" d="M237.1,41.4c0,0-87.3-86.7-68.9,36.1"/>
+          <path id="_Path_6" class="st1 ears" d="M177.8,75.3c-8-10.1-6.9-46.4,7.2-51c0,0,6.8-0.7,11,3.2c0,0,30.7,26.3,14.6,41.8
+              C196.7,82.7,183,81.8,177.8,75.3z"/>
+          <path id="_Path_7" class="st1 ears" d="M177.8,75.3l0.9-0.7c-1.5-1.9-2.8-5.1-3.6-9c-0.9-4.3-1.2-8.6-1.1-13c0-5.9,1.1-11.8,3.1-17.5
+              c0.8-2.3,2-4.4,3.6-6.3c1.2-1.6,2.9-2.7,4.8-3.4l-0.3-1.1l0.1,1.1l0,0c0.5,0,0.9,0,1.4,0c1.4,0,2.8,0.2,4.2,0.6
+              c1.7,0.4,3.2,1.2,4.5,2.4l0,0l0,0h0.1c3.6,3.2,7,6.8,10,10.6c2.4,3,4.5,6.2,6.2,9.7c1.7,3.2,2.6,6.7,2.6,10.3
+              c-0.1,3.7-1.6,7.1-4.3,9.6c-7.8,7.5-15.5,10.3-21.5,10.2c-4.4-0.1-7.7-1.7-9.7-4.2L177.8,75.3l-0.9,0.7c2.4,3.1,6.5,4.9,11.4,5
+              c6.7,0.1,14.9-3,23.1-10.8c3.1-2.9,4.9-6.9,5-11.2c-0.1-4.1-1.1-8-3-11.6c-2.8-5.3-6.3-10.2-10.4-14.5c-2-2.2-4.1-4.2-6.3-6.2
+              l-0.7,0.9l0.8-0.8c-1.6-1.4-3.4-2.4-5.5-2.9c-1.5-0.4-3.1-0.6-4.7-0.7c-1,0-1.7,0-1.7,0h-0.1h-0.1c-2.3,0.8-4.3,2.2-5.8,4.1
+              c-2.5,3.3-4.3,7.1-5.3,11.2c-1.2,4.6-1.8,9.3-1.9,14.1c-0.1,4.5,0.3,9.1,1.1,13.5c0.9,4.1,2.2,7.6,4.1,9.9L177.8,75.3z"/>
+            </g>
+          <path id="_Path_8" class="st1" d="M156.2,108.7c0,0-49.1,89.9,40.7,140.7C196.9,249.4,125.9,188.5,156.2,108.7z"/>
+          <path id="_Path_9" class="st2 right-ear" d="M323.2,43.7c0,0,90.1-83.7,67.7,38.4"/>
+          <path id="_Path_10" class="st1 right-ear" d="M382.5,79.6c8.3-9.8,8.4-46.2-5.5-51.2c0,0-6.7-0.9-11.1,2.9c0,0-31.6,25.3-16,41.3
+              C363.3,86.4,377.1,85.9,382.5,79.6z"/>
+          <path id="_Path_11" class="st1 right-ear" d="M382.5,79.6l0.9,0.7c1.9-2.2,3.3-5.6,4.3-9.5c1-4.3,1.6-8.7,1.7-13.1c0.2-6.3-0.6-12.7-2.5-18.7
+              c-0.8-2.6-2.1-5.1-3.7-7.3c-1.5-2-3.4-3.5-5.7-4.4h-0.1h-0.1c-0.5-0.1-1-0.1-1.5-0.1c-1.6,0-3.2,0.1-4.8,0.5c-2.1,0.4-4,1.4-5.7,2.8
+              l0.7,0.9l-0.7-0.9c-3.7,3.1-7.1,6.4-10.2,10c-2.7,3.1-5.1,6.4-7.1,10c-2,3.5-3.2,7.4-3.5,11.5c-0.1,4.3,1.6,8.5,4.6,11.5
+              c7.8,8,15.9,11.4,22.6,11.6c5,0.1,9.2-1.6,11.8-4.6L382.5,79.6l-0.9-0.7c-2.1,2.4-5.6,3.9-10,3.8c-5.9-0.1-13.5-3.2-21-10.9
+              c-2.7-2.6-4.1-6.2-4-9.9c0.2-3.7,1.3-7.3,3.2-10.4c2.8-5,6.4-9.6,10.5-13.6c1.8-1.8,3.3-3.2,4.5-4.2l1.3-1.1
+              c0.1-0.1,0.2-0.2,0.4-0.3l0.1-0.1l0,0l0,0c1.4-1.1,3-1.9,4.7-2.3c1.4-0.3,2.8-0.5,4.2-0.4c0.4,0,0.7,0,1,0.1h0.2h0.1l0.1-1.1
+              l-0.4,1.1c1.9,0.7,3.5,2,4.7,3.7c2.3,3.2,3.8,6.9,4.5,10.8c1,4.5,1.5,9.2,1.4,13.8c-0.1,4.2-0.6,8.5-1.6,12.6c-0.7,3.1-2,6-3.8,8.6
+              L382.5,79.6z"/>
+          <path id="_Path_12" class="st3" d="M384.2,173.4c1,38.2-28.2,71.4-69.5,83.6c-10.3,3-20.9,4.7-31.6,5c-44.3,1.2-82.7-21-98.3-53.1
+              c-0.4-0.9-0.9-1.9-1.3-2.8c-3.8-8.6-5.8-17.8-6.1-27.2c-1.2-47.4,46.1-88.4,103.2-89.9c10.2-0.3,20.4,0.7,30.4,3.1
+              C353,102.2,383.2,134.8,384.2,173.4z"/>
+          <ellipse  class="st4 left-eye" cx="230.7" cy="201.1" rx="10" ry="15"/>
+          <ellipse  class="st4 right-eye" cx="323.4" cy="207.8" rx="10" ry="15"/>
+          <path class="st4" d="M193.2,221.7c0,0-9.4-60,5.6-61.6c0,0,7.9,9.9,13,9.8c1,0-3.5-30.5,12.8-40c0,0,58.6,22.5,65.2,9.1
+              c-2-1.1-23.5-9.1-22.7-18.5c0.5-5.2,46-4.9,66.1,39.2c3.4,1.9,8.4-6.5,9.6-18.7c2.1-22.8,18.7,38.3,19.1,39.2s4.9-1.4,8.7-7
+              s2.6,36.7,1.8,41s14.8-18,12.4-46.6s-28-58.6-50.2-67.5c-21.1-8.5-56.7-23.8-111.5,4.3c-58.2,29.9-44.6,91.4-44.4,92.5
+              C180.4,203.7,190.8,221.1,193.2,221.7z"/>
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="289.7656" y1="278.6893" x2="297.9551" y2="105.4657" gradientTransform="matrix(0.9996 2.949179e-02 2.949179e-02 -0.9996 -16.7595 577.7911)">
+              <stop  offset="0.4" style="stop-color:#8D735E"/>
+              <stop  offset="0.69" style="stop-color:#8B715D"/>
+              <stop  offset="0.83" style="stop-color:#836B58"/>
+              <stop  offset="0.94" style="stop-color:#766151"/>
+              <stop  offset="1" style="stop-color:#6C594B"/>
+          </linearGradient>
+          <path class="st5" d="M221.3,268.3c46.7,18.8,124.4-3.3,135.3-5.7c0.8-0.2,4.6,0,5.3,0.4c6,3.8,39.6,27.6,46,49.8
+              c0.2,0.6,0.1,1.3-0.1,1.9l-13.6,36.4c-0.3,0.8-0.9,1.4-1.7,1.8l-19.5,7.6c-1.5,0.6-3.1-0.1-3.8-1.5c-2.6-5.3-9.4-17.8-18.3-26.3
+              c-1.2-1.2-3.1-1.1-4.2,0c-0.7,0.7-1,1.7-0.8,2.6c2,12.5,7.2,34.7,11,56.1c5.7,32.1,12.7,40,21.6,58.5c10,20.9-5.3,50.2-49.4,49.8
+              c-34.6-0.4-52.2-12.2-47.6-41.6c2.9-18.3,0.9-43.9-12-43.9s-13.9,23.7-10.1,42.8c7.3,37.5-37.4,43.1-65.2,37.4
+              c-29.8-6.2-44.7-27.7-32.9-50.5c10.6-20.4,15.5-31.2,17.1-68.5c1.5-35.2,0.3-56.8,1.1-69.8"/>
+          <g id="ARM" class="arm-wave">
+                  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="176.5925" y1="334.9932" x2="179.2582" y2="278.6074" gradientTransform="matrix(0.9996 2.949179e-02 2.949179e-02 -0.9996 -16.7595 577.7911)">
+                  <stop  offset="0.4" style="stop-color:#8D735E"/>
+                  <stop  offset="0.69" style="stop-color:#8B715D"/>
+                  <stop  offset="0.9308" style="stop-color:#8B715D"/>
+              </linearGradient>
+              <path class="st6" d="M182.8,310.7c0.1-1.3-0.7-2.6-2-3c-9.4-3.5-48-19.7-65.6-58.1c-0.7-1.5,0-3.3,1.5-4c0.2-0.1,0.5-0.2,0.7-0.2
+                  l69.7-11.8c1.3-0.2,2.7,0.5,3.2,1.7c3.2,7.1,14.9,30.2,34.3,38"/>
+              <path class="st7" d="M164.6,262.2c18.3-10,21-25.3,31.8-42.7s12-27.9,0.7-36.3c-6.4-4.7-13,1.3-17.6,7.4c-1.6,2.2-4.6,2.6-6.8,1
+                  c-0.8-0.6-1.4-1.5-1.7-2.4c-3.3-10.2-10.2-24.6-24.4-29.4c-22.8-7.8-40.2-1.9-49.4,19c-8.6,19.5-4.2,49.6,21.9,78.1
+                  C129.3,268,153.8,268.1,164.6,262.2z"/>
+          </g>
+          <path class="st7" d="M396.5,293.2c8.9,14.2,8.2,28,5.7,35.6c-5.2,15.8-14.8,18.8-28.7,23.5c-5.1,1.8-6.2,3.1-5.3,5.9
+              c2.6,8.5,7.2,25,19.4,23.5c7.4-1,10.9-4.3,12.4-7.8c1.1-2.5,4-3.7,6.6-2.6c0.4,0.2,0.7,0.4,1,0.6c5.4,4.2,15.2,11.5,25.2,5.6
+              C448.6,368.2,452.3,318.1,396.5,293.2z"/>
+          <path class="st1" d="M189.6,237.4c0,0,31.7,42.9,90.9,45.3c55.5,2.3,83.4-18.7,83.4-18.7l4.7,4c0,0-33.9,26.6-91.3,19.9
+              C222.7,281.6,206.8,261.2,189.6,237.4z"/>
+          <ellipse class="st1 left-eye" cx="272.4" cy="339.1" rx="0" ry="0.9"/>
+          <ellipse transform="matrix(2.949183e-02 -0.9996 0.9996 2.949183e-02 -76.5715 608.2202)" class="st8" cx="274.9" cy="343.5" rx="49" ry="43.4"/>
+          </svg>
+           </center>
+          <style>
+ @keyframes left-ear-shuffle {
+3% {
+  transform: scale(1, .85);
+}
+6% {
+  transform: scale(1, 1);
+}
+10% {
+  transform: scale(1, .95);
+}
+13% {
+  transform: scale(1, 1);
+}
+}
+
+@keyframes right-ear-shuffle {
+3% {
+  transform: scale(1.01, 0.85);
+}
+6% {
+  transform: scale(1, 1);
+}
+13% {
+  transform: scale(1.03, 0.95);
+}
+19% {
+  transform: scale(1, 1);
+}
+}
+
+@keyframes arm-wave {
+25% {
+  transform: rotate(-6deg);
+}
+75% {
+  transform: rotate(7deg);
+}
+}
+
+@keyframes blink {
+5% {
+  transform: scale(1.2, 0.1);
+}
+10% {
+  transform: scale(1, 1);
+}
+}
+
+@keyframes tail-move {
+25% {
+  transform: rotate(3deg);
+}
+75% {
+  transform: rotate(-3deg);
+}
+}
+
+.left-ear {
+animation: left-ear-shuffle 3s infinite;
+transform-origin: 194px 52px;
+}
+
+.right-ear {
+animation: right-ear-shuffle 2s infinite 1.4s;
+transform-origin: 366px 66px;
+}
+
+.arm-wave {
+animation: arm-wave 0.5s infinite linear;
+transform-origin: 180px 307px;
+}
+
+.left-eye {
+animation: blink 2s infinite;
+transform-origin: 230.7px 201.1px;
+}
+
+.right-eye {
+animation: blink 2s infinite;
+transform-origin: 323px 207px;
+}
+
+.tail {
+animation: tail-move 2s infinite linear;
+transform-origin: 155px 347px;
+}
+
+.st0 {
+fill: #735D4F;
+}
+
+.st1 {
+fill: #7E6454;
+}
+
+.st2 {
+fill: #8D735E;
+}
+
+.st3 {
+fill: #D0B089;
+}
+
+.st4 {
+fill: #232222;
+}
+
+.st5 {
+fill: url(#SVGID_1_);
+}
+
+.st6 {
+fill: url(#SVGID_2_);
+}
+
+.st7 {
+fill: #9E9F9F;
+}
+
+.st8 {
+fill: #805C32;
+}
+  </style>
+
+
+
+
+
+
+
+
+<h4>References</h4>
+
+<ol class="list-group">
+  <li class="list-group-item">
+    <a target="_blank" href="https://resources.docs.salesforce.com/214/latest/en-us/sfdc/pdf/salesforce_technical_requirements.pdf">
+      Salesforce System Requirements
+    </a>
+  </li>
+  <li class="list-group-item">
+    <a target="_blank" href="https://www.youtube.com/watch?v=9aUkDQ9EicM"> While there is life - there is hope! - Stephen Hawking's Motivational Video
+</a>
+  </li>
+</ol>
+<h4>IP Addresses and Security and Compliance Docs</h4>
+<ol>
+<li><a href="https://help.salesforce.com/articleView?id=000003652&type=1">What are the Salesforce IP Addresses & Domains to whitelist?  </a></li>
+<li><a href="https://scdp.salesforce.com/">Security & Compliance Documentation Portal </a></li>
+</ol>
+
+<hr/>
+ <ul>
+<li>
+<a href="https://ta.wikisource.org/wiki/%E0%AE%86%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%9A%E0%AF%82%E0%AE%9F%E0%AE%BF">ஆத்திசூடி</a>
+</li>
+  </ull>
+
+</div>
+
+
+<script>
+
+(function() {
+
+   const mp3s = [
+     {"url": "amclassical_twopart_invention_in_eflat.mp3", "name": "Beethoven: Two Part invention in E-Flat" },
+      {"url": "amclassical_chopin_prelude_in_c_minor.mp3", "name": "Chopin: Prelude in C minor, Op. 28 No. 20" },
+      {"url": "amclassical_piano_sonata_k_310_mvt_1.mp3", "name": "Mozart: Piano Sonata, K. 310, mvt. 1" },
+      {"url": "amclassical_beethoven_fur_elise.mp3.mp3", "name": "Beethoven: Fur Elise" }
+   ]
+   const mkgQuotes = [
+      {"q": ""},
+      {"q": "You must be the change you wish to see in the world."},
+      {"q": "Satisfaction lies in the effort, not in the attainment, full effort is full victory."},
+      { "q": "Where there is love there is life." },
+      { "q": "The weak can never forgive. Forgiveness is the attribute of the strong." },
+      { "q": "Strength does not come from physical capacity. It comes from an indomitable will."},
+      { "q": "You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty." },
+      { "q": "An ounce of practice is worth more than tons of preaching."},
+      { "q":"Non-violence is the greatest force at the disposal of mankind. It is mightier than the mightiest weapon of destruction devised by the ingenuity of man."},
+
+      {"q": "First they ignore you, then they laugh at you, then they fight you, then you win"}
+
+   ];
+   const START = 1;
+   const STOP = mkgQuotes.length - 1;
+   const author = "Mohandas K Gandhi"
+
+
+   const id = Math.floor((Math.random() * STOP) + START);
+   const quote = mkgQuotes[id].q
+   $('#quote').html(quote + " - " +  author);
+
+
+
+
+
+
+ })();
+
+
+</script>
+
 </body>
+
 </html>
