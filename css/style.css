@@ -18,8 +18,8 @@
 .pb-85{
     padding-bottom: 85px;
 }
-.p-65{
-    padding: 65px;
+.p-75{
+    padding: 75px;
 }
 .my-15{
     margin-top: 15px;
@@ -27,6 +27,9 @@
 }
 .mb-30{
     margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 .mt-45{
     margin-top: 45px;
@@ -44,13 +47,16 @@
     margin-top: 20px;
 }
 .mt-30{
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 .mt-40{
     margin-top: 40px;
 }
 .mt-50{
     margin-top: 50px;
+}
+.mt-70{
+    margin-top: 70px;
 }
 .mb-45{
     margin-bottom: 45px;
@@ -61,6 +67,9 @@
 }
 .pr-40{
     padding-right:40px;
+}
+.pb-40{
+    padding-bottom:40px;
 }
 .pl-40{
     padding-left:40px;
@@ -78,6 +87,11 @@
 .flex{
     display: flex;
 }
+.flex-card{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
 .lift{
     transition: box-shadow .25s ease,transform .25s ease,-webkit-transform .25s ease;
 }
@@ -87,8 +101,15 @@
 .w-48{
     width: 48%;
 }
+.w-70{
+    width: 70% !important;
+}
 .font12{
     font-size: 12px !important;
     line-height: 16px;
 }
+.lighter-txt{
+    font-weight: lighter;
+}
+
 

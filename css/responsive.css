@@ -86,7 +86,7 @@
         padding-top: 60px !important;
         padding-bottom: 60px !important;
     }
-    .p-65 {
+    .p-75 {
         padding: 55px 40px !important;
     }
     .footer .sub-menu{
@@ -151,6 +151,37 @@
     li.nav-item .sub-nav{
         display: none;
     }
+    .img-signup-for-advice{
+        margin-top: 30px;
+    }
+    .stories .fix-min-h{
+        min-height: 435px;
+    }
+    .lcol, .rcol{
+        width: 100%;
+    }
+    .lcol{
+        margin-right: 0;
+    }
+    .customer-story{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sub-banner .logo-customer img{
+        width: 100px;
+    }
+    .our-mission .w-50{
+        width: 100% !important;
+    }
+    .contact-ct .add-1, .contact-ct .add-2{
+        width: 100%;
+    }
+    .contact-ct .add-1{
+        margin-bottom: 50px;
+    }
+    .contact-ct ul{
+        margin: 0 0 20px 0;
+    }
 }
 /*------------------------------------Mobile----------------------------------*/
 @media (max-width: 481px){
@@ -207,7 +238,7 @@
         text-align: center;
         align-items: center;
     }
-    .p-65{
+    .p-75{
         padding:40px 30px !important;
     }
     .industry img{
@@ -341,7 +372,34 @@
     .form .w-48{
         width: 100%;
     }
-    .bnstory{
+    .bn-story, .bn-adidas, .bn-aboutus, .bn-partner, .bn-contact, .bn-faq{
         background: none;
+    }
+    .stories .fix-min-h{
+        min-height: auto;
+    }
+    .logo-customer{
+        padding-top: 30px;
+    }
+    .img-left-p{
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .ctosaid{
+        text-align: center;
+    }
+    .ctosaid img{
+        width: 70%;
+        display: inline-block;
+        clear: both;
+        float: none;
+    }
+    .ctosaid p{
+        width: 100%;
+        padding: 0 20px;
+        margin: 25px 0 0 0;
+    }
+    .partner-ct ul li{
+        width: 30%;
     }
 }   

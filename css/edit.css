@@ -1,5 +1,4 @@
 body{
-    font-size: 16px;
     line-height: 22px !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #718096;
@@ -204,7 +203,11 @@ a:hover{
     height: 285px;
 }
 .sub-banner button{
-    margin: 10px 0 35px 0;
+    margin: 20px 0 0 0;
+}
+.sub-banner .logo-customer img{
+    width: 130px;
+    margin-bottom: 30px;
 }
 .solution, .industry, .platform, .service, .contact, .footer{
     display: inline-block;
@@ -221,6 +224,11 @@ a:hover{
     color: #152C5B;
     margin: 0;
     font-weight: normal;
+}
+.main-heading h4{
+    text-transform: none;
+    margin: 8px 0 0 0;
+    color: #718096;
 }
 .solution p, .industry p, .platform p, .service p, .partner p{
     color: #718096;
@@ -531,11 +539,12 @@ ul.sub-ul li a{
 }
 .card2 h5{
     color: #152C5B;
+    text-transform: none;
 }
 .card2 h6{
     color: #152C5B;
     font-size: 20px;
-    font-weight: normal;
+    text-transform: none;
 }
 .card2 ul li a{
     font-size: 14px;
@@ -547,10 +556,14 @@ ul.sub-ul li a{
 }
 ul.ul-arrow{
     list-style-image: url('../images/icons/arrow_right_solid_icon2.svg');
-    padding-left: 13px;
+    padding-left: 14px;
 }
-ul.ul-arrow li{
-    padding: 8px 0;
+ul.ul-arrow li, ul.ul-square li{
+    padding: 10px 0 10px 5px;
+}
+ul.ul-square{
+    list-style-image: url('../images/icons/square.png');
+    padding-left: 14px;
 }
 .started{
     padding: 40px 0;
@@ -561,7 +574,7 @@ ul.ul-arrow li{
     font-weight: lighter;
 }
 .filter-le{
-    padding: 35px 0;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -573,30 +586,30 @@ ul.ul-arrow li{
     color: #152C5B;
     font-size: 18px;
 }
-.large-enterprise{
-    margin-top: 50px;
+.lar-ent{
+    margin-top: 65px;
 }
-.large-enterprise .card{
+.lar-ent .card{
     margin: 0 0 30px 0;
 }
-.large-enterprise .card a{
+.lar-ent .card a{
     width: 100%;
-    text-align: center;
     height: auto;
 }
-.large-enterprise .card .card-img-top{
+.lar-ent .card .card-img-top{
     object-fit: cover;
     border-top-left-radius: calc(.65rem - 1px);
     border-top-right-radius: calc(.65rem - 1px);
 }
-.large-enterprise .card .card-body p.card-text{
+.lar-ent .card .card-body p.card-text{
     margin-bottom: 30px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 48px;
 }
-.large-enterprise .card .card-body a.viewmore{
+.lar-ent .card .card-body a.viewmore{
     font-weight: 500 !important;
     font-size: 15px;
 }
@@ -636,11 +649,11 @@ ul.ul-arrow li{
     width: 150px;
     margin-right: 25px;
     object-fit: cover;
-    border: 1px #dadada solid;
 }
 a.view-more-txt{
     font-size: 14px;
     font-weight: 500;
+    display: inline-block;
 }
 a.view-more-txt svg{
     transition: transform .25s ease,-webkit-transform .25s ease;
@@ -763,10 +776,122 @@ li.nav-item .sub-nav ul li a{
 li.nav-item .sub-nav .w-50{
     padding: 0 10px;
 }
-.bnstory{
+.bn-story{
     background: transparent url('../images/bnstory.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.bn-adidas{
+    background: transparent url('../images/bnadidas.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.bn-aboutus{
+    background: transparent url('../images/bnaboutus.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.bn-partner{
+    background: transparent url('../images/bnpartner.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.bn-contact{
+    background: transparent url('../images/bncontact.jpg') no-repeat right bottom;
+    background-size: contain;
+}
+.bn-faq{
+    background: transparent url('../images/bnfaq.jpg') no-repeat right bottom;
     background-size: contain;
 }
 .object-contain{
     object-fit: contain !important;
+}
+.img-signup-for-advice{
+    width: 60% !important;
+}
+.lcol{
+    float: left;
+    width: 270px;
+    margin-right: 50px;
+}
+.lcol .divider{
+    margin: 30px 0 !important;
+}
+.rcol{
+    float: left;
+    width: calc(100% - 320px);
+}
+.customer-story h5{
+    text-transform: none !important;
+}
+.share-story a img{
+    width: 35px;
+    margin-right: 15px;
+    margin-top: 15px;
+    float: left;
+}
+.product-used h5, .related-stories h5{
+    margin-bottom: 15px;
+}
+.stories .fix-min-h{
+    min-height: 415px;
+}
+.img-left-p{
+    float: left;
+    width: 50%;
+    margin: 0 50px 50px 0;
+}
+.ctosaid{
+    float: left;
+}
+.ctosaid img{
+    float: left;
+    width: 200px;
+}
+.ctosaid p{
+    float: left;
+    width: calc(100% - 200px);
+    font-size: 30px;
+    color: white;
+    line-height: 34px;
+    padding-left: 50px;
+    margin: 0;
+    font-weight: normal;
+}
+.ctosaid p span{
+    color: white;
+    font-size: 16px;
+}
+.partner-ct h5{
+    text-transform: none;
+}
+.partner-ct ul{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.partner-ct ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.partner-ct ul li img{
+    height: 60px;
+}
+.contact-ct ul{
+    list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+.contact-ct ul li{
+    padding: 3px 0;
+    display: inline-block;
+    width: 100%;
+}
+.contact-ct ul li strong{
+    color: #152C5B;
+}
+.contact-ct .add-1{
+    float: left;
+    width: 45%;
+}
+.contact-ct .add-2{
+    float: right;
+    width: 45%;
 }
