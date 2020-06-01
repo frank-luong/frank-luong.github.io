@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainCtrl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{appName}}</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/navbar-green.css">
+  <script src="../js/angular.min.js"></script>
+  <script src="../js/data-markdown.user.js"></script>
+
+
+  <script src="../bower_components/marked/marked.min.js"></script>
+  <script src="../bower_components/angular-marked/dist/angular-marked.js"></script>
+
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+    		<![endif]-->
+
+  <style>
+    .reveal .slide-number {
+      font-size: 0.5em;
+    }
+
+    .simg {
+      border-radius: 10px;
+      border: 1px;
+    }
+
+    .reveal section ul li,
+    .reveal section p {
+      font-size: .8em !important;
+    }
+
+    .reveal section pre code {
+      font-size: 0.7em !important;
+    }
+  </style>
+  <!--
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5381915020912221",
+    enable_page_level_ads: true
+  });
+</script>
+-->
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5381915020912221",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)">{{appName}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/home">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li ><a href="/">Main</a></li>
+      </ul>
+
+      <div class="inner-addon right-addon navbar-form navbar-right">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown ">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Help <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="../sfdc/help.html">Help Topics</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <!--
+  <div class="container" ng-controller='MainCtrl'>
+    <div marked src="'pevents.md'"></div>
+  </div>
+-->
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section id="home">
+        <h4>{{appName}}</h4>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Opening</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/3OVDQPWzBFE?autoplay=0"></iframe>
+      </section>
+ 
+      <section>
+          <h4 style="font-size:25px;">Welcome DF 18 Keynote</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/i53LCY3OIsw?autoplay=0"></iframe>
+      </section>
+ 
+      <section>
+          <h4 style="font-size:25px;">Lightning Dashboards Best Practices</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/oC6-DZQFxA4?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Future of Healthcare & Life Sciences</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/KmYpKGsVJQc?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Healthcare & Life Sciences Keynote: Better Connections, Bigger Outcomes</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/DIAGdGbOBBw?autoplay=0"></iframe>
+      </section>
+
+
+      <section>
+          <h4 style="font-size:25px;">Retailing in the Age of Voice + AI</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/pv48R_10K1I?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Salesforce Research: The Future of AI</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/DGFZax6LzlQ?autoplay=0"></iframe>
+      </section>
+ 
+      <section>
+          <h4 style="font-size:25px;">Mobile is Changing the World of Marketing</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/V0EFilgdr3M?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">The Future of Work in the AI Age</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/AVQw62VzJdI?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Business AI </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/bKGyzf0nCvQ?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Financial Services Keynote </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/g18kXRwXnIc?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Marriott </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/mLuUYc3eooY?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Admins Keynote </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/fOyq_2948lc?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Einstein Keynote </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/jqTGbAjBeVg?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Fireside Chat with Dion Weisler and Keith Block </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/Fxv8-mAm6C4?autoplay=0"></iframe>
+      </section>
+
+
+      <section>
+          <h4 style="font-size:25px;">Dream Pitch</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/OnF8MCkwcHQ?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">A Celebration of Trailblazer</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/dWOiWCYlHpc?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Unilever</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/pPzeoOqhaWs?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Brunello Cucinelli</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/tPRxdycAst8?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Lightning Platform Keynote</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/qnbVgzIvHys?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">It's Better in Lightning</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/r2XX4ksM81w?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Philanthropy Cloud Keynote</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/xY9wcyybQZg?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Partner Keynote</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/6seuDz2drq8?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">The Future of Travel & Hospitality</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/EgDD5hBrkNU?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Geoffrey West</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/ncDE_V5RAQc?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Fireside Chat with Ulrich Spiesshofer and Marc Benioff </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/_6_RBL9ixo4?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">CPQ & Billing Keynote </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/rkM9LwSYwuo?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Developer Keynote: Build Apps of the Future </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/C6Cp2P5Eb7Y?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Retail Keynote: Be the Brand Your Customers Love</h4> 
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/ZV0gU2FaaYU?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Salesforce Pardot: B2B Marketing on the World's #1 CRM</h4>
+
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/Hj653eyxI34?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Service Cloud Keynote: Customer Success in the New Age of Service</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/9qiYRkDHrGw?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Dreamforce 2018 Live Broadcast - Day 3</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/M9R2XBLty20?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Dreamforce 2018 Live Broadcast - Day 4</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/mkMjM_S3eC0?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Integration Keynote: MuleSoft Connects Every App, Data and Device </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/owqbfwAJSac?autoplay=0"></iframe>
+      </section>
+
+
+      <section>
+          <h4 style="font-size:25px;">Community Cloud Keynote: Win the Digital Experience Race</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/Mp1pZHgDpOw?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Consumer Goods Keynote: Driving Intelligent, Integrated Consumer Experiences</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/XumHj57-NkY?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Trailhead Keynote: Reinvent Learning and Enablement</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/6MojUTEF0JI?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Customer Success Keynote: Learn How to Get More Value from Salesforce </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/5EvS4gUwKr8?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Fireside Chat with Drew Houston and Marc Benioff</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/9Chg19_lBcA?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Sales Cloud Keynote: Now Every Sales Team Gets AI </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/uUEdpOJ93PU?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Service Cloud Keynote: Customer Success in the New Age of Service </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/2HSHJqcYuqk?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Future of Retail w/ Chip Bergh, Levi Strauss & Jennifer Hyman, Rent the Runway </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/MEZ2gtKQmn0?autoplay=0"></iframe>
+      </section>
+      <section>
+          <h4 style="font-size:25px;">Salesforce Small Business Keynote: Riding with You on the Road to Success </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/mPVYj4onth4?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Inside Look: How adidas connects with consumers in a radically different way </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/AysWk_zGHH4?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">CDPHP: Building a 360-Degree View Across Members, Providers, Brokers & Employees </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/dA65wVkFUIE?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Digital Transformation with Salesforce and Vlocity </h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/WwBW_qdUmyY?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Einstein Analytics Keynote: AI + Analytics for Every Business Process</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/vE5RLPzbihU?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Equality Keynote with Tracee Ellis Ross and Adam Rippon</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/qXpwKHG6KYQ?autoplay=0"></iframe>
+      </section>
+
+      <section>
+          <h4 style="font-size:25px;">Personal Empowerment: How to Live a Successful Life with Plum Village Monastics</h4>
+             <iframe height="400" width="800" data-src="https://www.youtube.com/embed/aNYm3i8x2JQ?autoplay=0"></iframe>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+
+  <script>
+    'use strict';
+
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+      //width: 960,
+      //	height: 700,
+
+      // Display presentation control arrows
+      controls: true,
+
+      // Help the user learn the controls by providing hints, for example by
+      // bouncing the down arrow when they first encounter a vertical slide
+      controlsTutorial: true,
+
+      // Determines where controls appear, "edges" or "bottom-right"
+      controlsLayout: 'edges',
+
+      // Visibility rule for backwards navigation arrows; "faded", "hidden"
+      // or "visible"
+      controlsBackArrows: 'faded',
+      // Display a presentation progress bar
+      progress: true,
+
+      // Set default timing of 2 minutes per slide
+      defaultTiming: 120,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+
+      history: true,
+      center: true,
+      slideNumber: true,
+
+      embedded: true,
+
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+      menu: {
+        markers: true,
+        openSlideNumber: true,
+        themes: [{
+            name: 'Black',
+            theme: '../reveal.js/css/theme/black.css'
+          },
+          {
+            name: 'White',
+            theme: '../reveal.js/css/theme/white.css'
+          },
+          {
+            name: 'League',
+            theme: '../reveal.js/css/theme/league.css'
+          },
+          {
+            name: 'Sky',
+            theme: '../reveal.js/css/theme/sky.css'
+          },
+          {
+            name: 'Beige',
+            theme: '../reveal.js/css/theme/beige.css'
+          },
+          {
+            name: 'Simple',
+            theme: '../reveal.js/css/theme/simple.css'
+          },
+          {
+            name: 'Serif',
+            theme: '../reveal.js/css/theme/serif.css'
+          },
+          {
+            name: 'Blood',
+            theme: '../reveal.js/css/theme/blood.css'
+          },
+          {
+            name: 'Night',
+            theme: '../reveal.js/css/theme/night.css'
+          },
+          {
+            name: 'Moon',
+            theme: '../reveal.js/css/theme/moon.css'
+          },
+          {
+            name: 'Solarized',
+            theme: '../reveal.js/css/theme/solarized.css'
+          }
+        ],
+        custom: []
+      },
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: '../reveal.js/lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+       { src: '../reveal.js/plugin/search/search.js', async: true },
+        {
+          src: '../reveal.js/plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/highlight/highlight.js',
+          async: true,
+          condition: function() {
+            return !!document.querySelector('pre code');
+          },
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: '../reveal.js/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/reveal.js-menu/menu.js',
+          async: true
+        }
+      ]
+    });
+
+
+    var app = angular.module('app', [
+      'hc.marked'
+    ]);
+    app.config(['markedProvider', function(markedProvider) {
+      markedProvider.setOptions({
+        gfm: true
+      });
+    }]);
+
+    var GSCOPE;
+    app.controller('MainCtrl', function($scope, $http, $timeout) {
+      GSCOPE = $scope; // debugging purposes
+      $scope.appName="Dreamforce 18 ";
+
+
+
+    })
+  </script>
+</body>
+
+</html>

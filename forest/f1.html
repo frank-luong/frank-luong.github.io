@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainCtrl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{appName}}</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/navbar-green.css">
+  <script src="../js/angular.min.js"></script>
+  <script src="../js/data-markdown.user.js"></script>
+
+
+  <script src="../bower_components/marked/marked.min.js"></script>
+  <script src="../bower_components/angular-marked/dist/angular-marked.js"></script>
+
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+    		<![endif]-->
+
+  <style>
+    .reveal .slide-number {
+      font-size: 0.5em;
+    }
+
+    .simg {
+      border-radius: 10px;
+      border: 1px;
+    }
+
+    .reveal section ul li,
+    .reveal section p {
+      font-size: .8em !important;
+    }
+
+    .reveal section pre code {
+      font-size: 0.7em !important;
+    }
+  </style>
+  <!--
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5381915020912221",
+    enable_page_level_ads: true
+  });
+</script>
+-->
+
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)">{{appName}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/home">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li ><a href="/">Main</a></li>
+      </ul>
+
+      <div class="inner-addon right-addon navbar-form navbar-right">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown ">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Help <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="./help.html">Help Topics</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <!--
+  <div class="container" ng-controller='MainCtrl'>
+    <div marked src="'pevents.md'"></div>
+  </div>
+-->
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section id="home">
+        <h4>{{appName}} - to build Native Forest!</h4>
+      </section>
+
+      <section >
+        <h4 style="font-size:30px;">Trees/Plants that Every Indian needs to grow</h4>
+        <ol style="font-size:19px;">
+          <li>Banyan Tree - <a target="_blank" href="https://www.google.com/search?q=define+Ficus benghalensis">Ficus benghalensis</a></li>
+          <li>Neem tree  -  <a target="_blank" href="https://www.google.com/search?q=define+Azadirachta indica">Azadirachta indica</a></li>
+          <li>Peepal (அரச) tree -  <a target="_blank" href="https://www.google.com/search?q=define+Ficus Religiosa">Ficus Religiosa</a> </li>
+          <li>Naval Pazham (black plum) Tree - <a target="_blank" href="https://www.google.com/search?q=define+Syzygium cumini"> Syzygium cumini</a></li>
+          <li>Indian gooseberry - <a target="_blank" href="https://www.google.com/search?q=define+Phyllanthus emblica">Phyllanthus emblica</a> </li>
+          <li>Soursop (Mullu Seetha) -  <a target="_blank" href="https://www.google.com/search?q=define+Annona muricata">Annona muricata</a></li>
+          <li>Arjuna tree - <a target="_blank" href="https://www.google.com/search?q=define+Terminalia arjuna">Terminalia arjuna</a></li>
+          <li>Sal tree - <a target="_blank" href="https://www.google.com/search?q=define+Shorea Robusta ">Shorea Robusta</a></li>
+          <li>Gulmohar tree - <a target="_blank" href="https://www.google.com/search?q=define+Delonix Regia">Delonix Regia</a></li>
+          <li>Indian Mahogany tree - <a target="_blank" href="https://www.google.com/search?q=define+Swietenia mahagoni">Swietenia mahagoni</a></li>
+          <li>Curry tree - <a target="_blank" href="https://www.google.com/search?q=define+Murraya koenigii">Murraya koenigii</a></li>
+          <li>Asoka tree - <a target="_blank" href="https://www.google.com/search?q=define+Saraca asoca ">Saraca asoca</a></li>
+          <li>Jackfruit tree - <a target="_blank" href="https://www.google.com/search?q=define+Artocarpus heterophyllus">Artocarpus heterophyllus </a></li>
+          <li>Bilva  tree - <a target="_blank" href="https://www.google.com/search?q=define+Aegle marmelos">Aegle marmelos </a></li>
+          <li>Pungai (புங்கை)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Millettia pinnata">Millettia pinnata </a></li>
+          <li>Poovarasu  tree - <a target="_blank" href="https://www.google.com/search?q=define+Thespesia populnea">Thespesia populnea </a></li>
+          <li>Tamarind (Indian Date - புளி)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Tamarindus indica">Tamarindus indica</a></li>
+          <li>Guava (கொய்யா)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Psidium guajava ">Psidium guajava </a></li>
+           
+          <li>Badam (Almond)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Prunus dulcis">Prunus dulcis </a></li>
+          <li>Coconut (தேங்காய்)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Cocos nucifera">Cocos nucifera </a></li>
+          <li>Banana (வாழை)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Musa acuminata and Musa balbisiana">Musa acuminata and Musa balbisiana </a></li>
+          <li>Mango (மாங்கனி)  tree - <a target="_blank" href="https://www.google.com/search?q=define+Mangifera indica ">Mangifera indica </a></li>
+          
+          
+           
+    
+        </ol>
+      </section>
+
+      <section>
+        <h4 style="font-size: 30px;">Finding Botanical name for the given Plant names in Tamil </h4>
+        <img style="border-radius:10px;border:0px;" height="400" src="img/plants-1.gif" alt="">
+        <br/>
+          <a style="font-size: 20px;" target="_blank" href="../sfdc/data/sfdc-glossary.html?f=Plants:mulai">App: Tamil to Botanical Name Lookup</a> </li>
+
+      </section>
+
+      <section>
+        <h4 style="font-size: 20px;">3D picture of a forest</h4>
+        <video height="400" controls>
+          <source src="img/3rd-pic.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </section>
+
+
+    <section>
+      <h4>Tools/References</h4>
+      <ul style="font-size: 30px;">
+        <li> <a target="_blank" href="./csv-viewer.html?f=Tamil2BotName">Tamil to Botanical Name</a> </li>
+        <li> <a target="_blank" href="../sfdc/data/sfdc-glossary.html?f=Plants:mulai">Tamil to Botanical Name Lookup</a> </li>
+    </ul>
+    </section>
+
+    </div>
+  </div>
+
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+
+  <script>
+    'use strict';
+
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+      //width: 960,
+      //	height: 700,
+
+      // Display presentation control arrows
+      controls: true,
+
+      // Help the user learn the controls by providing hints, for example by
+      // bouncing the down arrow when they first encounter a vertical slide
+      controlsTutorial: true,
+
+      // Determines where controls appear, "edges" or "bottom-right"
+      controlsLayout: 'edges',
+
+      // Visibility rule for backwards navigation arrows; "faded", "hidden"
+      // or "visible"
+      controlsBackArrows: 'faded',
+      // Display a presentation progress bar
+      progress: true,
+
+      // Set default timing of 2 minutes per slide
+      defaultTiming: 120,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+
+      history: true,
+      center: true,
+      slideNumber: true,
+
+      embedded: true,
+
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+      menu: {
+        markers: true,
+        openSlideNumber: true,
+        themes: [{
+            name: 'Black',
+            theme: '../reveal.js/css/theme/black.css'
+          },
+          {
+            name: 'White',
+            theme: '../reveal.js/css/theme/white.css'
+          },
+          {
+            name: 'League',
+            theme: '../reveal.js/css/theme/league.css'
+          },
+          {
+            name: 'Sky',
+            theme: '../reveal.js/css/theme/sky.css'
+          },
+          {
+            name: 'Beige',
+            theme: '../reveal.js/css/theme/beige.css'
+          },
+          {
+            name: 'Simple',
+            theme: '../reveal.js/css/theme/simple.css'
+          },
+          {
+            name: 'Serif',
+            theme: '../reveal.js/css/theme/serif.css'
+          },
+          {
+            name: 'Blood',
+            theme: '../reveal.js/css/theme/blood.css'
+          },
+          {
+            name: 'Night',
+            theme: '../reveal.js/css/theme/night.css'
+          },
+          {
+            name: 'Moon',
+            theme: '../reveal.js/css/theme/moon.css'
+          },
+          {
+            name: 'Solarized',
+            theme: '../reveal.js/css/theme/solarized.css'
+          }
+        ],
+        custom: []
+      },
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: '../reveal.js/lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/highlight/highlight.js',
+          async: true,
+          condition: function() {
+            return !!document.querySelector('pre code');
+          },
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: '../reveal.js/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/reveal.js-menu/menu.js',
+          async: true
+        }
+      ]
+    });
+
+
+
+    var app = angular.module('app', [
+      'hc.marked'
+    ]);
+    app.config(['markedProvider', function(markedProvider) {
+      markedProvider.setOptions({
+        gfm: true
+      });
+    }]);
+
+    var GSCOPE;
+    app.controller('MainCtrl', function($scope, $http, $timeout) {
+      GSCOPE = $scope; // debugging purposes
+      $scope.appName="Lovely Plants";
+
+
+
+    })
+  </script>
+</body>
+
+</html>
