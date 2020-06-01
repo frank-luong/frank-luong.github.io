@@ -1,0 +1,972 @@
+<html lang="en" ng-app="app" ng-controller="MainCtrl">
+<head>
+  <meta charset="UTF-8">
+  <title>{{appName}}</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/navbar-green.css">
+  <script src="../js/angular.min.js"></script>
+  <script src="../js/data-markdown.user.js"></script>
+
+    <script src="../gif-player/webcomponents-loader.js"></script>
+    <script src="../gif-player/gif-player.es6.js"></script>
+
+
+
+  <script src="../bower_components/marked/marked.min.js"></script>
+  <script src="../bower_components/angular-marked/dist/angular-marked.js"></script>
+
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+    		<![endif]-->
+
+  <style>
+    .reveal .slide-number {
+      font-size: 0.5em;
+    }
+
+    .simg {
+      border-radius: 10px;
+      border: 1px;
+    }
+
+    .reveal section ul li,
+    .reveal section p {
+      font-size: .8em !important;
+    }
+
+    .reveal section pre code {
+      font-size: 0.7em !important;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)">{{appName}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/home">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li ><a href="/">Main</a></li>
+      </ul>
+
+      <div class="inner-addon right-addon navbar-form navbar-right">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown ">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Help <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="./help.html">Help Topics</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <!--
+  <div class="container" ng-controller='MainCtrl'>
+    <div marked src="'pevents.md'"></div>
+  </div>
+-->
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section id="home">
+        <h4>{{appName}}</h4>
+       </section>
+
+       <section>
+         <h4>Person Accounts LEX</h4>
+         <object style="width: 100%; height: 820px" data="img/Person-Accounts-in-Lightning-Experience-Spring-17-2.pdf"
+                 type="application/pdf">
+        </object>
+       </section>
+
+       <section>
+         <h4>Person Accounts Resources</h4>
+            <ul>
+            <li>
+            <a target="_blank"
+             href="https://help.salesforce.com/articleView?id=account_person_enable.htm&type=5">Enable Person Account</a>
+            </li>
+            <li>
+              <a target="_blank"
+               href="https://trailhead.salesforce.com/modules/admin_intro_accounts_contacts">Trialhead: Accounts & Contacts </a>
+              </li>
+            <li>
+
+            <a target="_blank"
+             href="https://trailhead.salesforce.com/modules/fsc_data_model">Trialhead: Financial Services Cloud Data Modeling </a>
+            </li>
+
+            </ul>
+       </section>
+
+
+       <section>
+         <h4 style="font-size:30px;">Task and Event ERD and Metadata</h4>
+         <div class="row">
+           <div class="col-lg-8">
+             <img style="border:0px;border-radius:10px;padding:10px;" src="img/tasks-erd-1.png" height="500" alt="">
+           </div>
+          <div class="col-lg-4">
+            <ul style="font-size:20px;">
+              <li>
+                <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=task"> Task  </a>
+              </li>
+              <li>
+                <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=taskStatus"> TaskStatus  </a>
+              </li>
+              <li>
+                <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=taskPriority"> TaskPriority </a> <hr/>
+              </li>
+              <li>
+                <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=event"> Event  </a>
+              </li>
+              <li>
+                <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=eventRelation"> EventRelation  </a>
+              </li>
+
+
+            </ul>
+          </div>
+         </div>
+       </section>
+
+       <section>
+         <h4  style="font-size:30px;">Lookup Relation Support for Task - Not available yet</h4>
+         <img style="border:0px;border-radius:10px;padding:10px;" src="img/task-lookup-custom.png" height="500" alt="">
+
+       </section>
+
+       <section>
+         <h4 style="font-size:30px;">Salesforce App - Task Closed Check Box issue - 2 Closed Status </h4>
+         <div class="row">
+           <div class="col-lg-6">
+             <img style="border:0px;border-radius:10px;padding:0px;" src="img/task-1-closed.png" height="125" alt="">
+             <img style="border:0px;border-radius:10px;padding:0px;" src="img/task-mobile-picklist-2.gif" height="400" alt="">
+
+           </div>
+           <div class="col-lg-6" style="margin-top:-10px;">
+             <img style="border:0px;border-radius:10px;padding:0px;" src="img/task-2-closeds.png" height="125" alt="">
+             <img style="border:0px;border-radius:10px;padding:0px;" src="img/task-mobile-picklist-4.gif" height="400" alt="">
+           </div>
+         </div>
+       </section>
+
+       <section>
+         <h4 style="font-size:30px;">Salesforce App - Task Closed Check Box issue - References </h4>
+         <ul style="font-size:25px;">
+           <li>
+             <a target="_blank" href="https://help.salesforce.com/articleView?id=limits_mobile_sf1_productivity.htm&type=5">
+               Productivity Features: What’s Different or Not Available in the Salesforce App
+             </a>
+           </li>
+         </ul>
+       </section>
+
+
+       <section>
+         <h4>Console Home Tab Notes</h4>
+         <ul style="font-size:30px">
+           <li>Url: <b>/home/home.jsp?isdtp=vw</b></li>
+          <li> <b>/home/home.jsp</b> is the url of the Home tab</li>
+          <li> The parameter <b>?isdtp=vw</b> indicates to salesforce that the page should be rendered to comply and function within the Console. </li>
+           <li> <b>isdtp</b> is short for "Is Desktop", the original name for Console</li>
+           <li> <b>vw</b> is short for <b>view</b>, which is the mode in which the page is displayed.<br/>
+              It renders the page without the regular salesforce.com header and sidebar </li>
+           <li> Possible values:
+           <ul>
+            <li>isdtp=mn : Retains the old SFDC styling without the tabs and sidebar  </li>
+            <li>isdtp=lt : Retains the old SFDC styling without the tabs, sidebar, or header </li>
+            <li>isdtp=vw : The page will be rendered without the tabs and sidebar </li>
+            <li>isdtp=nv : The page will be rendered without the tabs and sidebar, and will accommodate all the buttons in a list view </li>
+
+            </ul>
+           </li>
+         </ul>
+       </section>
+
+       <section>
+         <h4 style="font-size:30px;">Setting Custom Links in Home page</h4>
+         <img height="550" style="border:0px; border-radius:20px;" src="img/home-custom-link-1.gif" alt="">
+       </section>
+
+       <section>
+         <h4 style="font-size:30px;">Setting up Salesforce Console Links</h4>
+
+         <iframe id="vidyard_iframe_Ki1BhOiiQAbhWmFg-x4uiQ" class="vidyard_iframe" src="//play.vidyard.com/Ki1BhOiiQAbhWmFg-x4uiQ?disable_popouts=0&amp;hide_html5_playlist=1&amp;v=3.1.1&amp;vyemail=&amp;type=inline&amp;referring_url=http%253A%252F%252Flocalhost%253A7010%252Fgithub%252Fgithub-page%252Fmohan-chinnappan-n.github.io%252Fsf-notes%252Fsf-notes-1.html&amp;"
+
+          width="800" height="500" title="Video" aria-label="Video" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="" style="opacity: 1; background-color: transparent; position: relative; right: 0px; top: 0px;"></iframe>
+
+       </section>
+
+       <section>
+         <h4>How to get Org-Id of Salesforce org</h4>
+         <img style="border:0px;border-radius:10px;" src="img/sfdc-org-id.png" alt="">
+       </section>
+
+
+       <section>
+         <h4>References</h4>
+         <ul>
+           <li>
+             <a style="font-size:30px;" target="_blank" href="img/salesforce_agent_console_cheatsheet.pdf"> USING THE CONSOLE TAB  </a>
+           </li>
+         </ul>
+       </section>
+
+       <section>
+         <h4>Outbound Messaging</h4>
+         <div class="row">
+           <div class="col-lg-5">
+             <ul style="font-size:23px;">
+               <li>If the endpoint is unavailable, messages will stay in the queue until sent successfully,
+                  or until they are 24 hours old. After 24 hours, messages are <b>dropped</b> from the queue</li>
+              <li>
+                If a message cannot be delivered, the interval between <b>retries increases exponentially</b>, up to a <b>maximum of 2 hours between retries</b>
+
+              </li>
+              <li>Messages are retried <b>independent of their order in the queue</b>. This may result in messages being delivered <b>out of order</b></li>
+              <li>
+                You cannot build an audit trail using outbound messaging. While each message should be delivered at least once, it may be <b>delivered more than once</b>.
+                Listener client should check the <b>notification IDs</b> delivered in the notification before processing.
+                 Also, it may not be delivered at all if delivery cannot be done within 24 hours
+
+              </li>
+              <li> The source object may change <b>after a notification is queued</b>
+                 but before it is sent, so the endpoint will only receive the <b>latest data</b>, not any intermediate changes.</li>
+
+             </ul>
+
+           </div>
+           <div class="col-lg-7">
+             <img style="border:0px;border-radius:10px;padding:0px;" src="https://developer.salesforce.com/docs/resources/img/en-us/212.0?doc_id=dev_guides%2Fapi%2Fimages%2Foutbound_overview.gif&folder=api" height="500" alt="">
+
+           </div>
+
+         </div>
+       </section>
+
+       <section>
+         <h4>Customizing Profile Page Tabs</h4>
+         <img style="border:0px;border-radius:10px;padding:0px;" src="img/profile-page-tabs-custom-1.gif" height="450" alt="">
+         <ul style="font-size:30px;">
+           <li>
+             <a target="_blank" href="https://resources.docs.salesforce.com/212/latest/en-us/sfdc/pdf/salesforce_profile_tabs_cheatsheet.pdf">
+               Customize Chatter Proifle Pages with Profile Tabs
+             </a>
+           </li>
+         </ul>
+
+
+       </section>
+
+       <section>
+         <h4>Lightning Experience Roadmap</h4>
+           <a target="_blank" href="https://www.salesforce.com/content/dam/web/en_us/www/documents/e-books/salesforce-lightning-roadmap.pdf">Link</a>
+           <object style="width: 100%; height: 820px" data="https://www.salesforce.com/content/dam/web/en_us/www/documents/e-books/salesforce-lightning-roadmap.pdf"
+                   type="application/pdf">
+          </object>
+
+       </section>
+
+
+       <section>
+         <h4>myTrailhead</h4>
+        <ul style="font-size:30px;">
+          <li>Create custom learning content</li>
+          <li>Share guided learning paths</li>
+          <li>Rate and reward learning</li>
+          <li>Assign and track progress</li>
+          <li>Track your achievements and skills</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h4>myTrailhead Resources</h4>
+        <ul style="font-size:30px;">
+          <li>
+            <a target="_blank" href="https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/get-ready-for-my-trailhead">Trailmix Get Ready for myTrailhead
+</a>
+          </li>
+          <li> <a target="_blank" href="https://trailhead.salesforce.com/mytrailhead/webinar">Webinar</a> </li>
+          <li> <a target="_blank" href="https://trailhead.salesforce.com/en/mytrailhead">Video</a> </li>
+          <li> <a target="_blank" href="https://salesforce.quip.com/IthKAuemOn5O">FAQ</a> </li>
+          <li>
+            <a  target="_blank" href="https://trailhead.salesforce.com/modules/writing_style?trailmix_creator_id=00550000006yDdKAAU&trailmix_id=get-ready-for-my-trailhead">Writing Style
+</a>
+          </li>
+          <li>
+            <a href="https://medium.com/trailhead/go-behind-the-scenes-with-trailheads-writers-d5829a196bf4">Go Behind the Scenes with Trailhead’s Writers
+</a>
+          </li>
+        </ul>
+    </section>
+
+    <section>
+      <h4 style="font-size:30px;">Trailhead Tracker App by Salesforce Labs</h4>
+      <a style="font-size:30px;" target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000EFpAtUAL">AppExchange Link</a>
+      <img height="450"  style="border:0px;border-radius:10px;" src="img/trailhead-tracker-1.png" alt="">
+    </section>
+
+
+    <section>
+      <h4 style="font-size:30px;">asyncApexJob</h4>
+      <div class="row">
+        <div class="col-lg-8">
+          <img style="border:0px;border-radius:10px;padding:10px;" src="img/asyncApexJob-1.png" height="500" alt="">
+        </div>
+       <div class="col-lg-4">
+         <ul style="font-size:20px;">
+           <li>
+             <a style="font-size:20px;" target="_blank" href="csv-viewer.html?f=asyncApexJob">  Details </a>
+           </li>
+           <li>
+             <a style="font-size:20px;" target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_asyncapexjob.htm">
+                 Doc
+             </a>
+           </li>
+         </ul>
+       </div>
+      </div>
+    </section>
+
+    <section>
+      <h4>Querying asyncApexJob</h4>
+      <img style="border:0px;border-radius:10px;padding:10px;" src="img/async-apex-query-1.png"  alt="">
+
+    </section>
+
+    <section>
+      <h4>Querying cronTrigger - contd.</h4>
+      <pre style="font-size:20px;">
+        <code>
+  SELECT JobType,Status,
+         Id, MethodName,
+         CreatedDate, CompletedDate,
+         ExtendedStatus
+    FROM asyncApexJob
+
+        </code>
+      </pre>
+    </section>
+
+
+
+        <section>
+          <h4 style="font-size:30px;">cronTrigger</h4>
+          <div class="row">
+            <div class="col-lg-10">
+              <img style="border:0px;border-radius:10px;padding:10px;" src="img/cronTrigger-1.png" height="500" alt="">
+            </div>
+           <div class="col-lg-2">
+             <ul style="font-size:20px;">
+               <li>
+                 <a style="font-size:20px;" target="_blank" href="csv-viewer.html?f=cronTrigger"> Details </a>
+               </li>
+               <li>
+                 <a style="font-size:20px;" target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.214.0.object_reference.meta/object_reference/sforce_api_objects_crontrigger.htm">
+                  Doc
+                 </a>
+               </li>
+               <li>
+                 <a  style="font-size:20px;" target="_blank"   href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm">
+                   Apex Scheduler
+
+                 </a>
+               </li>
+             </ul>
+           </div>
+          </div>
+        </section>
+
+
+        <section>
+          <h4>Querying cronTrigger</h4>
+          <img style="border:0px;border-radius:10px;padding:10px;" src="img/cronTrigger-qurery-1.png" height="500" alt="">
+
+        </section>
+
+        <section>
+          <h4>Querying cronTrigger - contd.</h4>
+          <pre style="font-size:20px;">
+            <code>
+  SELECT CronJobDetail.Name, State,
+         TimeZoneSidKey, TimesTriggered,
+         NextFireTime, PreviousFireTime, StartTime,
+         CronExpression, EndTime,
+         Id
+      FROM CronTrigger
+            </code>
+  </pre>
+
+  <pre style="font-size:20px;">
+            <code>
+SELECT State,Id,
+       TimeZoneSidKey, TimesTriggered,
+       NextFireTime, PreviousFireTime, StartTime,
+       CronExpression, EndTime
+    FROM CronTrigger
+     WHERE CronJobDetail.Name = 'HelloWorldJob'
+   </code>
+ </pre>
+</section>
+
+
+
+    <section>
+      <h4 style="font-size:30px;">EventLogFile</h4>
+      <div class="row">
+        <div class="col-lg-8">
+          <img style="border:0px;border-radius:10px;padding:10px;" src="img/eventLogFile-1.png" height="500" alt="">
+        </div>
+       <div class="col-lg-4">
+         <ul style="font-size:20px;">
+           <li>
+             <a style="font-size:30px;" target="_blank" href="csv-viewer.html?f=eventLogFile"> EventLogFile </a>
+           </li>
+           <li>
+             <a style="font-size:30px;" target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.sfFieldRef.meta/sfFieldRef/salesforce_field_reference_EventLogFile.htm"> documentation </a>
+           </li>
+
+         </ul>
+       </div>
+      </div>
+    </section>
+
+    <section>
+      <h4 style="font-size: 25px;">StandardSetController - Task - Error</h4>
+       <ul style="font-size: 30px;">
+         <li>
+           <a target="_blank" href="https://success.salesforce.com/issues_view?title=standardsetcontroller-vf-class-doesn-t-work-with-task-entity-when-there-is-a-filter-applied-to-the-task-listview&Id=a1p3A000001EmHD">
+          Known Issue</a>
+         </li>
+       </ul> 
+      <img style="border:0px;border-radius:10px;padding:10px;"  src="img/taskListError-1.gif" height="500" alt=""><br/>
+    </section>
+
+
+    <section>
+        <h4 style="font-size:30px;">Activities apex:enhancedList in Lightning</h4>
+        <img src="../sfdc/img/taskListViews-1.gif" style="border-radius:10px;border-color:#eef;" height="450" alt="">
+    </section>
+
+    <section>
+        <h4 style="font-size:30px;">Activities apex:enhancedList in Lightning - References</h4>
+        <ul>
+            <li> <a target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_compref_enhancedList.htm">apex:enhancedList</a> </li>
+            <li> <a target="_blank" href="https://trailhead.salesforce.com/modules/lex_dev_visualforce/units/lex_dev_visualforce_process">Develop Visualforce Pages for Lightning Experience
+</a> </li>
+ 
+        </ul>
+    </section>
+
+    <section>
+        <h4 style="font-size:30px;">Activity List View is timing out </h4>
+      <ul style='font-size:30px;'>
+          <li>You can resolve <b>time limit exceeded</b> errors by refining the criteria for your Activity List View.  </li>
+          <li>On the Homepage, 'Activity List View' takes the User to the last List they viewed  </li>
+          <li>If the criteria are too broad this page will never load and you will receive an error  </li>
+          <li>Refer: <a target='_blank' href="https://help.salesforce.com/articleView?id=How-do-I-fix-an-ac    tivity-list-view-that-is-timing-out-1327365102712&language=en_US&type=1">Knowledge Article</a> </li>
+      </ul>
+</section>
+
+
+    <section>
+        <h4 style="font-size:30px;">Activity List View is timing out - Solution </h4>
+              <ul style='font-size:30px;'>
+                  <li>
+                     Log in to your Salesforce org. Refer: <a target='_blank' href="https://help.salesforce.com/articleView?id=How-do-I-fix-an-activity-list-view-that-is-timing-out-1327365102712&language=en_US&type=1">Knowledge Article</a> </li>
+                  <li> Click this <a target='_new'
+                          href='https://na4.salesforce.com/ui/list/FilterEditPage?ftype=z&retURL=%2F007'>link</a>
+                    to Create a new Activity List View and Save
+                      <img src='img/list-view-timeout-2.png' style='border-radius:10px; border-color:#eef;'/>
+                       </li>
+                  <li></li>
+                  <li></li>
+              </ul>
+
+   </section>
+
+  <section>
+        <h4 style="font-size:30px;">Activity List View is timing out - Solution - contd. </h4>
+              <ul style='font-size:30px;'>
+                  <li> When the view finishes loading, you will see List-View-Id (starting with 00B) in the URL
+                  <img src='img/list-view-timeout-3.png' style='border-radius:10px; border-color:#eef;'/>
+
+                  </li>
+                  <li>Copy this List-View-Id for the List-View-Id that is timing out</li>
+           
+              </ul>
+
+   </section>
+
+  <section>
+      <h4 style='font-size:30px;'>How to sell and track products with multiple prices - pricebook and products</h4>
+      <img src="img/pricebook-1.gif" style="border-radius:10px; border-color:#eef;">
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>ERD - pricebook and products - click to zoom-in</h4>
+      <a href='img/pricebook.svg' target='_blank'><img src="img/pricebook.png" style="border-radius:10px; border-color:#eef;" ></a>
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>Querying pricebookEntry  VSCode extension</h4>
+      <img src="img/priceBookEntryQuery-1.gif" style="border-radius:10px; border-color:#eef;" >
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>Querying pricebookEntry  using CLI</h4>
+       <img src="img/priceBookEntryCLI-1.png" style="border-radius:10px; border-color:#eef;" >
+       <pre style='font-size:12px;'> describe using: sfdx force:schema:sobject:describe -s PriceBookEntry -u TestOrg1 </pre>
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>tree export pricebookEntry  using CLI</h4>
+        <img src="img/tree-export-1.png" style="border-radius:10px; border-color:#eef;margin-top:-10px;" >
+         <img src="img/tree-export-11.png" style="border-radius:10px; border-color:#eef;margin-top:-10px;;" >
+       <img src="img/tree-export-2.png" height='220' style="border-radius:10px; border-color:#eef;margin-top:-10px;" >
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>tree export pricebookEntry  using CLI - contd.</h4>
+        <img src="img/tree-export-3.png" style="border-radius:10px; border-color:#eef;" height='500' >
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>tree export pricebook using CLI </h4>
+        <img src="img/tree-export-4.png" style="border-radius:10px; border-color:#eef;" >
+  </section>
+
+
+
+  <section>
+      <h4 style='font-size:30px;'>Video - pricebook and products </h4>
+     <iframe height="400" width="800" data-src="https://www.youtube.com/embed/b-Hg6dwtSDo?autoplay=0"></iframe>
+  </section>
+
+
+  <section>
+      <h4 style='font-size:30px;'>Loading - pricebook and products </h4>
+      <object   data="img/pricebookLoading.PDF" type="application/pdf" style="width: 100%; height: 800px;">
+           <p>It appears you don't have a PDF plugin for this browser</p>
+      </object>
+   </section>
+ 
+  <section>
+      <h4 style='font-size:30px;'>What to do after setting up My Domain: Deploy to Users </h4>
+        <img src="img/myDomain-Deploy-1.gif " style="border-radius:10px; border-color:#eef;" >
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>Installing Dreamhouse App </h4>
+        <img src="img/dh-app-install-de.gif" style="border-radius:10px; border-color:#eef;" > 
+  </section>
+  <section>
+      <h4 style='font-size:30px;'>Installing Dreamhouse App  in a Scratch Org</h4>
+         <img src="img/dh-scratchOrg-2.gif" style="border-radius:10px; border-color:#eef;" > 
+  </section>
+
+
+
+
+
+  <section>
+      <h4 style='font-size:30px;'>Resources - pricebook and products </h4>
+     <ul style='font-size:25px;'>
+       <li><a href="https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_test_data.htm" target="_blank">SFDX: populate your scratch orgs</a></li>
+       <li><a target='_blank' href="https://success.salesforce.com/answers?id=90630000000glHfAAI">How to insert/upload new Products, Price Books & Opportunity Line Item via Data Loader?  </a></li>
+       <li><a target='_blank' href="https://help.salesforce.com/servlet/servlet.FileDownload?file=01530000001OdbFAAS">PDF:How to insert/upload new Products, Price Books & Opportunity Line Item via Data Loader?</a></li>
+       <li><a href="https://help.salesforce.com/articleView?id=000268161&language=en_US&type=1">Load Opportunity Line Items using Data Loader </a></li>
+       <li><a target='_blank' href="https://github.com/douglascayers/sfdc-change-opportunity-pricebook-flow">Change Opportunity Pricebook Flow</a></li>
+       <li><a target='_blank' href="http://www.dreamhouseapp.io/installation/">Dreamhouse App Install</a></li>
+ 
+     </ul>
+
+  </section>
+
+  <section>
+      <h4 style='font-size:30px;'>Lead Conversion Field Mapping</h4>
+     <ul style='font-size:30px;'>
+         <li>When you convert lead records, standard lead fields map to: Fields of:
+           <ul>
+            <li> Contact</li>
+            <li> Account and , Person Account </li>
+            <li> Opportunity fields</li>
+           </ul>
+         </li>
+         <li> If you use custom fields, your admin specifies the fields that they map to in your newly created records.
+          <hr/>
+          Refer docs: <a target='_target' href="https://help.salesforce.com/articleView?id=lead_conversion_mapping.htm&type=5">Lead Conversion Field Mapping</a>
+         </li>
+     </ul>
+  </section>
+
+<section>
+    <h4>Rename Object, Tab and Field Labels</h4>
+    <ul style='font-size:30px;'>
+        <li>Most tabs are can be renamed but not all - Forecast tab can't be renamed</li>
+        <li><code>Setup:Rename Tabs and Labels</code></li>
+        <li>Renamed Objects, Tabs, Field Labels will appear with new names in User Pages but in Setup pages, they will appear in the original names</li>
+        <li>After renaming a tab or object, rename any custom reports, dashboards, profiles, permission sets, custom fields, and list views that contain the original name</li>
+        <li> You can modify labels using the <b>Translation Workbench</b>. To rename a standard report, click <b>Save As and save it to a folder designed for your new name</b></li>
+
+    </ul>
+</section>
+
+<section>
+    <h4>Unsupported Metadata types</h4>
+    <ul style='font-size:12px;'>
+    <li>Account Teams</li>
+    <li>Activity Button Overrides</li>
+    <li>Analytic Settings</li>
+    <li>Automated Case User Settings</li>
+    <li>Auto-number on Customizable Standard Fields</li>
+    <li>Campaign Influences</li>
+    <li>Case Contact Roles</li>
+    <li>Case Feed Layouts</li>
+    <li>Case Team Roles</li>
+    <li>Console Layouts</li>
+    <li>Multiline layout fields for contract line items</li>
+    <li>Currency Exchange Rates</li>
+    <li>Data Category Visibility Settings</li>
+    <li>Delegated Administration</li>
+    <li>Divisions</li>
+    <li>Fiscal Year</li>
+    <li>File Upload and Download Security Settings</li>
+    <li>Lead Settings</li>
+    <li>Live Agent chats routed with Omni-Channel</li>
+    <li>Mail Merge Templates</li>
+    <li>Mobile Administration</li>
+    <li>Mobile Users and Devices</li>
+    <li>Multiline layout fields for opportunity teams</li>
+    <li>Offline Briefcase Configurations</li>
+    <li>Opportunity Big Deal Alerts</li>
+    <li>Opportunity Update Reminders</li>
+    <li>Organization Wide Email Addresses</li>
+    <li>Outlook Configurations</li>
+    <li>Partner Management</li>
+    <li>The following standard picklists: IdeaTheme.Categories, Order.Status, Question.Origin. (All other standard picklists are supported.)</li>
+    <li>Predefined Case Teams</li>
+    <li>Product Schedule Setup</li>
+    <li>Public and Resource Calendars</li>
+    <li>Quote Templates</li>
+    <li>Salesforce to Salesforce</li>
+    <li>Self-Service Portal Font and Colors</li>
+    <li>Self-Service Portal Settings</li>
+    <li>Self-Service Portal Users</li>
+    <li>Self-Service Public Solutions</li>
+    <li>Self-Service Web-to-Case</li>
+    <li>Service report templates</li>
+    <li>Site.com</li>
+    <li>Social Account/Contact Settings</li>
+    <li>Social Business Rules</li>
+    <li>Social Customer Service Settings</li>
+    <li>SoftPhone Layout</li>
+    <li>Solution Categories</li>
+    <li>Solution Settings</li>
+    <li>Standard fields that aren’t customizable, such as autonumber fields or system fields</li>
+    <li>Tag Settings</li>
+    <li>Territory Assignment Rules</li>
+    <li>User Interface Settings (except calendar features, which are supported in ActivitiesSettings)</li>
+    <li>Web Links on Person Account Page Layouts</li>
+    <li>Web-to-Lead</li>
+    </ul>
+</section>
+
+
+<section>
+    <h4 style='font-size:30px;'>Document, Note, and Attachment Objects </h4>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="../sfdc/fs-cloud/img/notes-attachments.png" height="500" alt="">
+</section>
+
+<section>
+    <h4 style='font-size:30px;'>Attachment Object </h4>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="../sfdc/fs-cloud/img/attachement-obj.png"  alt="">
+</section>
+
+<section>
+    <h4 style='font-size:30px;'>Enhanced Notes - Auto-save demo </h4>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="./img/enhanced-notes-3.gif" height='500'  alt="">
+</section>
+
+<section>
+    <h4 style='font-size:30px;'>Enhanced Notes - References </h4>
+   <ul style='font-size:30px;'>
+       <li> <a target='_blank' href="https://admin.salesforce.com/pro-tip-boost-note-taking-enhanced-notes-lightning-experience">Pro Tip: Boost Note-Taking with Enhanced Notes in Lightning Experience</a></li>
+       <li>
+<a target='_blank' href="http://releasenotes.docs.salesforce.com/en-us/winter16/release-notes/rn_sales_notes.htm">Our enhanced note-taking tool helps sales team players stay organized by taking better notes faster</a>
+  </li>
+   </ul>
+</section>
+
+<section>
+    <h4 style='font-size:30px;'> Developers - Disable Lightning Component Caching - Step-1</h4>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="./img/debug-mode-1.png" height='500'  alt="">
+</section>
+<section>
+    <h4 style='font-size:30px;'> Developers - Disable Lightning Component Caching - Step-2</h4>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="./img/debug-mode-2.png" height='500'  alt="">
+</section>
+
+
+<section>
+    <h4 style='font-size:30px;'> Developers - Disable Lightning Component Caching -  via SFDX </h4>
+ <pre>
+<code> {
+  "orgName": "Acme",
+  "edition": "Enterprise",
+  "features": ["Communities", "ServiceCloud", "Chatbot"],
+  "settings": {
+      "orgPreferenceSettings": {
+          "networksEnabled": true,
+          "s1DesktopEnabled": true,
+          "s1EncryptedStoragePref2": false <----
+      },
+      "omniChannelSettings": {
+          "enableOmniChannel": true
+      },
+      "caseSettings": {
+          "systemUserEmail": "support@acme.com"
+      }
+  }
+}
+</code></pre>
+<a style='font-size:20px;' target='_blank' href="https://help.salesforce.com/articleView?id=aura_debug_mode.htm&type=5">Enable Debug Mode for Lightning Components
+</a>
+<hr/>
+<a style='font-size:20px;' target='_blank' href="https://medium.com/salestrip/salesforce-lightning-component-caching-a39b6a9d01a7">Auto-disable Component Caching in Scratch Orgs
+</a>
+</section>
+
+<section>
+    <h4 style='font-size:30px;'> Production - Clear Cache Chrome Extension </h4>
+     <a style='font-size:20px;' target='_blank' href="https://chrome.google.com/webstore/detail/clear-browser-cache/ifhfpdbgpmalhoigckoojjjpepbionkn">Clear Browser Cache -  Chrome Extension - Install</a>
+         <hr/>
+       <img style="border:0px;border-radius:10px;padding:10px;" src="./img/clear-cache-1.png" height='400'  alt="">
+</section>
+
+<section>
+ <h4 style='font-size:30px;'>Modifying system fields during data migration</h4>
+
+<ul style='font-size:30px;'>
+    <li> <a target='_new' href='https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/system_fields.htm'>System fields</a> like <code>CreatedBy, CreatedDate, LastModifiedByID, LastModifiedDate</code> are read-only for valid business and data-integrity reasons.</li>
+    <li> During data migrations, it is sometimes desirable to insert records with legacy dates and ids to match the source system.</li>
+    <li>How to : <b>Contact Salesforce Support</b> to enable this functionality for you for a limited time.</li>
+</ul>
+  
+</section>
+
+
+    </div>
+  </div>
+
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+
+  <script>
+    'use strict';
+
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+      //width: 960,
+      //	height: 700,
+
+      // Display presentation control arrows
+      controls: true,
+
+      // Help the user learn the controls by providing hints, for example by
+      // bouncing the down arrow when they first encounter a vertical slide
+      controlsTutorial: true,
+
+      // Determines where controls appear, "edges" or "bottom-right"
+      controlsLayout: 'edges',
+
+      // Visibility rule for backwards navigation arrows; "faded", "hidden"
+      // or "visible"
+      controlsBackArrows: 'faded',
+      // Display a presentation progress bar
+      progress: true,
+
+      // Set default timing of 2 minutes per slide
+      defaultTiming: 120,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+
+      history: true,
+      center: true,
+      slideNumber: true,
+
+      embedded: true,
+
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+      menu: {
+        markers: true,
+        openSlideNumber: true,
+        themes: [{
+            name: 'Black',
+            theme: '../reveal.js/css/theme/black.css'
+          },
+          {
+            name: 'White',
+            theme: '../reveal.js/css/theme/white.css'
+          },
+          {
+            name: 'League',
+            theme: '../reveal.js/css/theme/league.css'
+          },
+          {
+            name: 'Sky',
+            theme: '../reveal.js/css/theme/sky.css'
+          },
+          {
+            name: 'Beige',
+            theme: '../reveal.js/css/theme/beige.css'
+          },
+          {
+            name: 'Simple',
+            theme: '../reveal.js/css/theme/simple.css'
+          },
+          {
+            name: 'Serif',
+            theme: '../reveal.js/css/theme/serif.css'
+          },
+          {
+            name: 'Blood',
+            theme: '../reveal.js/css/theme/blood.css'
+          },
+          {
+            name: 'Night',
+            theme: '../reveal.js/css/theme/night.css'
+          },
+          {
+            name: 'Moon',
+            theme: '../reveal.js/css/theme/moon.css'
+          },
+          {
+            name: 'Solarized',
+            theme: '../reveal.js/css/theme/solarized.css'
+          }
+        ],
+        custom: []
+      },
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: '../reveal.js/lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/highlight/highlight.js',
+          async: true,
+          condition: function() {
+            return !!document.querySelector('pre code');
+          },
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: '../reveal.js/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/reveal.js-menu/menu.js',
+          async: true
+        }
+      ]
+    });
+
+
+
+    var app = angular.module('app', [
+      'hc.marked'
+    ]);
+    app.config(['markedProvider', function(markedProvider) {
+      markedProvider.setOptions({
+        gfm: true
+      });
+    }]);
+
+    var GSCOPE;
+    app.controller('MainCtrl', function($scope, $http, $timeout) {
+      GSCOPE = $scope; // debugging purposes
+      $scope.appName="SFDC Notes";
+
+
+
+    })
+  </script>
+</body>
+
+</html>

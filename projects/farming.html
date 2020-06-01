@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainCtrl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{appName}}</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/navbar-green.css">
+  <script src="../js/angular.min.js"></script>
+  <script src="../js/data-markdown.user.js"></script>
+
+
+  <script src="../bower_components/marked/marked.min.js"></script>
+  <script src="../bower_components/angular-marked/dist/angular-marked.js"></script>
+
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    		<script src="../reveal.js/lib/js/html5shiv.js"></script>
+    		<![endif]-->
+
+  <style>
+    .reveal .slide-number {
+      font-size: 0.5em;
+    }
+
+    .simg {
+      border-radius: 10px;
+      border: 1px;
+    }
+
+    .reveal section ul li,
+    .reveal section p {
+      font-size: .8em !important;
+    }
+
+    .reveal section pre code {
+      font-size: 0.7em !important;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)">{{appName}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/home">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li ><a href="/">Main</a></li>
+      </ul>
+
+      <div class="inner-addon right-addon navbar-form navbar-right">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="form-control" placeholder="Search" />
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown ">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Help <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="./help.html">Help Topics</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <!--
+  <div class="container" ng-controller='MainCtrl'>
+    <div marked src="'pevents.md'"></div>
+  </div>
+-->
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section id="home">
+        <h4>{{appName}} Bots and Internet-of-Things</h4>
+       </section>
+
+       <section>
+             <h4>Organic farming</h4>
+            <ul style='font-size:30px;'>
+                <li>Respect the Nature :  <a href="https://mohan-chinnappan-n.github.io/life/life-1.html" target='_blank'>Life.yeah!</a>
+                <li>Bring back <b>WOW!</b> in the food taste</li>
+                <li>Move the system of food manufacturing from <b>shelf-life</b> to <b>taste-and-healthy</b></li
+>
+            </ul>
+        </section>
+
+       <section>
+         <h4>Data Driven Farming - Food 2.0</h4>
+         <object   data="img/farming/costco-food20.pdf" type="application/pdf" style="width: 100%; height: 800px;">
+
+           <p>It appears you don't have a PDF plugin for this browser</p>
+         </object>
+       </section>
+
+
+       <section>
+         <h4>Robotic Farming of the Future</h4>
+         <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/NO8PmqEI0cc?autoplay=0"></iframe>
+
+       </section>
+
+       <section>
+         <h4>SwagBot - guide cattles</h4>
+         <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/oxpZ1c7TsPI?autoplay=0"></iframe>
+
+       </section>
+
+       <section>
+         <h4>RIPPA - pest & weed control cattles</h4>
+         <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/XP7GoNKcTS4?autoplay=0"></iframe>
+       </section>
+
+
+       <section>
+         <h4>Using Earth Heat in farming</h4>
+         <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/ZD_3_gsgsnk?autoplay=0"></iframe>
+       </section>
+
+
+
+
+
+
+        <section>
+          <h4 style="font-size:30px;">FarmBot: open source backyard robot for a fully automated garden - 3D printer style </h4>
+          <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/BqYrAWssrrY?autoplay=0"></iframe>
+        </section>
+
+
+        <section>
+          <h4>1 Shipping Containers = 5 Acres of  Farmland</h4>
+          <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/w-1tBWDHcQs?autoplay=0"></iframe>
+        </section>
+
+
+        <section>
+          <h4>Farmbot - docs</h4>
+          <ul style="font-size:30px;">
+            <li>
+              <a target="_blank" href="https://genesis.farm.bot/docs">Documents</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4 style="font-size:30px;">Inspiration - TensorFlow powered cucumber sorter by Makoto Koike </h4>
+          <iframe allowfullscreen height="400" width="800" data-src="https://www.youtube.com/embed/4HCE1P-m1l8?autoplay=0"></iframe>
+          <hr>
+          <a style="font-size:20px;" target="_blank" href="https://cloud.google.com/blog/big-data/2016/08/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow">
+            How a Japanese cucumber farmer is using deep learning and TensorFlow
+          </a>
+        </section>
+
+
+        <section>
+          <h4 style="font-size:30px;">Formlabs Form 2 3D Printer</h4>
+                 <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/7-2tyf7umsc?autoplay=0"></iframe>
+        </section>
+
+
+        <section>
+          <h4 style="font-size:30px;" >17 Incredible 3D Printed Objects</h4>
+                 <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/FSu19nz7NlE?autoplay=0"></iframe>
+        </section>
+
+
+        <section>
+          <h4 style="font-size:30px;"> GE -  3D Printed Jet Engine</h4>
+                 <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/W6A4-AKICQU?autoplay=0"></iframe>
+        </section>
+
+
+
+
+
+
+        <section>
+          <h4 style="font-size:30px;">Internet of Farming: Arduino-based, backyard aquaponics </h4>
+                 <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/X2wWTadsBDA?autoplay=0"></iframe>
+        </section>
+
+        <section>
+          <h4>Arduino</h4>
+          <img style="border:0px;" height="500" src="img/farming/ABX00020_iso.jpg.png" alt="">
+        </section>
+
+        <section>
+          <h4>Arduino Book - Introduction to Arduino</h4>
+          <object   data="img/farming/IntroArduinoBook.pdf" type="application/pdf" style="width: 100%; height: 800px;">
+
+            <p>It appears you don't have a PDF plugin for this browser</p>
+          </object>
+        </section>
+
+        <section>
+          <h4>Organic Farming</h4>
+           <iframe allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/videoseries?list=PLR89zYaefHpxq8laHpCWkJsmrvD81BHIA"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <section>
+          <h4 style="font-size:30px;">Meta-Learning and Self-Play - Ilya Sutskever</h4>
+                 <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/9EN_HoEk3KY?autoplay=0"></iframe>
+        </section>
+
+        <section>
+          <h4>Deep Learning - Ian Goodfellow</h4>
+          <object   data="img/farming/deeplearningbook.pdf" type="application/pdf" style="width: 100%; height: 800px;">
+            <p>It appears you don't have a PDF plugin for this browser</p>
+          </object>
+        </section>
+
+
+
+        <section>
+          <h4>Reinforcement Learning: An Introduction</h4>
+          <object   data="img/farming/bookdraft2017nov5.pdf" type="application/pdf" style="width: 100%; height: 800px;">
+            <p>It appears you don't have a PDF plugin for this browser</p>
+          </object>
+        </section>
+
+
+
+
+
+
+
+        <section>
+          <h4>Terrain Maps</h4>
+        </section>
+
+        <section>
+          <h4  style="font-size:20px;">How to see Terrain in Google Maps</h4>
+          <img style="border:0px;" height="450" src="img/farming/gmaps-terrian-1.png" alt="">
+          <br/>
+          <a style="font-size:20px;" target="_blank"
+          href="https://www.google.com/maps/@11.055562,76.9855886,9z/data=!5m1!1e4"
+          >
+            Example:Coimbatore, India
+          </a> |
+          <a style="font-size:20px;" target="_blank"
+          href="https://legacy.lib.utexas.edu/maps/ams/india/"
+          >
+            University of Texas libraries, India Maps
+          </a>
+
+        </section>
+
+
+
+
+        <section>
+          <h4 style="font-size:20px;"> Google Earth KML file for seeing US Terrain info from : earthpoint</h4>
+          <div style="font-size:18px;">Drag and Drop this file into Google Earth</div>
+
+          <pre>
+<code> <?xml version="1.0" encoding="UTF-8"?> <kml xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:gx="http://www.google.com/kml/ext/2.2">
+     <NetworkLink><name>Earth Point Topo Map</name>
+       <description>Download in progress. Please wait...</description>
+       <open>0</open>
+       <refreshVisibility>1</refreshVisibility>
+       <Style>
+          <ListStyle><listItemType>checkHideChildren</listItemType></ListStyle>
+          <BalloonStyle><text>$[description]</text> </BalloonStyle>
+        </Style>
+        <Url>
+           <href>http://www.earthpoint.us/Default.ashx?RequestID=946b0d66a4f1469fb39eee62148d5dcb</href>
+            <viewRefreshMode>onStop</viewRefreshMode>
+            <viewRefreshTime>2</viewRefreshTime>
+            <viewBoundScale>1</viewBoundScale>
+            <viewFormat>BBOX=[bboxWest],[bboxSouth],[bboxEast],[bboxNorth],[lookatLon],[lookatLat],[lookatRange],[lookatTilt],[lookatHeading],[lookatTerrainAlt],[horizPixels],[vertPixels],[terrainEnabled]
+            </viewFormat>
+            </Url>
+            </NetworkLink>
+            </kml>
+                          </code>
+                           </pre>
+
+        </section>
+
+        <section>
+          <h4 style="font-size:20px;">A Gentle Introduction to CalTopo - The Ultimate in Backcountry Mapping Utilities </h4>
+               <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/2188-p_uFMY?autoplay=0"></iframe>
+        </section>
+
+
+
+      <section>
+
+        <h4 style="font-size:20px;">Download topographic maps from caltopo </h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/K8uHFu-9rJk?autoplay=0"></iframe>
+
+      </section>
+
+
+        <section>
+
+          <h4 style="font-size:20px;">Adding a Custom Overlay in Google Maps </h4>
+          <a style="font-size:20px;" target="_blank" href="gmap.html" >Custom Overlay Example </a>
+          <br/>
+            <a style="font-size:20px;" target="_blank" href="gmap-kml.html" >KML LayersExample </a>
+            <br/>
+              <a style="font-size:20px;" target="_blank" href="img/farming/cta.kml" >KML file used </a>
+              <br/>
+                <a style="font-size:20px;" target="_blank" href="gmaps-eq.html" >Earth Quake Maps </a>
+                <br/>
+                  <a style="font-size:20px;" target="_blank" href="gmaps-pano.html" >Map  - Panoramas </a>
+
+        </section>
+
+
+
+
+
+       <section>
+         <h4>Q&A: How to Begin Large-Scale Water Catchment Systems - Geoff Lawton</h4>
+         <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/EDM8IA7sJO0?autoplay=0"></iframe>
+      </section>
+
+      <section>
+        <h4>Zaytuna Farm Tour</h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/eFujalK2jHg?autoplay=0"></iframe>
+     </section>
+
+      <section>
+        <h4> Satoyama II Japans Secret Watergarden</h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/Q2WshkiSFpE?autoplay=0"></iframe>
+     </section>
+
+     <section>
+        <h4 style="font-size: 25px"> Wasteland to Heaven in 50 years</h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/ZSPkcpGmflE?autoplay=0"></iframe>
+     </section>
+
+     <section>
+        <h4 style="font-size: 25px"> Regreening the desert with John D. Liu </h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/IDgDWbQtlKI?autoplay=0"></iframe>
+     </section>
+
+          <section>
+        <h4 style="font-size: 25px"> Hope in a Changing Climate -  John D. Liu </h4>
+        <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/bLdNhZ6kAzo?autoplay=0"></iframe>
+     </section>
+
+
+
+ 
+
+     <section>
+          <h4>Fruit Trees - Almond in CA</h4>
+             <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/pm3M7U2NCQQ?autoplay=0"></iframe>
+     </section>
+
+     <section>
+          <h4>Fruit Trees - Macadamia</h4>
+             <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/XsQFSFjYujo?autoplay=0"></iframe>
+     </section>
+
+      <section>
+        <h4>Organic Farming - G. Nammalvar - Playlist</h4>
+<iframe allowfullscreen width="800" height="450" src="https://www.youtube.com/embed/videoseries?list=PLR89zYaefHpz9_3xap4iY5juabnD1m0Oh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+
+     <section>
+          <h4>Henry Ford - Farmers Guru</h4>
+             <iframe allowfullscreen height="450" width="800" data-src="https://www.youtube.com/embed/MAG4PHIhYK0?autoplay=0"></iframe>
+     </section>
+
+
+
+      <section>
+        <h4>Celebrity Farmers -  Jim Nabors</h4>
+              <iframe allowfullscreen src="https://player.vimeo.com/video/13983909" webkitallowfullscreen="" mozallowfullscreen=""
+                    allowfullscreen="" width="1000" height="500" frameborder="0"></iframe>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
+
+
+  <script>
+    'use strict';
+
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+      //width: 960,
+      //	height: 700,
+
+      // Display presentation control arrows
+      controls: true,
+
+      // Help the user learn the controls by providing hints, for example by
+      // bouncing the down arrow when they first encounter a vertical slide
+      controlsTutorial: true,
+
+      // Determines where controls appear, "edges" or "bottom-right"
+      controlsLayout: 'edges',
+
+      // Visibility rule for backwards navigation arrows; "faded", "hidden"
+      // or "visible"
+      controlsBackArrows: 'faded',
+      // Display a presentation progress bar
+      progress: true,
+
+      // Set default timing of 2 minutes per slide
+      defaultTiming: 120,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+
+      history: true,
+      center: true,
+      slideNumber: true,
+
+      embedded: true,
+
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+      menu: {
+        markers: true,
+        openSlideNumber: true,
+        themes: [{
+            name: 'Black',
+            theme: '../reveal.js/css/theme/black.css'
+          },
+          {
+            name: 'White',
+            theme: '../reveal.js/css/theme/white.css'
+          },
+          {
+            name: 'League',
+            theme: '../reveal.js/css/theme/league.css'
+          },
+          {
+            name: 'Sky',
+            theme: '../reveal.js/css/theme/sky.css'
+          },
+          {
+            name: 'Beige',
+            theme: '../reveal.js/css/theme/beige.css'
+          },
+          {
+            name: 'Simple',
+            theme: '../reveal.js/css/theme/simple.css'
+          },
+          {
+            name: 'Serif',
+            theme: '../reveal.js/css/theme/serif.css'
+          },
+          {
+            name: 'Blood',
+            theme: '../reveal.js/css/theme/blood.css'
+          },
+          {
+            name: 'Night',
+            theme: '../reveal.js/css/theme/night.css'
+          },
+          {
+            name: 'Moon',
+            theme: '../reveal.js/css/theme/moon.css'
+          },
+          {
+            name: 'Solarized',
+            theme: '../reveal.js/css/theme/solarized.css'
+          }
+        ],
+        custom: []
+      },
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: '../reveal.js/lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: '../reveal.js/plugin/highlight/highlight.js',
+          async: true,
+          condition: function() {
+            return !!document.querySelector('pre code');
+          },
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: '../reveal.js/plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../reveal.js/plugin/reveal.js-menu/menu.js',
+          async: true
+        }
+      ]
+    });
+
+
+
+    var app = angular.module('app', [
+      'hc.marked'
+    ]);
+    app.config(['markedProvider', function(markedProvider) {
+      markedProvider.setOptions({
+        gfm: true
+      });
+    }]);
+
+    var GSCOPE;
+    app.controller('MainCtrl', function($scope, $http, $timeout) {
+      GSCOPE = $scope; // debugging purposes
+      $scope.appName="Farming";
+
+
+
+    })
+  </script>
+</body>
+
+</html>

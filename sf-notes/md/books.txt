@@ -1,0 +1,15 @@
+person-accounts.md
+sandboxes.md
+shield.md
+skews.md
+std-profiles.md
+entitlement.md
+lightning-lookup.md
+lightning-scheduler.md
+fsc-recordtype-mapping.md
+fsc-account-add.md
+fsc-custom-triggers.md
+fsc-faq.md
+fsc-groups.md
+ea-dx.md
+sf-gov.md
